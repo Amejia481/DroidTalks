@@ -17,6 +17,10 @@ A collections of videos and resource from Android Conferences and talks
 
 ## By Topic
 
+### Layouts
+- [ConstraintLayout: It Can Do what Now? - Nicolas Roard](https://realm.io/news/constraintlayout-it-can-do-what-now/) | [Slides](https://speakerdeck.com/camaelon/constraintlayout-presentation) | [Twitter](https://twitter.com/@camaelon)
+
+
 ### Security
  - [What’s NNNNNNNNew in Android Security? - Scott Alexander](https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it) | [Twitter](https://twitter.com/scottyab)
 - [The Android Security Jungle: Pitfalls, Threats & Survival Tips - Scott Alexander](https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf) | [Twitter](https://twitter.com/scottyab)
