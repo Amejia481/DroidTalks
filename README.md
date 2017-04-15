@@ -34,5 +34,9 @@ A collections of videos and resource from Android Conferences and talks
 
 
 ### RxJava
+ - [Exploring RxJava 2 for Android  - Jake Wharton](https://youtu.be/htIXKI5gOQU?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U) | [Slides](https://gotocon.com/dl/goto-cph-2016/slides/JakeWharton_ExploringRxJava2ForAndroid.pdf) | [Twitter](https://twitter.com/JakeWharton)
+ - [Managing State with RxJava - Jake Wharton](https://youtu.be/0IKHxjkgop4) | [Slides](https://speakerdeck.com/jakewharton/the-state-of-managing-state-with-rxjava-devoxx-us-2017) | [Twitter](https://twitter.com/JakeWharton) 
  - [Learning RxJava (for Android) by example -Kaushik Gopal](https://youtu.be/k3D0cWyNno4) | [Slides](https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example) | [Twitter](https://twitter.com/kaushikgopal)
-
+ 
+ 
+ 
