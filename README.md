@@ -4,6 +4,8 @@ A collections of videos and resource from Android Conferences and talks
 **Pull Request are welcome!**
 
 ## By Conference
+- 360|Andev
+  - [2016](https://www.youtube.com/watch?v=Uz5JgP_kzIM&list=PLUrdD0cY2QkzNs8fwxdv0PuXUFDkYIn3W)
 - Droidcon Italy
   - [2017](https://www.youtube.com/playlist?list=PL4ebO4PmeAi4MgpaaK9Hej0P6ooIhmfms)
   - [2016](https://www.youtube.com/playlist?list=PL4ebO4PmeAi7gpxmaKUWc9Xa30vPM92TU)
@@ -20,7 +22,8 @@ A collections of videos and resource from Android Conferences and talks
 - [ConstraintLayout: It Can Do what Now? - Nicolas Roard](https://realm.io/news/constraintlayout-it-can-do-what-now/) | [Slides](https://speakerdeck.com/camaelon/constraintlayout-presentation) | [Twitter](https://twitter.com/@camaelon)
 
 ### Performance
-- [Optimizing Apps for Better Performance - Elif Boncuk](https://youtu.be/hWbIU00zAX0) | [Slides](https://docs.google.com/presentation/d/1N195_xUSQr1g9iTfSOCbb-404rTxoTfkLHMjpKEZeqM/view) | [Twitter](https://twitter.com/elifbon_)
+- [Optimizing and Profiling UI Performance - Brenda Cook](https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi) | [Slides](https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1) | [Twitter](https://twitter.com/kenodoggy)
+- [Optimizing Apps for Better Performance - Elif Boncuk](https://youtu.be/hWbIU00zAX0?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi) | [Slides](https://docs.google.com/presentation/d/1N195_xUSQr1g9iTfSOCbb-404rTxoTfkLHMjpKEZeqM/view) | [Twitter](https://twitter.com/elifbon_)
 
 ### Espresso
 - [Deeper insight into Android Espresso library - Kamil Krzyk](https://youtu.be/2Sw7zrJG1-0) | [Slides](https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2) | [Twitter](https://twitter.com/f1sherkk)
@@ -28,9 +31,9 @@ A collections of videos and resource from Android Conferences and talks
  
 
 ### Security
- - [What’s NNNNNNNNew in Android Security? - Scott Alexander](https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it) | [Twitter](https://twitter.com/scottyab)
-- [The Android Security Jungle: Pitfalls, Threats & Survival Tips - Scott Alexander](https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf) | [Twitter](https://twitter.com/scottyab)
  - ['I just hacked your app!' Marcos Placona](https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016) | [Twitter](https://twitter.com/marcos_placona)
+- [The Android Security Jungle: Pitfalls, Threats & Survival Tips - Scott Alexander](https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf) | [Twitter](https://twitter.com/scottyab)
+- [What’s NNNNNNNNew in Android Security? - Scott Alexander](https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it) | [Twitter](https://twitter.com/scottyab)
 
 
 ### RxJava
