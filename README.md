@@ -1,5 +1,5 @@
 # Android Talks
-A collections of videos and resource from Android Conferences and talks
+A collection of videos and resource from Android Conferences and talks
 
 **Pull Request are welcome!**
 
