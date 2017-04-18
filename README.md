@@ -18,6 +18,9 @@ A collection of videos and resource from Android Conferences and talks
 
 ## By Topic
 
+### Accessibility
+- [Android is for Everyone - Kelly Shuster](https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5) | [Slides](https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone) | [Twitter](https://twitter.com/kellyshuster)
+
 ### Custom Views
 - [Measure, Layout, Draw, Repeat: Custom Views and ViewGroups - Huyen Tue Dao](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat) | [Twitter](https://twitter.com/queencodemonkey)
 
@@ -26,6 +29,9 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Layouts
 - [ConstraintLayout: It Can Do what Now? - Nicolas Roard](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/camaelon/constraintlayout-presentation) | [Twitter](https://twitter.com/@camaelon)
+
+### Libraries
+- [Libraries I Wish I Knew About When I Started - Chris Guzman](https://youtu.be/r7z1dHL90BI?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y) | [Slides](https://speakerdeck.com/chrisguzman/android-libraries-i-wish-i-knew-when-i-started) | [Twitter](https://twitter.com/speaktochris)
 
 ### Performance
 - [Optimizing and Profiling UI Performance - Brenda Cook](https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi) | [Slides](https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1) | [Twitter](https://twitter.com/kenodoggy)
