@@ -24,6 +24,9 @@ A collection of videos and resource from Android Conferences and talks
 ### Custom Views
 - [Measure, Layout, Draw, Repeat: Custom Views and ViewGroups - Huyen Tue Dao](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat) | [Twitter](https://twitter.com/queencodemonkey)
 
+### Data Binding
+- [Data Binding in the Real World - Kevin Pelgrims](https://realm.io/news/droidkaigi-kevin-pelgrims-data-real-world-data-binding/) | [Slides](https://speakerdeck.com/kevinpelgrims/data-binding-on-android) | [Twitter](https://twitter.com/kevinpelgrims)
+
 ### Espresso
 - [Deeper insight into Android Espresso library - Kamil Krzyk](https://youtu.be/2Sw7zrJG1-0) | [Slides](https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2) | [Twitter](https://twitter.com/f1sherkk)
 
