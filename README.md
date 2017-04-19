@@ -13,6 +13,16 @@ A collection of videos and resource from Android Conferences and talks
 - Droidcon Krakow
   - [2016](https://www.youtube.com/playlist?list=PLvpKlOXx1MBNyzmF-EVZs54jhG53ag-T9)
   - [2015](https://www.youtube.com/playlist?list=PLvpKlOXx1MBMfL4llJOi0VX6LcQVP0Su0)
+- Droidcon NYC
+  - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXJha06t6pWfkYcATV4oPvC)
+  - [2015](https://www.youtube.com/playlist?list=PLnVy79PaFHMUqqvwbjyKJZv1N8rzHOCBi)
+  - [2014](https://www.youtube.com/playlist?list=PLnVy79PaFHMUtzI53_x_2VJn2vlt5fowY)
+ - Droidcon Paris
+   - [2015](https://www.youtube.com/playlist?list=PLn7H9CUCuXAv_kAdS0rxL1_jdxXpFVb0r)
+   - [2014](https://www.youtube.com/playlist?list=PLn7H9CUCuXAtRg4CnSjYEpdWpn_8TwiWK)
+   - [2013](https://www.youtube.com/playlist?list=PLn7H9CUCuXAvCeSMm56NEtui1ajY903N6)
+ - Droidcon SF
+   - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXpPlgs1uUny8eb-PEfEQNn)
 - Google I/O
   - [2016](https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte)
 
@@ -20,6 +30,9 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Accessibility
 - [Android is for Everyone - Kelly Shuster](https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5) | [Slides](https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone) | [Twitter](https://twitter.com/kellyshuster)
+
+### Android Studio
+- [Fifty Shades of Android Studio - Murat Yener](https://youtu.be/O3Xj1vBc0Xg?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F) | [Twitter](https://twitter.com/yenerm)
 
 ### Custom Views
 - [Measure, Layout, Draw, Repeat: Custom Views and ViewGroups - Huyen Tue Dao](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat) | [Twitter](https://twitter.com/queencodemonkey)
@@ -29,6 +42,13 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Espresso
 - [Deeper insight into Android Espresso library - Kamil Krzyk](https://youtu.be/2Sw7zrJG1-0) | [Slides](https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2) | [Twitter](https://twitter.com/f1sherkk)
+
+### History
+- [An Android Retrospective - Romain Guy - Chet Haase, Google](https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq) | [Twitter](https://twitter.com/romainguy) | [Twitter](https://twitter.com/chethaase)
+
+### Kotlin
+- [Kotlin in Production - Christina Lee](https://youtu.be/mDpnc45WwlI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Twitter](https://twitter.com/runchristinarun)
+- [Typing in Java, Kotlin and Scala - Hanneli Tavante - Breandan Considine](https://youtu.be/9h0XjuU0Ipk?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Slides](https://www.slideshare.net/hannelita/typing-in-java-kotlin-and-scala) | [Twitter](https://twitter.com/hannelita) | [Twitter](https://twitter.com/breandan)
 
 ### Layouts
 - [ConstraintLayout: It Can Do what Now? - Nicolas Roard](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/camaelon/constraintlayout-presentation) | [Twitter](https://twitter.com/@camaelon)
