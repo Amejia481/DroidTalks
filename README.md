@@ -31,6 +31,9 @@ A collection of videos and resource from Android Conferences and talks
 ### Accessibility
 - [Android is for Everyone - Kelly Shuster](https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5) | [Slides](https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone) | [Twitter](https://twitter.com/kellyshuster)
 
+### Android loT
+- [Android Things for IoT Talk - Wayne Piekarski](https://youtu.be/L1JTnPDQpiI?list=PLWy8DQlwJkdwlV36QfGOrlTH5Y7Domgvo) | [Twitter](https://twitter.com/waynepiekarski)
+
 ### Android Studio
 - [Fifty Shades of Android Studio - Murat Yener](https://youtu.be/O3Xj1vBc0Xg?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F) | [Twitter](https://twitter.com/yenerm)
 
@@ -42,6 +45,9 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Espresso
 - [Deeper insight into Android Espresso library - Kamil Krzyk](https://youtu.be/2Sw7zrJG1-0) | [Slides](https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2) | [Twitter](https://twitter.com/f1sherkk)
+
+### Fragments
+- [Fragments: What Are They Good For? - David Hope](https://youtu.be/fuHSFAqbyvo?list=PLWy8DQlwJkdz7TT5E5efXU70uzvVpl5FM) | [Slides](https://speakerdeck.com/hopemobile/fragments-what-are-they-good-for) | [Twitter](https://twitter.com/HopeDeveloper)
 
 ### History
 - [An Android Retrospective - Romain Guy - Chet Haase, Google](https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq) | [Twitter](https://twitter.com/romainguy) | [Twitter](https://twitter.com/chethaase)
