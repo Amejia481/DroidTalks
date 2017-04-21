@@ -27,6 +27,20 @@ A collection of videos and resource from Android Conferences and talks
   - [2016](https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte)
 
 ## By Topic
+- [Accessibility](https://github.com/Amejia481/AndroidTalks#accessibility)
+- [Android loT](https://github.com/Amejia481/AndroidTalks#android-lot)
+- [Android Studio](https://github.com/Amejia481/AndroidTalks#android-studio)
+- [Custom Views](https://github.com/Amejia481/AndroidTalks#custom-views)
+- [Data Binding](https://github.com/Amejia481/AndroidTalks#data-binding)
+- [Espresso](https://github.com/Amejia481/AndroidTalks#espresso)
+- [Fragments](https://github.com/Amejia481/AndroidTalks#fragments)
+- [History](https://github.com/Amejia481/AndroidTalks#history)
+- [Kotlin](https://github.com/Amejia481/AndroidTalks#kotlin)
+- [Layouts](https://github.com/Amejia481/AndroidTalks#layouts)
+- [Libraries](https://github.com/Amejia481/AndroidTalks#libraries)
+- [Performance](https://github.com/Amejia481/AndroidTalks#performance)
+- [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
+- [Security](https://github.com/Amejia481/AndroidTalks#security)
 
 ### Accessibility
 - [Android is for Everyone - Kelly Shuster](https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5) | [Slides](https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone) | [Twitter](https://twitter.com/kellyshuster)
