@@ -4,27 +4,13 @@ A collection of videos and resource from Android Conferences and talks
 **Pull Request are welcome!**
 
 ## By Conference
-- 360|Andev
-  - [2016](https://www.youtube.com/watch?v=Uz5JgP_kzIM&list=PLUrdD0cY2QkzNs8fwxdv0PuXUFDkYIn3W)
-- Droidcon Italy
-  - [2017](https://www.youtube.com/playlist?list=PL4ebO4PmeAi4MgpaaK9Hej0P6ooIhmfms)
-  - [2016](https://www.youtube.com/playlist?list=PL4ebO4PmeAi7gpxmaKUWc9Xa30vPM92TU)
-  - [2015](https://www.youtube.com/playlist?list=PL4ebO4PmeAi6s0zJoLuydIXUIHxrG8ohS)
-- Droidcon Krakow
-  - [2016](https://www.youtube.com/playlist?list=PLvpKlOXx1MBNyzmF-EVZs54jhG53ag-T9)
-  - [2015](https://www.youtube.com/playlist?list=PLvpKlOXx1MBMfL4llJOi0VX6LcQVP0Su0)
-- Droidcon NYC
-  - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXJha06t6pWfkYcATV4oPvC)
-  - [2015](https://www.youtube.com/playlist?list=PLnVy79PaFHMUqqvwbjyKJZv1N8rzHOCBi)
-  - [2014](https://www.youtube.com/playlist?list=PLnVy79PaFHMUtzI53_x_2VJn2vlt5fowY)
- - Droidcon Paris
-   - [2015](https://www.youtube.com/playlist?list=PLn7H9CUCuXAv_kAdS0rxL1_jdxXpFVb0r)
-   - [2014](https://www.youtube.com/playlist?list=PLn7H9CUCuXAtRg4CnSjYEpdWpn_8TwiWK)
-   - [2013](https://www.youtube.com/playlist?list=PLn7H9CUCuXAvCeSMm56NEtui1ajY903N6)
- - Droidcon SF
-   - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXpPlgs1uUny8eb-PEfEQNn)
-- Google I/O
-  - [2016](https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte)
+- [360|Andev](https://github.com/Amejia481/AndroidTalks#andev)
+- [Droidcon Italy](https://github.com/Amejia481/AndroidTalks#droidcon-italy)
+- [Droidcon Krakow](https://github.com/Amejia481/AndroidTalks#droidcon-krakow)
+- [Droidcon NYC](https://github.com/Amejia481/AndroidTalks#droidcon-nyc)
+- [Droidcon Paris](https://github.com/Amejia481/AndroidTalks#droidcon-paris)
+- [Droidcon SF](https://github.com/Amejia481/AndroidTalks#droidcon-sf)
+- [Google I/O](https://github.com/Amejia481/AndroidTalks#google-io)
 
 ## By Topic
 - [Accessibility](https://github.com/Amejia481/AndroidTalks#accessibility)
@@ -41,6 +27,32 @@ A collection of videos and resource from Android Conferences and talks
 - [Performance](https://github.com/Amejia481/AndroidTalks#performance)
 - [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
 - [Security](https://github.com/Amejia481/AndroidTalks#security)
+
+## By Conference
+
+### 360|Andev
+   - [2016](https://www.youtube.com/watch?v=Uz5JgP_kzIM&list=PLUrdD0cY2QkzNs8fwxdv0PuXUFDkYIn3W)
+### Droidcon Italy
+   - [2017](https://www.youtube.com/playlist?list=PL4ebO4PmeAi4MgpaaK9Hej0P6ooIhmfms)
+   - [2016](https://www.youtube.com/playlist?list=PL4ebO4PmeAi7gpxmaKUWc9Xa30vPM92TU)
+   - [2015](https://www.youtube.com/playlist?list=PL4ebO4PmeAi6s0zJoLuydIXUIHxrG8ohS)
+### Droidcon Krakow
+   - [2016](https://www.youtube.com/playlist?list=PLvpKlOXx1MBNyzmF-EVZs54jhG53ag-T9)
+   - [2015](https://www.youtube.com/playlist?list=PLvpKlOXx1MBMfL4llJOi0VX6LcQVP0Su0)
+### Droidcon NYC
+   - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXJha06t6pWfkYcATV4oPvC)
+   - [2015](https://www.youtube.com/playlist?list=PLnVy79PaFHMUqqvwbjyKJZv1N8rzHOCBi)
+   - [2014](https://www.youtube.com/playlist?list=PLnVy79PaFHMUtzI53_x_2VJn2vlt5fowY)
+### Droidcon Paris
+  - [2015](https://www.youtube.com/playlist?list=PLn7H9CUCuXAv_kAdS0rxL1_jdxXpFVb0r)
+  - [2014](https://www.youtube.com/playlist?list=PLn7H9CUCuXAtRg4CnSjYEpdWpn_8TwiWK)
+  - [2013](https://www.youtube.com/playlist?list=PLn7H9CUCuXAvCeSMm56NEtui1ajY903N6)
+### Droidcon SF
+  - [2016](https://www.youtube.com/playlist?list=PLnVy79PaFHMXpPlgs1uUny8eb-PEfEQNn)
+### Google I/O 
+  - [2016](https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte)
+
+## By Topic
 
 ### Accessibility
 - [Android is for Everyone - Kelly Shuster](https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5) | [Slides](https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone) | [Twitter](https://twitter.com/kellyshuster)
