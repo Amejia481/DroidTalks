@@ -4,7 +4,7 @@ A collection of videos and resource from Android Conferences and talks
 **Pull Request are welcome!**
 
 ## By Conference
-- [360|Andev](https://github.com/Amejia481/AndroidTalks#andev)
+- [360|Andev](https://github.com/Amejia481/AndroidTalks#360andev)
 - [Droidcon Italy](https://github.com/Amejia481/AndroidTalks#droidcon-italy)
 - [Droidcon Krakow](https://github.com/Amejia481/AndroidTalks#droidcon-krakow)
 - [Droidcon NYC](https://github.com/Amejia481/AndroidTalks#droidcon-nyc)
@@ -20,10 +20,12 @@ A collection of videos and resource from Android Conferences and talks
 - [Data Binding](https://github.com/Amejia481/AndroidTalks#data-binding)
 - [Espresso](https://github.com/Amejia481/AndroidTalks#espresso)
 - [Fragments](https://github.com/Amejia481/AndroidTalks#fragments)
+- [GO](https://github.com/Amejia481/AndroidTalks#go)
 - [History](https://github.com/Amejia481/AndroidTalks#history)
 - [Kotlin](https://github.com/Amejia481/AndroidTalks#kotlin)
 - [Layouts](https://github.com/Amejia481/AndroidTalks#layouts)
 - [Libraries](https://github.com/Amejia481/AndroidTalks#libraries)
+- [Material Design](https://github.com/Amejia481/AndroidTalks#material-design)
 - [Performance](https://github.com/Amejia481/AndroidTalks#performance)
 - [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
 - [Security](https://github.com/Amejia481/AndroidTalks#security)
@@ -75,6 +77,9 @@ A collection of videos and resource from Android Conferences and talks
 ### Fragments
 - [Fragments: What Are They Good For? - David Hope](https://youtu.be/fuHSFAqbyvo?list=PLWy8DQlwJkdz7TT5E5efXU70uzvVpl5FM) | [Slides](https://speakerdeck.com/hopemobile/fragments-what-are-they-good-for) | [Twitter](https://twitter.com/HopeDeveloper)
 
+### GO
+- [Gophers are coming - Jovica Popovic](https://youtu.be/XS0cuFm7hgo?list=PLWy8DQlwJkdwdLouTsRJuLL2WjM2ekx2T) | [Slides](https://www.slideshare.net/JovicaPopovic/gomobile-gophers-in-the-land-of-android) | [Twitter](https://twitter.com/jpop_32)
+
 ### History
 - [An Android Retrospective - Romain Guy - Chet Haase, Google](https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq) | [Twitter](https://twitter.com/romainguy) | [Twitter](https://twitter.com/chethaase)
 
@@ -86,7 +91,11 @@ A collection of videos and resource from Android Conferences and talks
 - [ConstraintLayout: It Can Do what Now? - Nicolas Roard](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/camaelon/constraintlayout-presentation) | [Twitter](https://twitter.com/@camaelon)
 
 ### Libraries
+- [How to reactively load and cache data without even trying - Mike Nakhimovich](https://youtu.be/TvsOsgd0--c?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y) | [Slides](https://www.slideshare.net/nakhimovich/data-loading-made-easy-with-mike-nakhimovich-droidcon-italy-2017) | [Twitter](https://twitter.com/friendlymikhail)
 - [Libraries I Wish I Knew About When I Started - Chris Guzman](https://youtu.be/r7z1dHL90BI?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y) | [Slides](https://speakerdeck.com/chrisguzman/android-libraries-i-wish-i-knew-when-i-started) | [Twitter](https://twitter.com/speaktochris)
+
+### Material Design
+- [Journey to material Design Award - Taylor Ling](https://youtu.be/VZMe3LJuAPE?list=PLWy8DQlwJkdyA29LXz0r7jaaGqPhsCuRd) | [Slides](https://speakerdeck.com/taylorling/designing-fabulous-journey-to-material-design-award) | [Twitter](https://twitter.com/taylorling)
 
 ### Performance
 - [Optimizing and Profiling UI Performance - Brenda Cook](https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi) | [Slides](https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1) | [Twitter](https://twitter.com/kenodoggy)
