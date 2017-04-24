@@ -15,7 +15,9 @@ A collection of videos and resource from Android Conferences and talks
 ## By Topic
 - [Accessibility](https://github.com/Amejia481/AndroidTalks#accessibility)
 - [Android loT](https://github.com/Amejia481/AndroidTalks#android-lot)
-- [Android Studio](https://github.com/Amejia481/AndroidTalks#android-studio)
+- [Android Studio](https://github.com/Amejia481/AndroidTalks#android-studio-plugin)
+- [Android Studio Plugin](https://github.com/Amejia481/AndroidTalks#android-studio)
+- [Architecture](https://github.com/Amejia481/AndroidTalks#architecture)
 - [Custom Views](https://github.com/Amejia481/AndroidTalks#custom-views)
 - [Data Binding](https://github.com/Amejia481/AndroidTalks#data-binding)
 - [Espresso](https://github.com/Amejia481/AndroidTalks#espresso)
@@ -29,6 +31,7 @@ A collection of videos and resource from Android Conferences and talks
 - [Performance](https://github.com/Amejia481/AndroidTalks#performance)
 - [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
 - [Security](https://github.com/Amejia481/AndroidTalks#security)
+- [Swift](https://github.com/Amejia481/AndroidTalks#swift)
 
 ## By Conference
 
@@ -64,6 +67,12 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Android Studio
 - [Fifty Shades of Android Studio - Murat Yener](https://youtu.be/O3Xj1vBc0Xg?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F) | [Twitter](https://twitter.com/yenerm)
+
+### Android Studio Plugin
+- [Make your Android Studio Plugin - Andrea Lucibello](https://youtu.be/znDROg5CzZw?list=PLWy8DQlwJkdzcgWrCWSYwY5PRiJFWwmIj) | [Slides](https://speakerdeck.com/synesthesia/make-your-own-android-studio-plugin) | [Twitter](https://twitter.com/andreoid82) 
+
+### Architecture
+- [Adaptable architecture for agencies - Luca Piras - Francesco Santagati](https://youtu.be/qSe8oXEln0I?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD) | [Slides](https://speakerdeck.com/synesthesia/adaptable-architecture-for-agencies-sharing-our-experience) | [Twitter](https://twitter.com/fra_santagati) 
 
 ### Custom Views
 - [Measure, Layout, Draw, Repeat: Custom Views and ViewGroups - Huyen Tue Dao](https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP) | [Slides](https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat) | [Twitter](https://twitter.com/queencodemonkey)
@@ -107,6 +116,9 @@ A collection of videos and resource from Android Conferences and talks
  - [Learning RxJava (for Android) by example -Kaushik Gopal](https://youtu.be/k3D0cWyNno4) | [Slides](https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example) | [Twitter](https://twitter.com/kaushikgopal)
  
 ### Security
- - ['I just hacked your app!' Marcos Placona](https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016) | [Twitter](https://twitter.com/marcos_placona)
+ - ['I just hacked your app!' - Marcos Placona](https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016) | [Twitter](https://twitter.com/marcos_placona)
 - [The Android Security Jungle: Pitfalls, Threats & Survival Tips - Scott Alexander](https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf) | [Twitter](https://twitter.com/scottyab)
 - [What’s NNNNNNNNew in Android Security? - Scott Alexander](https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it) | [Twitter](https://twitter.com/scottyab)
+
+### Swift
+ - [Swift on Android: The Future of Cross-Platform Programming or White Whale? - Eric Wing](https://news.realm.io/news/swift-on-android) | [Twitter](https://twitter.com/ewingfighter)
