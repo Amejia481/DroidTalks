@@ -5,6 +5,7 @@ A collection of videos and resource from Android Conferences and talks
 
 ## By Conference
 - [360|Andev](https://github.com/Amejia481/AndroidTalks#360andev)
+- [Android Makers](https://github.com/Amejia481/AndroidTalks#android-makers)
 - [Droidcon Italy](https://github.com/Amejia481/AndroidTalks#droidcon-italy)
 - [Droidcon Krakow](https://github.com/Amejia481/AndroidTalks#droidcon-krakow)
 - [Droidcon NYC](https://github.com/Amejia481/AndroidTalks#droidcon-nyc)
@@ -21,6 +22,7 @@ A collection of videos and resource from Android Conferences and talks
 - [Custom Views](https://github.com/Amejia481/AndroidTalks#custom-views)
 - [Data Binding](https://github.com/Amejia481/AndroidTalks#data-binding)
 - [Espresso](https://github.com/Amejia481/AndroidTalks#espresso)
+- [Flutter](https://github.com/Amejia481/AndroidTalks#flutter)
 - [Fragments](https://github.com/Amejia481/AndroidTalks#fragments)
 - [GO](https://github.com/Amejia481/AndroidTalks#go)
 - [History](https://github.com/Amejia481/AndroidTalks#history)
@@ -28,6 +30,7 @@ A collection of videos and resource from Android Conferences and talks
 - [Layouts](https://github.com/Amejia481/AndroidTalks#layouts)
 - [Libraries](https://github.com/Amejia481/AndroidTalks#libraries)
 - [Material Design](https://github.com/Amejia481/AndroidTalks#material-design)
+- [Nearby](https://github.com/Amejia481/AndroidTalks#nearby)
 - [Performance](https://github.com/Amejia481/AndroidTalks#performance)
 - [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
 - [Security](https://github.com/Amejia481/AndroidTalks#security)
@@ -37,6 +40,8 @@ A collection of videos and resource from Android Conferences and talks
 
 ### 360|Andev
    - [2016](https://www.youtube.com/watch?v=Uz5JgP_kzIM&list=PLUrdD0cY2QkzNs8fwxdv0PuXUFDkYIn3W)
+### Android Makers
+   - [2017](https://www.youtube.com/playlist?list=PLn7H9CUCuXAs2N7Wh57yR9RmzMke-hPY-)
 ### Droidcon Italy
    - [2017](https://www.youtube.com/playlist?list=PL4ebO4PmeAi4MgpaaK9Hej0P6ooIhmfms)
    - [2016](https://www.youtube.com/playlist?list=PL4ebO4PmeAi7gpxmaKUWc9Xa30vPM92TU)
@@ -83,6 +88,9 @@ A collection of videos and resource from Android Conferences and talks
 ### Espresso
 - [Deeper insight into Android Espresso library - Kamil Krzyk](https://youtu.be/2Sw7zrJG1-0) | [Slides](https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2) | [Twitter](https://twitter.com/f1sherkk)
 
+### Flutter
+- [A new hope - Eugenio Marletti e Sebastiano Poggi](https://youtu.be/1mGEpCEbnXk?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns) | [Slides](https://speakerdeck.com/takhion/a-new-hope) | [Twitter](https://twitter.com/workingkills) | [Twitter](https://twitter.com/seebrock3r)
+
 ### Fragments
 - [Fragments: What Are They Good For? - David Hope](https://youtu.be/fuHSFAqbyvo?list=PLWy8DQlwJkdz7TT5E5efXU70uzvVpl5FM) | [Slides](https://speakerdeck.com/hopemobile/fragments-what-are-they-good-for) | [Twitter](https://twitter.com/HopeDeveloper)
 
@@ -105,6 +113,9 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Material Design
 - [Journey to material Design Award - Taylor Ling](https://youtu.be/VZMe3LJuAPE?list=PLWy8DQlwJkdyA29LXz0r7jaaGqPhsCuRd) | [Slides](https://speakerdeck.com/taylorling/designing-fabulous-journey-to-material-design-award) | [Twitter](https://twitter.com/taylorling)
+
+### Nearby
+- [Add proximity to apps with Nearby - Brian Duff](https://youtu.be/e3ufn-tY2Ek?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo)
 
 ### Performance
 - [Optimizing and Profiling UI Performance - Brenda Cook](https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi) | [Slides](https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1) | [Twitter](https://twitter.com/kenodoggy)
