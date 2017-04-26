@@ -127,7 +127,9 @@ A collection of videos and resource from Android Conferences and talks
  - [Learning RxJava (for Android) by example -Kaushik Gopal](https://youtu.be/k3D0cWyNno4) | [Slides](https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example) | [Twitter](https://twitter.com/kaushikgopal)
  
 ### Security
- - ['I just hacked your app!' - Marcos Placona](https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016) | [Twitter](https://twitter.com/marcos_placona)
+- [Android Security, an enterprise perspective - Pietro Maggi](https://youtu.be/1LacHsCRJw0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/nibble/android-its-time-to-go-to-work) | [Twitter](https://twitter.com/pfmaggi)
+- [I just hacked your app! - Marcos Placona](https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016) | [Twitter](https://twitter.com/marcos_placona)
+- [Attacking Android Applications - Dario incalza](https://youtu.be/sZJzrF790fQ?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/h4oxer/attacking-android-applications) | [Twitter](https://twitter.com/h4oxer)
 - [The Android Security Jungle: Pitfalls, Threats & Survival Tips - Scott Alexander](https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf) | [Twitter](https://twitter.com/scottyab)
 - [What’s NNNNNNNNew in Android Security? - Scott Alexander](https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm) | [Slides](https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it) | [Twitter](https://twitter.com/scottyab)
 
