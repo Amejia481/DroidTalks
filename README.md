@@ -101,7 +101,8 @@ A collection of videos and resource from Android Conferences and talks
 - [An Android Retrospective - Romain Guy - Chet Haase, Google](https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq) | [Twitter](https://twitter.com/romainguy) | [Twitter](https://twitter.com/chethaase)
 
 ### Kotlin
-- [Kotlin in Production - Christina Lee](https://youtu.be/mDpnc45WwlI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Twitter](https://twitter.com/runchristinarun)
+- [Kotlin: A Followup - Christina Lee](https://youtu.be/j-3HOCGxbaI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Slides](https://christinalee.github.io/Slides/slides-master/kotlin-retro) | [Twitter](https://twitter.com/runchristinarun)
+- [Kotlin in Production - Christina Lee](https://youtu.be/mDpnc45WwlI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Slides](https://christinalee.github.io/Slides/slides-master/kotlin) | [Twitter](https://twitter.com/runchristinarun)
 - [Typing in Java, Kotlin and Scala - Hanneli Tavante - Breandan Considine](https://youtu.be/9h0XjuU0Ipk?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu) | [Slides](https://www.slideshare.net/hannelita/typing-in-java-kotlin-and-scala) | [Twitter](https://twitter.com/hannelita) | [Twitter](https://twitter.com/breandan)
 
 ### Layouts
