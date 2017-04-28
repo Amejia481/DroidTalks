@@ -25,6 +25,7 @@ A collection of videos and resource from Android Conferences and talks
 - [Flutter](https://github.com/Amejia481/AndroidTalks#flutter)
 - [Fragments](https://github.com/Amejia481/AndroidTalks#fragments)
 - [GO](https://github.com/Amejia481/AndroidTalks#go)
+- [Gradle](https://github.com/Amejia481/AndroidTalks#gradle)
 - [History](https://github.com/Amejia481/AndroidTalks#history)
 - [Kotlin](https://github.com/Amejia481/AndroidTalks#kotlin)
 - [Layouts](https://github.com/Amejia481/AndroidTalks#layouts)
@@ -35,6 +36,7 @@ A collection of videos and resource from Android Conferences and talks
 - [RxJava](https://github.com/Amejia481/AndroidTalks#rxjava)
 - [Security](https://github.com/Amejia481/AndroidTalks#security)
 - [Swift](https://github.com/Amejia481/AndroidTalks#swift)
+- [Testing](https://github.com/Amejia481/AndroidTalks#testing)
 
 ## By Conference
 
@@ -97,6 +99,9 @@ A collection of videos and resource from Android Conferences and talks
 ### GO
 - [Gophers are coming - Jovica Popovic](https://youtu.be/XS0cuFm7hgo?list=PLWy8DQlwJkdwdLouTsRJuLL2WjM2ekx2T) | [Slides](https://www.slideshare.net/JovicaPopovic/gomobile-gophers-in-the-land-of-android) | [Twitter](https://twitter.com/jpop_32)
 
+### Gradle
+- [Making the most of your Gradle Builds - Egor Andreevici](https://youtu.be/-RNXngQY5Dc?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh) | [Slides](https://www.slideshare.net/EgorAndreevici/making-the-most-of-your-gradle-builds) | [Twitter](https://twitter.com/EgorAnd)
+
 ### History
 - [An Android Retrospective - Romain Guy - Chet Haase, Google](https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq) | [Twitter](https://twitter.com/romainguy) | [Twitter](https://twitter.com/chethaase)
 
@@ -136,3 +141,6 @@ A collection of videos and resource from Android Conferences and talks
 
 ### Swift
  - [Swift on Android: The Future of Cross-Platform Programming or White Whale? - Eric Wing](https://news.realm.io/news/swift-on-android) | [Twitter](https://twitter.com/ewingfighter)
+ 
+### Testing
+ - [Does it work? Did you test it? - Derek Rozycki & Kirk Chambers](https://youtu.be/Ru-ooxa1upc?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ) | [Slides](https://github.com//d2therak/DoesItWork/blob/master/Does%20it%20Work.pdf) | [Twitter](https://twitter.com/D2theRak) | [Twitter](https://twitter.com/theKirken)
