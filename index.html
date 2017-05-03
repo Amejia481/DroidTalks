@@ -1,0 +1,76 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="mainCtrl">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Android Talks</span>
+
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Topics</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">Speakers</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Conferences</a>
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Android Talks</span>
+    </div>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+
+                <div class="mdl-grid"  ng-repeat="topic in topics | orderBy">
+                    <div class="mdl-cell">
+                        <strong id="#{{replaceSpaceByDash(topic)}}"> {{topic}}</strong>
+                        <ul ng-repeat="talk in talks | orderBy | filter:{topic:topic} ">
+                            <li>
+                                <span> </span> <a href="{{talk.video}}">{{talk.name}}</a>
+                                <span ng-repeat=" speaker in talk.speakers | orderBy "> | <a href="{{ speaker.twitter || '#' }}" >{{speaker.name}}</a></span>
+                                <span ng-show="talk.slides">| <a href="{{talk.slides}}" >Slides</a></span>
+
+                            </li>
+                        </ul>
+                        </strong>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">Under Construction</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="page-content">Under Construction</div>
+        </section>
+    </main>
+</div>
+
+</body>
+<html>
