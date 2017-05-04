@@ -89,7 +89,54 @@ const TAYLOR_LING = {
     "name": "Taylor Ling",
     "twitter": "https://twitter.com/taylorling"
 };
-
+const BRIAN_DUFF = {
+    "name": "Brian Duff",
+    "twitter": "https://twitter.com/taylorling"
+};
+const BRENDA_COOK = {
+    "name": "Brenda Cook",
+    "twitter": "https://twitter.com/kenodoggy"
+};
+const ELIF_BONCUK = {
+    "name": "Elif Boncuk",
+    "twitter": "https://twitter.com/elifbon_"
+};
+const JAKE_WHARTON = {
+    "name": "Jake Wharton",
+    "twitter": "https://twitter.com/JakeWharton"
+};
+const KAUSHIK_GOPAL = {
+    "name": "Kaushik Gopal",
+    "twitter": "https://twitter.com/kaushikgopal"
+};
+const PIETRO_MAGGI = {
+    "name": "Pietro Maggi",
+    "twitter": "https://twitter.com/pfmaggi"
+};
+const MARCOS_PLACONA = {
+    "name": "Marcos Placona",
+    "twitter": "https://twitter.com/marcos_placona"
+};
+const DARIO_INCALZA = {
+    "name": "Dario incalza",
+    "twitter": "https://twitter.com/h4oxer"
+};
+const SCOTT_ALEXANDER = {
+    "name": "Scott Alexander",
+    "twitter": "https://twitter.com/scottyab"
+};
+const ERIC_WING = {
+    "name": "Eric Wing",
+    "twitter": "https://twitter.com/ewingfighter"
+};
+const DEREK_ROZYCKI = {
+    "name": "Derek Rozycki",
+    "twitter": "https://twitter.com/D2theRak"
+};
+const KIRK_CHAMBERS = {
+    "name": "Kirk Chambers",
+    "twitter": "https://twitter.com/theKirken"
+};
 
 
 
@@ -111,8 +158,12 @@ const TAYLOR_LING = {
  const LAYOUTS = "Layouts";
  const LIBRARIES = "Libraries";
  const MATERIAL_DESIGN = "Material Design";
-
-
+ const NEARBY = "Nearby";
+ const PERFORMANCE = "Performance";
+ const RXJAVA = "RxJava";
+ const SECURITY = "Security";
+ const SWIFT = "Swift";
+ const TESTING = "Testing";
 
 
 
@@ -124,7 +175,10 @@ const topics = [
    		FRAGMENTS,GO,
     	GRADLE,HISTORY,
         KOTLIN,LAYOUTS,
-        LIBRARIES,MATERIAL_DESIGN
+        LIBRARIES,MATERIAL_DESIGN,
+        NEARBY,PERFORMANCE,
+        RXJAVA,SECURITY,
+        SWIFT,TESTING
 
 	];
 
@@ -260,5 +314,98 @@ var talks = [
         "slides":"https://speakerdeck.com/taylorling/designing-fabulous-journey-to-material-design-award",
         "speakers":[TAYLOR_LING],
         "topic": MATERIAL_DESIGN
+    },
+    {
+        "name":"Add proximity to apps with Nearby",
+        "video":"https://youtu.be/e3ufn-tY2Ek?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
+        "slides":null,
+        "speakers":[BRIAN_DUFF],
+        "topic": NEARBY
+    },
+    {
+        "name":"Optimizing and Profiling UI Performance",
+        "video":"https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
+        "slides":"https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1",
+        "speakers":[BRENDA_COOK],
+        "topic": PERFORMANCE
+    },
+    {
+        "name":"Optimizing Apps for Better Performance",
+        "video":"https://youtu.be/hWbIU00zAX0?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
+        "slides":"https://docs.google.com/presentation/d/1N195_xUSQr1g9iTfSOCbb-404rTxoTfkLHMjpKEZeqM/view",
+        "speakers":[ELIF_BONCUK],
+        "topic": PERFORMANCE
+    },
+    {
+        "name":"Exploring RxJava 2 for Android",
+        "video":"https://youtu.be/htIXKI5gOQU?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
+        "slides":"https://gotocon.com/dl/goto-cph-2016/slides/JakeWharton_ExploringRxJava2ForAndroid.pdf",
+        "speakers":[JAKE_WHARTON],
+        "topic": RXJAVA
+    },
+    {
+        "name":"Managing State with RxJava",
+        "video":"https://youtu.be/0IKHxjkgop4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
+        "slides":"https://speakerdeck.com/jakewharton/the-state-of-managing-state-with-rxjava-devoxx-us-2017",
+        "speakers":[JAKE_WHARTON],
+        "topic": RXJAVA
+    },
+    {
+        "name":"Learning RxJava (for Android) by example",
+        "video":"https://youtu.be/k3D0cWyNno4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
+        "slides":"https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example",
+        "speakers":[KAUSHIK_GOPAL],
+        "topic": RXJAVA
+    },
+    {
+        "name":"Android Security, an enterprise perspective",
+        "video":"https://youtu.be/1LacHsCRJw0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
+        "slides":"https://speakerdeck.com/nibble/android-its-time-to-go-to-work",
+        "speakers":[PIETRO_MAGGI],
+        "topic": SECURITY
+    },
+    {
+        "name":"I just hacked your app!",
+        "video":"https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
+        "slides":"https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016",
+        "speakers":[MARCOS_PLACONA],
+        "topic": SECURITY
+    },
+    {
+        "name":"Attacking Android Applications",
+        "video":"https://youtu.be/sZJzrF790fQ?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
+        "slides":"https://speakerdeck.com/h4oxer/attacking-android-applications",
+        "speakers":[DARIO_INCALZA],
+        "topic": SECURITY
+    },
+    {
+        "name":"The Android Security Jungle: Pitfalls, Threats & Survival Tips",
+        "video":"https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
+        "slides":"http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf",
+        "speakers":[SCOTT_ALEXANDER],
+        "topic": SECURITY
+    },
+    {
+        "name":"What’s NNNNNNNNew in Android Security?",
+        "video":"https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
+        "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
+        "speakers":[SCOTT_ALEXANDER],
+        "topic": SECURITY
+    },
+    {
+        "name":"Swift on Android: The Future of Cross-Platform Programming or White Whale?",
+        "video":"https://news.realm.io/news/swift-on-android",
+        "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
+        "speakers":[ERIC_WING],
+        "topic": SWIFT
+    },
+    {
+        "name":"Does it work? Did you test it?",
+        "video":"https://youtu.be/Ru-ooxa1upc?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ",
+        "slides":"https://github.com//d2therak/DoesItWork/blob/master/Does%20it%20Work.pdf",
+        "speakers":[DEREK_ROZYCKI,KIRK_CHAMBERS],
+        "topic": TESTING
     }
+
+
 ];
