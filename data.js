@@ -172,7 +172,7 @@ const topics = [
 		ANDROID_STUDIO,	ARCHITECTURE,
     	CUSTOM_VIEWS,DATA_BINDING,
     	ESPRESSO,FLUTTER,
-   		FRAGMENTS,GO,
+   		GO,
     	GRADLE,HISTORY,
         KOTLIN,LAYOUTS,
         LIBRARIES,MATERIAL_DESIGN,
@@ -181,7 +181,144 @@ const topics = [
         SWIFT,TESTING
 
 	];
+const speakers =
+    [  KELLY_SHUSTER,
+        MURAT_YENER,
+        WAYNE_PIEKARSKI,
+        ANDREA_LUCIBELLO,
+        LUCA_PIRAS,
+        FRANCESCO_SANTAGATI,
+        HUYEN_TUE_DAO,
+        KEVIN_PELGRIM,
+        KAMIL_KRZYK,
+        EUGENIO_MARLETTI,
+        SEBASTIANO_POGGI,
+        JOVICA_POPOVIC,
+        EGOR_ANDREEVICI,
+        ROMAIN_GUY,
+        CHET_HAASE,
+        CHRISTINA_LEE,
+        HANNELI_TAVANTE,
+        BREANDAN_CONSIDINE,
+        NICOLAS_ROARD,
+        MIKE_NAKHIMOVICH,
+        CHRIS_GUZMAN,
+        TAYLOR_LING,
+        BRIAN_DUFF,
+        BRENDA_COOK,
+        ELIF_BONCUK,
+        JAKE_WHARTON,
+        KAUSHIK_GOPAL,
+        PIETRO_MAGGI,
+        MARCOS_PLACONA,
+        DARIO_INCALZA,
+        SCOTT_ALEXANDER,
+        ERIC_WING,
+        DEREK_ROZYCKI,
+        KIRK_CHAMBERS]
 
+const events =[
+    {
+        "name":"360|Andev",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/watch?v=Uz5JgP_kzIM&list=PLUrdD0cY2QkzNs8fwxdv0PuXUFDkYIn3W"
+            }
+        ]
+    },
+    {
+        "name":"Android Makers",
+        "versions":[
+            {
+                "name":"2017",
+                "videoURL":"https://www.youtube.com/playlist?list=PLn7H9CUCuXAs2N7Wh57yR9RmzMke-hPY-"
+            }
+        ]
+    },
+    {
+        "name":"Droidcon Italy",
+        "versions":[
+            {
+                "name":"2017",
+                "videoURL":"https://www.youtube.com/playlist?list=PL4ebO4PmeAi4MgpaaK9Hej0P6ooIhmfms"
+            },
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PL4ebO4PmeAi7gpxmaKUWc9Xa30vPM92TU"
+            },
+            {
+                "name":"2015",
+                "videoURL":"https://www.youtube.com/playlist?list=PL4ebO4PmeAi6s0zJoLuydIXUIHxrG8ohS"
+            }
+        ]
+    },
+    {
+        "name":"Droidcon Krakow",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PLvpKlOXx1MBNyzmF-EVZs54jhG53ag-T9"
+            },
+            {
+                "name":"2015",
+                "videoURL":"https://www.youtube.com/playlist?list=PLvpKlOXx1MBMfL4llJOi0VX6LcQVP0Su0"
+            }
+        ]
+    },
+    {
+        "name":"Droidcon NYC",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PLnVy79PaFHMXJha06t6pWfkYcATV4oPvC"
+            },
+            {
+                "name":"2015",
+                "videoURL":"https://www.youtube.com/playlist?list=PLnVy79PaFHMUqqvwbjyKJZv1N8rzHOCBi"
+            },
+            {
+                "name":"2014",
+                "videoURL":"https://www.youtube.com/playlist?list=PLnVy79PaFHMUtzI53_x_2VJn2vlt5fowY"
+            }
+        ]
+    },
+    {
+        "name":"Droidcon Paris",
+        "versions":[
+            {
+                "name":"2015",
+                "videoURL":"https://www.youtube.com/playlist?list=PLn7H9CUCuXAv_kAdS0rxL1_jdxXpFVb0r"
+            },
+            {
+                "name":"2014",
+                "videoURL":"https://www.youtube.com/playlist?list=PLn7H9CUCuXAtRg4CnSjYEpdWpn_8TwiWK"
+            },
+            {
+                "name":"2013",
+                "videoURL":"https://www.youtube.com/playlist?list=PLn7H9CUCuXAvCeSMm56NEtui1ajY903N6"
+            }
+        ]
+    },
+    {
+        "name":"Droidcon SF",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PLnVy79PaFHMXpPlgs1uUny8eb-PEfEQNn"
+            }
+        ]
+    },
+    {
+        "name":"Google I/O",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte"
+            }
+        ]
+    }
+];
 
 var talks = [
 	{
@@ -386,7 +523,7 @@ var talks = [
         "topic": SECURITY
     },
     {
-        "name":"What’s NNNNNNNNew in Android Security?",
+        "name":"What's NNNNNNNNew in Android Security?",
         "video":"https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
         "speakers":[SCOTT_ALEXANDER],
