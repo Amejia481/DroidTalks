@@ -118,7 +118,7 @@
     <h4 class="mdl-dialog__title">Made with &hearts; by all this contributors:</h4>
     <div class="mdl-dialog__content">
 
-        <a style="text-decoration: none" target="_blank" ng-repeat="contributor in contributors | orderBy :'+contributions'" href="https://github.com/{{contributor.url}}">
+        <a style="text-decoration: none" target="_blank" ng-repeat="contributor in contributors | orderBy :'+contributions'" href="https://github.com/{{contributor.login}}">
             <div class="demo-card-image mdl-card mdl-shadow--2dp"
                style="width: 256px; height: 256px; background: url('{{contributor.avatar_url}}') center / cover;">
                 <div class="mdl-card__title mdl-card--expand"></div>
