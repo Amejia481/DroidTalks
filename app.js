@@ -34,7 +34,7 @@ app.directive("talkSection", function() {
 
 });
 
-app.controller('mainCtrl', function($scope) {
+app.controller('mainCtrl', function($scope,$http) {
     $scope.talks = talks;
     $scope.topics = topics;
     $scope.events = events;
@@ -44,6 +44,26 @@ app.controller('mainCtrl', function($scope) {
     $scope.replaceSpaceByDash = function(text){
        return text.replace(/\s+/g, '-');
     }
+
+    $http.get("https://api.github.com/repos/Amejia481/DroidTalks/contributors")
+        .then(function(contributorsData) {
+            $scope.contributors = [];
+
+            contributorsData.data.forEach(function(contributor){
+
+                $http.get("https://api.github.com/users/"+contributor.login)
+                    .then(function(userProfileData) {
+                        $scope.contributors.push({
+                            login:contributor.login,
+                            avatar_url:contributor.avatar_url,
+                            contributions:contributor.contributions,
+                            name:userProfileData.data.name
+
+                        })
+                    });
+
+            });
+        });
 
     $scope.getSpeakerText = function(speakers){
         var testFormatted = "";
