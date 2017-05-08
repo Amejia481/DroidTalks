@@ -5,12 +5,14 @@
     <title>Droid Talks</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A collection of videos from Android events and talks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" type="text/css" href="dialog-polyfill.css" />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dialog-polyfill.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>
 </head>
@@ -36,27 +38,30 @@
                 </div>
             </div>
         </div>
+
         <!-- Tabs -->
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
             <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Topics</a>
             <a href="#fixed-tab-2" class="mdl-layout__tab">Events</a>
-            <a href="#fixed-tab-3" class="mdl-layout__tab">Speakers</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Creators</a>
         </div>
     </header>
 
     <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Droid Talks</span>
         <nav class="mdl-navigation">
-            <!--<a class="mdl-navigation__link" href="">About</a>-->
-            <a class="mdl-navigation__link show-modal" href="">Credits</a>
+            <a target="_blank" href="https://github.com/Amejia481/DroidTalks/" class="mdl-navigation__link "><i class="material-icons">link</i><span> GitHub</span></a>
+            <a id="button-open-dialog-about" class="mdl-navigation__link" href=""><i class="material-icons">adb</i><span> About</span></a>
+            <a id="button-open-dialog-credits" class="mdl-navigation__link" href=""><i class="material-icons">favorite</i><span> Credits</span></a>
         </nav>
     </div>
     <main class="mdl-layout__content">
         <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
             <div class="page-content">
 
-                <div class="mdl-grid"  ng-repeat="topic in topics | orderBy | filter:searchPattern">
-                    <div class="mdl-cell mdl-card mdl-shadow--3dp">
+                <div class="mdl-grid"  >
+                    <div ng-repeat="topic in topics | orderBy | filter:searchPattern"
+                         class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone  mdl-card mdl-shadow--3dp" >
 
                         <div class="mdl-card__title mdl-card--border" >
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | filter: {topic:topic}).length }}"> <h3 class="mdl-card__title-text"> <strong >{{topic}}</strong></h3></span>
@@ -74,8 +79,9 @@
         <section class="mdl-layout__tab-panel" id="fixed-tab-2">
             <div class="page-content">
 
-                <div class="mdl-grid"  ng-repeat="event in events | orderBy | filter:{name:searchPattern}">
-                    <div class="mdl-cell mdl-card mdl-shadow--3dp">
+                <div class="mdl-grid" >
+                    <div ng-repeat="event in events | orderBy | filter:{name:searchPattern}"
+                         class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
 
                         <div class="mdl-card__title mdl-card--border">
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ event.versions.length }}"> <h3 class="mdl-card__title-text"> <strong >{{event.name}}</strong></h3></span>
@@ -83,7 +89,7 @@
 
                         <ul ng-repeat="version in event.versions ">
                             <li>
-                                <h5> <a href="{{version.videoURL}}">{{version.name}}</a></h5>
+                                <h5> <a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
                             </li>
                         </ul>
 
@@ -94,8 +100,9 @@
         </section>
         <section class="mdl-layout__tab-panel" id="fixed-tab-3">
             <div class="page-content">
-                <div class="mdl-grid"  ng-repeat="speaker in speakers | orderBy :'name' | filter:{name:searchPattern} ">
-                    <div class="mdl-cell mdl-card mdl-shadow--3dp">
+                <div class="mdl-grid" >
+                    <div ng-repeat="speaker in speakers | orderBy :'name' | filter:{name:searchPattern} "
+                         class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
 
                         <div class="mdl-card__title mdl-card--border">
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | inArray:speaker:'id').length  }}"> <h3 class="mdl-card__title-text"> <strong >{{speaker.name}}</strong></h3></span>
@@ -113,14 +120,44 @@
     </main>
 </div>
 
+<style>
+    @media (min-width: 481px){  .biggerDialog {width: 90% !important;} }
+    @media (min-width: 320px){  .biggerDialog {width: 90% !important;} }
+    @media (min-width: 320px) and (min-height: 568px){  .biggerDialog {width: auto !important;} }
+    @media (min-width: 1200px){  .biggerDialog {width: 40% !important;} }
+</style>
 
-<dialog class="mdl-dialog" style="width:45%!important;">
-    <h4 class="mdl-dialog__title">Made with &hearts; by all this contributors:</h4>
+<dialog id="dialog-about" class="mdl-dialog biggerDialog" >
+    <div class="mdl-dialog__content" >
+
+        <h5>
+            <strong> Droid Talks was created by <a target="_blank" href="http://www.arturomejiamarmol.com/">Arturo Mejia</a>
+            an Android Developer that just wanted to have a common place where collect and categorize resources about
+                Android Development for sharing with friends and future searches.
+                <br>
+                <br>
+                Feedbacks and Suggestions <a href="mailto:arturomejiamarmol@gmail.com">arturomejiamarmol@gmail.com</a>
+            </strong>
+        </h5>
+        <h5>
+
+        </h5>
+    </div>
+    <div class="mdl-dialog__actions mdl-dialog__actions--full-width" >
+        <button type="button" class="mdl-button"><a href="mailto:arturomejiamarmol@gmail.com">Send a Cool link</a> <i class="material-icons">send</i></button>
+        <button type="button" class="mdl-button close">Close</button>
+
+    </div>
+</dialog>
+
+<dialog id="dialog-credits" class="mdl-dialog biggerDialog" style="width: 300px !important;">
+    <span class="mdl-dialog__title" >Made with <i class="material-icons">favorite</i><span> by:</span></span>
     <div class="mdl-dialog__content">
+
 
         <a style="text-decoration: none" target="_blank" ng-repeat="contributor in contributors | orderBy :'+contributions'" href="https://github.com/{{contributor.login}}">
             <div class="demo-card-image mdl-card mdl-shadow--2dp"
-               style="width: 256px; height: 256px; background: url('{{contributor.avatar_url}}') center / cover;">
+               style="width: 200px; height: 200px; background: url('{{contributor.avatar_url}}') center / cover; margin: 10px;">
                 <div class="mdl-card__title mdl-card--expand"></div>
                 <div class="mdl-card__actions" style="height: 52px; padding: 16px; background: rgba(0, 0, 0, 0.2);">
                     <span style="color: #fff; font-size: 14px; font-weight: 500; "><strong>{{contributor.name}}</strong>&nbsp; <span class="mdl-badge" mdl-badge--overlap data-badge="{{contributor.contributions}}"></span></span>
@@ -132,25 +169,29 @@
 
         </div>
     </div>
-    <div class="mdl-dialog__actions mdl-dialog__actions--full-width" >
-        <button type="button" class="mdl-button"><a href="https://github.com/Amejia481/DroidTalks/">Join us</a></h4></button>
+    <div class="mdl-dialog__actions" >
+        <button type="button" class="mdl-button"><a target="_blank" href="https://github.com/Amejia481/DroidTalks/">Contribute</a></h4></button>
         <button type="button" class="mdl-button close">Close</button>
     </div>
 </dialog>
+
 <script>
-    var dialog = document.querySelector('dialog');
-    var showModalButton = document.querySelector('.show-modal');
-    if (! dialog.showModal) {
-        dialogPolyfill.registerDialog(dialog);
+    function setUpDialog(dialogID,openButton){
+        var dialog = document.querySelector('#'+dialogID);
+        var showModalButton = document.querySelector("#"+openButton);
+        if (! dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+        showModalButton.addEventListener('click', function() {
+            dialog.showModal();
+        });
+        dialog.querySelector('.close').addEventListener('click', function() {
+            dialog.close();
+        });
     }
-    showModalButton.addEventListener('click', function() {
-        dialog.showModal();
-    });
-    dialog.querySelector('.close').addEventListener('click', function() {
-        dialog.close();
-    });
+    setUpDialog("dialog-about","button-open-dialog-about");
+    setUpDialog("dialog-credits","button-open-dialog-credits");
+
 </script>
-
-
 </body>
 <html>

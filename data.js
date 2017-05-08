@@ -137,8 +137,14 @@ const KIRK_CHAMBERS = {
     "name": "Kirk Chambers",
     "twitter": "https://twitter.com/theKirken"
 };
+const FRAGMENTED_PODCAST = {
+    "name": "Fragmented Podcast",
+    "twitter": "https://twitter.com/FragmentedCast"
+};
 
-
+/*SOURCE TYPE*/
+const SOURCE_TYPE_AUDIO = "AUDIO";
+const SOURCE_TYPE_VIDEO = "VIDEO";
 
 
 /*TOPICS*/
@@ -215,7 +221,8 @@ const speakers =
         SCOTT_ALEXANDER,
         ERIC_WING,
         DEREK_ROZYCKI,
-        KIRK_CHAMBERS]
+        KIRK_CHAMBERS,
+        FRAGMENTED_PODCAST]
 
 const events =[
     {
@@ -326,223 +333,263 @@ var talks = [
 		"video":"https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5",
 		"slides":"https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone",
 		"speakers":[KELLY_SHUSTER],
-		"topic": ACCESSIBILITY
+		"topic": ACCESSIBILITY,
+        "type":SOURCE_TYPE_VIDEO
+
 	},
     {
         "name":"Android Things for IoT Talk",
         "video":"https://youtu.be/L1JTnPDQpiI?list=PLWy8DQlwJkdwlV36QfGOrlTH5Y7Domgvo",
         "speakers":[WAYNE_PIEKARSKI],
-        "topic": ANDROID_IOT
+        "topic": ANDROID_IOT,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Fifty Shades of Android Studio",
         "video":"https://youtu.be/O3Xj1vBc0Xg?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F",
         "speakers":[MURAT_YENER],
-        "topic": ANDROID_STUDIO
+        "topic": ANDROID_STUDIO,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Make your Android Studio Plugin",
         "video":"https://youtu.be/znDROg5CzZw?list=PLWy8DQlwJkdzcgWrCWSYwY5PRiJFWwmIj",
         "slides":"https://speakerdeck.com/synesthesia/make-your-own-android-studio-plugin",
         "speakers":[ANDREA_LUCIBELLO],
-        "topic": ANDROID_STUDIO
+        "topic": ANDROID_STUDIO,
+        "type":SOURCE_TYPE_VIDEO
     },
 	{
         "name":"Adaptable architecture for agencies",
         "video":"https://youtu.be/qSe8oXEln0I?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD",
         "slides":"https://speakerdeck.com/synesthesia/adaptable-architecture-for-agencies-sharing-our-experience",
         "speakers":[LUCA_PIRAS,FRANCESCO_SANTAGATI],
-        "topic": ARCHITECTURE
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Measure, Layout, Draw, Repeat: Custom Views and ViewGroups",
         "video":"https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP",
         "slides":"https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat",
         "speakers":[HUYEN_TUE_DAO],
-        "topic": CUSTOM_VIEWS
+        "topic": CUSTOM_VIEWS,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Data Binding in the Real World",
         "video":"https://realm.io/news/droidkaigi-kevin-pelgrims-data-real-world-data-binding/",
         "slides":"https://speakerdeck.com/kevinpelgrims/data-binding-on-android",
         "speakers":[KEVIN_PELGRIM],
-        "topic": DATA_BINDING
+        "topic": DATA_BINDING,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Deeper insight into Android Espresso library",
         "video":"https://youtu.be/2Sw7zrJG1-0?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ",
         "slides":"https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2",
         "speakers":[KAMIL_KRZYK],
-        "topic": ESPRESSO
+        "topic": ESPRESSO,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"A new hope",
         "video":"https://youtu.be/1mGEpCEbnXk?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns",
         "slides":"https://speakerdeck.com/takhion/a-new-hope",
         "speakers":[EUGENIO_MARLETTI,SEBASTIANO_POGGI],
-        "topic": FLUTTER
+        "topic": FLUTTER,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Gophers are coming",
         "video":"https://youtu.be/XS0cuFm7hgo?list=PLWy8DQlwJkdwdLouTsRJuLL2WjM2ekx2T",
         "slides":"https://www.slideshare.net/JovicaPopovic/gomobile-gophers-in-the-land-of-android",
         "speakers":[JOVICA_POPOVIC],
-        "topic": GO
+        "topic": GO,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Making the most of your Gradle Builds",
         "video":"https://youtu.be/-RNXngQY5Dc?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh",
         "slides":"https://www.slideshare.net/EgorAndreevici/making-the-most-of-your-gradle-builds",
         "speakers":[EGOR_ANDREEVICI],
-        "topic": GRADLE
+        "topic": GRADLE,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"An Android Retrospective",
         "video":"https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq",
         "slides":"https://www.slideshare.net/EgorAndreevici/making-the-most-of-your-gradle-builds",
         "speakers":[ROMAIN_GUY, CHET_HAASE],
-        "topic": HISTORY
+        "topic": HISTORY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Kotlin: A Followup",
         "video":"https://youtu.be/j-3HOCGxbaI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://christinalee.github.io/Slides/slides-master/kotlin-retro",
         "speakers":[CHRISTINA_LEE],
-        "topic": KOTLIN
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Kotlin in Production",
         "video":"https://youtu.be/mDpnc45WwlI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://christinalee.github.io/Slides/slides-master/kotlin",
         "speakers":[CHRISTINA_LEE],
-        "topic": KOTLIN
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Typing in Java, Kotlin and Scala",
         "video":"https://youtu.be/9h0XjuU0Ipk?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://www.slideshare.net/hannelita/typing-in-java-kotlin-and-scala",
         "speakers":[HANNELI_TAVANTE,BREANDAN_CONSIDINE],
-        "topic": KOTLIN
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"ConstraintLayout: It Can Do what Now?",
         "video":"https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP",
         "slides":"https://speakerdeck.com/camaelon/constraintlayout-presentation",
         "speakers":[NICOLAS_ROARD],
-        "topic": LAYOUTS
+        "topic": LAYOUTS,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"How to reactively load and cache data without even trying",
         "video":"https://youtu.be/TvsOsgd0--c?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y",
         "slides":"https://www.slideshare.net/nakhimovich/data-loading-made-easy-with-mike-nakhimovich-droidcon-italy-2017",
         "speakers":[MIKE_NAKHIMOVICH],
-        "topic": LIBRARIES
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Libraries I Wish I Knew About When I Started",
         "video":"https://youtu.be/r7z1dHL90BI?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y",
         "slides":"https://speakerdeck.com/chrisguzman/android-libraries-i-wish-i-knew-when-i-started",
         "speakers":[CHRIS_GUZMAN],
-        "topic": LIBRARIES
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Journey to material Design Award",
         "video":"https://youtu.be/VZMe3LJuAPE?list=PLWy8DQlwJkdyA29LXz0r7jaaGqPhsCuRd",
         "slides":"https://speakerdeck.com/taylorling/designing-fabulous-journey-to-material-design-award",
         "speakers":[TAYLOR_LING],
-        "topic": MATERIAL_DESIGN
+        "topic": MATERIAL_DESIGN,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Add proximity to apps with Nearby",
         "video":"https://youtu.be/e3ufn-tY2Ek?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
         "slides":null,
         "speakers":[BRIAN_DUFF],
-        "topic": NEARBY
+        "topic": NEARBY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Optimizing and Profiling UI Performance",
         "video":"https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
         "slides":"https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1",
         "speakers":[BRENDA_COOK],
-        "topic": PERFORMANCE
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Optimizing Apps for Better Performance",
         "video":"https://youtu.be/hWbIU00zAX0?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
         "slides":"https://docs.google.com/presentation/d/1N195_xUSQr1g9iTfSOCbb-404rTxoTfkLHMjpKEZeqM/view",
         "speakers":[ELIF_BONCUK],
-        "topic": PERFORMANCE
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Exploring RxJava 2 for Android",
         "video":"https://youtu.be/htIXKI5gOQU?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://gotocon.com/dl/goto-cph-2016/slides/JakeWharton_ExploringRxJava2ForAndroid.pdf",
         "speakers":[JAKE_WHARTON],
-        "topic": RXJAVA
+        "topic": RXJAVA,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Managing State with RxJava",
         "video":"https://youtu.be/0IKHxjkgop4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://speakerdeck.com/jakewharton/the-state-of-managing-state-with-rxjava-devoxx-us-2017",
         "speakers":[JAKE_WHARTON],
-        "topic": RXJAVA
+        "topic": RXJAVA,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Learning RxJava (for Android) by example",
         "video":"https://youtu.be/k3D0cWyNno4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example",
         "speakers":[KAUSHIK_GOPAL],
-        "topic": RXJAVA
+        "topic": RXJAVA,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Android Security, an enterprise perspective",
         "video":"https://youtu.be/1LacHsCRJw0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/nibble/android-its-time-to-go-to-work",
         "speakers":[PIETRO_MAGGI],
-        "topic": SECURITY
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"I just hacked your app!",
         "video":"https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016",
         "speakers":[MARCOS_PLACONA],
-        "topic": SECURITY
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Attacking Android Applications",
         "video":"https://youtu.be/sZJzrF790fQ?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/h4oxer/attacking-android-applications",
         "speakers":[DARIO_INCALZA],
-        "topic": SECURITY
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"The Android Security Jungle: Pitfalls, Threats & Survival Tips",
         "video":"https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf",
         "speakers":[SCOTT_ALEXANDER],
-        "topic": SECURITY
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"What's NNNNNNNNew in Android Security?",
         "video":"https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
         "speakers":[SCOTT_ALEXANDER],
-        "topic": SECURITY
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Swift on Android: The Future of Cross-Platform Programming or White Whale?",
         "video":"https://news.realm.io/news/swift-on-android",
         "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
         "speakers":[ERIC_WING],
-        "topic": SWIFT
+        "topic": SWIFT,
+        "type":SOURCE_TYPE_VIDEO
     },
     {
         "name":"Does it work? Did you test it?",
         "video":"https://youtu.be/Ru-ooxa1upc?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ",
         "slides":"https://github.com//d2therak/DoesItWork/blob/master/Does%20it%20Work.pdf",
         "speakers":[DEREK_ROZYCKI,KIRK_CHAMBERS],
-        "topic": TESTING
+        "topic": TESTING,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        "name":"013: Corey Latislaw on TDD and Testing",
+        "video":"http://fragmentedpodcast.com/episodes/13/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": TESTING,
+        "type":SOURCE_TYPE_AUDIO
     }
-
 
 ];

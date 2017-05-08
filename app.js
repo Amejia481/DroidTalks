@@ -18,15 +18,30 @@ app.directive("talkSection", function() {
             talk:'='
         },
         link: function(scope, element, attrs) {
+            scope.getIconBySourceType = function (sourceType){
+                var icon = "";
+                switch(sourceType){
+                    case SOURCE_TYPE_AUDIO:
+                        icon = "audiotrack";
+                        break;
 
+                    case SOURCE_TYPE_VIDEO:
+                        icon = "movie_creation";
+                        break;
+
+                    default:
+                        icon = "movie_creation";
+                }
+                return icon;
+            }
         },
         template :
-            '<li>'+
+            '<li style="list-style-type: none;">'+
                 '<span>' +
-                    '<h5>  <a href="{{talk.video}}">{{talk.name}}</a> </h5>'+
-                    '<strong ng-show="talk.speakers.length">Authors:</strong> <span ng-repeat=" speaker in talk.speakers | orderBy ">  <a href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
+                    '<h5><i class="material-icons">{{ getIconBySourceType(talk.type) }}</i><span>  <a target="_blank" href="{{talk.video}}">{{talk.name}}</a> </h5>'+
+                    '<strong ng-show="talk.speakers.length">Authors:</strong> <span ng-repeat=" speaker in talk.speakers | orderBy ">  <a target="_blank" href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
                     '<br/>'+
-                    '<span ng-show="talk.slides"><strong>Resources:</strong>  <a href="{{talk.slides}}" >Slides</a></span>'+
+                    '<span ng-show="talk.slides"><strong>Resources:</strong>  <a target="_blank" href="{{talk.slides}}" >Slides</a></span>'+
                 '</span>'+
             '</li>'
     };
@@ -39,8 +54,8 @@ app.controller('mainCtrl', function($scope,$http) {
     $scope.topics = topics;
     $scope.events = events;
     $scope.speakers = speakers;
-    $scope.searchPattern = "";
-
+    $scope.SOURCE_TYPE_VIDEO = SOURCE_TYPE_VIDEO;
+    $scope.SOURCE_TYPE_AUDIO = SOURCE_TYPE_AUDIO;
     $scope.replaceSpaceByDash = function(text){
        return text.replace(/\s+/g, '-');
     }
