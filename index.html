@@ -87,8 +87,8 @@
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ event.versions.length }}"> <h3 class="mdl-card__title-text"> <strong >{{event.name}}</strong></h3></span>
                         </div>
 
-                        <ul ng-repeat="version in event.versions ">
-                            <li>
+                        <ul>
+                            <li ng-repeat="version in event.versions">
                                 <h5> <a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
                             </li>
                         </ul>
