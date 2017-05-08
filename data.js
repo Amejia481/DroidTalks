@@ -141,6 +141,23 @@ const FRAGMENTED_PODCAST = {
     "name": "Fragmented Podcast",
     "twitter": "https://twitter.com/FragmentedCast"
 };
+const ERIC_COLEMAN = {
+    "name": "Eric Coleman",
+    "twitter": "https://twitter.com/EpicColeman"
+};
+const ANDROID_DEVELOPERS_BACKSTAGE = {
+    "name": "Android Developers Backstage",
+    "twitter": "http://androidbackstage.blogspot.com/"
+};
+const KYLE_VENN = {
+    "name": "KYLE VENN",
+    "twitter": "https://twitter.com/kylevenn"
+};
+const JOHN_RODRIGUEZ = {
+    "name": "John Rodriguez",
+    "twitter": "https://twitter.com/jrodbx"
+};
+
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -170,6 +187,11 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const SECURITY = "Security";
  const SWIFT = "Swift";
  const TESTING = "Testing";
+ const CONTINUOUS_INTEGRATION = "Continuous Integration";
+ const EMULATOR = "Emulator";
+ const EXOPLAYER = "ExoPlayer";
+ const STATIC_ANALYSIS = "Static Analysis";
+
 
 
 
@@ -184,7 +206,9 @@ const topics = [
         LIBRARIES,MATERIAL_DESIGN,
         NEARBY,PERFORMANCE,
         RXJAVA,SECURITY,
-        SWIFT,TESTING
+        SWIFT,TESTING,
+        CONTINUOUS_INTEGRATION,EMULATOR,
+        EXOPLAYER,STATIC_ANALYSIS
 
 	];
 const speakers =
@@ -222,7 +246,11 @@ const speakers =
         ERIC_WING,
         DEREK_ROZYCKI,
         KIRK_CHAMBERS,
-        FRAGMENTED_PODCAST]
+        FRAGMENTED_PODCAST,
+        ANDROID_DEVELOPERS_BACKSTAGE,
+        ERIC_COLEMAN,KYLE_VENN,
+        JOHN_RODRIGUEZ
+    ]
 
 const events =[
     {
@@ -590,6 +618,57 @@ var talks = [
         "speakers":[FRAGMENTED_PODCAST],
         "topic": TESTING,
         "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        "name":"012: Continous Integration and Collective Code Ownership",
+        "video":"http://fragmentedpodcast.com/episodes/12/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": CONTINUOUS_INTEGRATION,
+        "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        "name":"Continuous Integration with Android",
+        "video":"https://www.youtube.com/watch?v=-GZP2DaXIPk&index=1&list=PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp",
+        "slides":"http://slides.com/epiccoleman/android-ci",
+        "speakers":[ERIC_COLEMAN],
+        "topic": CONTINUOUS_INTEGRATION,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        "name":"082: Airbnb’s Gabriel tells how to animate with Lottie",
+        "video":"http://fragmentedpodcast.com/episodes/82/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"Episode 65: Emulator",
+        "video":"http://androidbackstage.blogspot.com/2017/05/episode-65-emulator.html",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS_BACKSTAGE],
+        "topic": EMULATOR,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"ExoPlayer 2.0",
+        "video":"https://youtu.be/RQHYVj2k3NM?list=PLWy8DQlwJkdxYgbAoUnTLCcbefI-OB_Li",
+        "slides":"https://drive.google.com/file/d/0B3yqitiGHRi8dVR1eXdGUXFxNkE/view",
+        "speakers":[KYLE_VENN],
+        "topic": EXOPLAYER,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"Brushing up on Lint",
+        "video":"https://youtu.be/RQHYVj2k3NM?list=PLWy8DQlwJkdxy9ugORZARtt1Zu6vCQhWr&t=1854",
+        "slides":"https://speakerdeck.com/jrodbx/brushing-up-on-lint-nyc-android-meetup-april-2017",
+        "speakers":[JOHN_RODRIGUEZ],
+        "topic": STATIC_ANALYSIS,
+        "type":SOURCE_TYPE_VIDEO
     }
 
 ];
