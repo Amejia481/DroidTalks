@@ -157,6 +157,20 @@ const JOHN_RODRIGUEZ = {
     "name": "John Rodriguez",
     "twitter": "https://twitter.com/jrodbx"
 };
+const LUCAS_ROCHA = {
+    "name": "Lucas Rocha",
+    "twitter": "https://twitter.com/lucasratmundo"
+};
+const EMIL_SJÖLANDER = {
+    "name": "Emil Sjölander",
+    "twitter": "https://twitter.com/emilsjolander"
+};
+
+const MICHAEL_BAILEY = {
+    "name": "Michael Bailey",
+    "twitter": "https://twitter.com/yogurtearl"
+};
+
 
 
 /*SOURCE TYPE*/
@@ -191,6 +205,7 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const EMULATOR = "Emulator";
  const EXOPLAYER = "ExoPlayer";
  const STATIC_ANALYSIS = "Static Analysis";
+ const JAVA_TIPS = "Java Tips";
 
 
 
@@ -208,7 +223,8 @@ const topics = [
         RXJAVA,SECURITY,
         SWIFT,TESTING,
         CONTINUOUS_INTEGRATION,EMULATOR,
-        EXOPLAYER,STATIC_ANALYSIS
+        EXOPLAYER,STATIC_ANALYSIS,
+        JAVA_TIPS
 
 	];
 const speakers =
@@ -249,7 +265,8 @@ const speakers =
         FRAGMENTED_PODCAST,
         ANDROID_DEVELOPERS_BACKSTAGE,
         ERIC_COLEMAN,KYLE_VENN,
-        JOHN_RODRIGUEZ
+        JOHN_RODRIGUEZ,LUCAS_ROCHA,
+        EMIL_SJÖLANDER,MICHAEL_BAILEY
     ]
 
 const events =[
@@ -670,5 +687,34 @@ var talks = [
         "topic": STATIC_ANALYSIS,
         "type":SOURCE_TYPE_VIDEO
     }
+    ,
+    {
+        "name":"Litho: A Declarative Framework for Efficient UIs",
+        "video":"https://developers.facebook.com/videos/f8-2017/litho-a-declarative-framework-for-efficient-uis/",
+        "slides":null,
+        "speakers":[LUCAS_ROCHA,EMIL_SJÖLANDER],
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"014: Effective Java for Android developers : Item 1",
+        "video":"http://fragmentedpodcast.com/episodes/14/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"GTAC 2014: Espresso, Spoon, Wiremock, Oh my!",
+        "video":"https://youtu.be/-xQCNf_5NNM?list=PLWy8DQlwJkdw9qjMIZnXl8-qWch2PsCF_",
+        "slides":"https://docs.google.com/presentation/d/1B6GDN5ny3hGteJViIy4WxH9pf5EeC-Y-7EcdIQltI1c/edit",
+        "speakers":[MICHAEL_BAILEY],
+        "topic": ESPRESSO,
+        "type":SOURCE_TYPE_VIDEO
+    }
+
+
 
 ];
