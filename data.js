@@ -182,6 +182,14 @@ const JASON_SENDROS = {
     "name": "Jason Sendros",
     "twitter": null
 };
+const JIE_JIN = {
+    "name": "Jie Jin",
+    "twitter": "https://twitter.com/jiegantic"
+};
+const JORGE_BARROSO = {
+    "name": "Jorge Barroso",
+    "twitter": "https://twitter.com/flipper83"
+};
 
 
 
@@ -222,6 +230,8 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const BECOMING_A_BETTER_DEVELOPER = "Becoming a Better Developer";
  const INTERVIEWS = "Interviews";
  const REALM = "Realm";
+ const OFFLINE = "Offline";
+ const GOOD_PRACTICES = "Good Practices";
 
 
 
@@ -242,7 +252,8 @@ const topics = [
         EXOPLAYER,STATIC_ANALYSIS,
         JAVA_TIPS,ANIMATIONS,
         BECOMING_A_BETTER_DEVELOPER,INTERVIEWS,
-        REALM
+        REALM,OFFLINE,
+        GOOD_PRACTICES
 
 	];
 const speakers =
@@ -286,7 +297,8 @@ const speakers =
         JOHN_RODRIGUEZ,LUCAS_ROCHA,
         EMIL_SJÖLANDER,MICHAEL_BAILEY,
         THE_CONTEXT,TOM_WILSON,
-        JASON_SENDROS
+        JASON_SENDROS,JIE_JIN,
+        JORGE_BARROSO
     ]
 
 const events =[
@@ -862,11 +874,38 @@ var talks = [
     }
     ,
     {
+        "name":"Realm:Pros,Cons,Tips,Tricks",
+        "video":"https://youtu.be/Rv8EWY8SFY8?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM&t=318",
+        "slides":null,
+        "speakers":[TOM_WILSON],
+        "topic": REALM,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
         "name":"Moving Mountains: The Art of Changing Large Software Systems",
         "video":"https://youtu.be/Rv8EWY8SFY8?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM&t=2149",
         "slides":null,
         "speakers":[JASON_SENDROS],
         "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"Building Mobile Applications for Unreliable Networks",
+        "video":"https://youtu.be/4G622GSIjeM?list=PLFKjcMIU2WsjRto4UpcU_k3ESIY-XOSi6",
+        "slides":null,
+        "speakers":[JIE_JIN],
+        "topic": OFFLINE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"The (BEST) good practices",
+        "video":"https://youtu.be/_3mHaG0A42g?list=PLWy8DQlwJkdxkvEz9gPaNZXcFXAFXQXlT",
+        "slides":"https://speakerdeck.com/karumi/the-best-good-practices-on-android",
+        "speakers":[JORGE_BARROSO],
+        "topic": GOOD_PRACTICES,
         "type":SOURCE_TYPE_VIDEO
     }
 
