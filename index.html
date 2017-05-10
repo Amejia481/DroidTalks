@@ -70,8 +70,8 @@
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | filter: {topic:topic}).length }}"> <h3 class="mdl-card__title-text"> <strong >{{topic}}</strong></h3></span>
                         </div>
 
-                        <ul ng-repeat="talk in talks | orderBy | filter:{topic:topic} ">
-                            <talk-section talk="talk"></talk-section>
+                        <ul>
+                            <talk-section ng-repeat="talk in talks | orderBy | filter:{topic:topic}" talk="talk"></talk-section>
                         </ul>
 
                     </div>
@@ -111,8 +111,8 @@
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | inArray:speaker:'id').length  }}"> <h3 class="mdl-card__title-text"> <strong >{{speaker.name}}</strong></h3></span>
                         </div>
 
-                        <ul ng-repeat="talk in talks | orderBy  | inArray:speaker:'id' ">
-                            <talk-section talk="talk"></talk-section>
+                        <ul>
+                            <talk-section ng-repeat="talk in talks | orderBy:'name'  | inArray:speaker:'id' " talk="talk" ></talk-section>
                         </ul>
                         </strong>
                     </div>

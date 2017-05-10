@@ -170,6 +170,18 @@ const MICHAEL_BAILEY = {
     "name": "Michael Bailey",
     "twitter": "https://twitter.com/yogurtearl"
 };
+const THE_CONTEXT = {
+    "name": "The Context",
+    "twitter": "https://github.com/artem-zinnatullin/TheContext-Podcast"
+};
+const TOM_WILSON = {
+    "name": "Tom Wilson",
+    "twitter": "https://twitter.com/tmtrademark"
+};
+const JASON_SENDROS = {
+    "name": "Jason Sendros",
+    "twitter": null
+};
 
 
 
@@ -206,6 +218,10 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const EXOPLAYER = "ExoPlayer";
  const STATIC_ANALYSIS = "Static Analysis";
  const JAVA_TIPS = "Java Tips";
+ const ANIMATIONS = "Animations";
+ const BECOMING_A_BETTER_DEVELOPER = "Becoming a Better Developer";
+ const INTERVIEWS = "Interviews";
+ const REALM = "Realm";
 
 
 
@@ -224,7 +240,9 @@ const topics = [
         SWIFT,TESTING,
         CONTINUOUS_INTEGRATION,EMULATOR,
         EXOPLAYER,STATIC_ANALYSIS,
-        JAVA_TIPS
+        JAVA_TIPS,ANIMATIONS,
+        BECOMING_A_BETTER_DEVELOPER,INTERVIEWS,
+        REALM
 
 	];
 const speakers =
@@ -266,7 +284,9 @@ const speakers =
         ANDROID_DEVELOPERS_BACKSTAGE,
         ERIC_COLEMAN,KYLE_VENN,
         JOHN_RODRIGUEZ,LUCAS_ROCHA,
-        EMIL_SJÖLANDER,MICHAEL_BAILEY
+        EMIL_SJÖLANDER,MICHAEL_BAILEY,
+        THE_CONTEXT,TOM_WILSON,
+        JASON_SENDROS
     ]
 
 const events =[
@@ -714,7 +734,140 @@ var talks = [
         "topic": ESPRESSO,
         "type":SOURCE_TYPE_VIDEO
     }
-
-
+    ,
+    {
+        "name":"015: Amanimations – Animations with Amanda",
+        "video":"http://fragmentedpodcast.com/episodes/15/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": ANIMATIONS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"010: Boning Up on Core Java",
+        "video":"http://fragmentedpodcast.com/episodes/10/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"001: Welcome & Testing in Android",
+        "video":"http://fragmentedpodcast.com/episodes/1/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": TESTING,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"001: Welcome & Testing in Android",
+        "video":"http://fragmentedpodcast.com/episodes/1/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": TESTING,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"002: Android Studio",
+        "video":"http://fragmentedpodcast.com/episodes/2/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": ANDROID_STUDIO,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"003: The RxJava show with Dan Lew (Part 1)",
+        "video":"http://fragmentedpodcast.com/episodes/3/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": RXJAVA,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"004: The RxJava show with Dan Lew (Part 2)",
+        "video":"http://fragmentedpodcast.com/episodes/4/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": RXJAVA,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"005: Image libraries for Android",
+        "video":"http://fragmentedpodcast.com/episodes/5/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"006: Jake Wharton on Becoming a Better Developer and Creating Successful Open Source Projects (Part 1)",
+        "video":"http://fragmentedpodcast.com/episodes/6/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": BECOMING_A_BETTER_DEVELOPER,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"007: Jake Wharton on Testing, SqlBrite, NotRxAndroid, RxJava and Much More",
+        "video":"http://fragmentedpodcast.com/episodes/7/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": LIBRARIES,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"008: Pocket Casts Amazingness with Philip Simpson",
+        "video":"http://fragmentedpodcast.com/episodes/8/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": INTERVIEWS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"009: Google IO Special",
+        "video":"http://fragmentedpodcast.com/episodes/9/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": INTERVIEWS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"011: The Fowler Road to a Clean Architecture",
+        "video":"http://fragmentedpodcast.com/episodes/11/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"Episode 10: Kotlin Language Design Nitpicking with Dmitry Jemerov from JetBrains",
+        "video":"https://github.com/artem-zinnatullin/TheContext-Podcast/releases/tag/Episode_10",
+        "slides":null,
+        "speakers":[THE_CONTEXT],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"Moving Mountains: The Art of Changing Large Software Systems",
+        "video":"https://youtu.be/Rv8EWY8SFY8?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM&t=2149",
+        "slides":null,
+        "speakers":[JASON_SENDROS],
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
+    }
 
 ];
