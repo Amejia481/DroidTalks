@@ -190,8 +190,27 @@ const JORGE_BARROSO = {
     "name": "Jorge Barroso",
     "twitter": "https://twitter.com/flipper83"
 };
+const ANDREW_BUNNER = {
+    "name": "Andrew Bunner",
+    "twitter": "https://twitter.com/andrewbunner"
+};
+const AKSHAY_KANNAN = {
+    "name": "Akshay Kannan",
+    "twitter": null
+};
+const ETIENNE_STUDDER = {
+    "name": "Etienne Studder",
+    "twitter": "https://twitter.com/etiennestuder"
+};
+const MARTIN_LIERSCH = {
+    "name": "Martin Liersch",
+    "twitter": "https://twitter.com/goddchen"
+};
 
 
+/*YOUTUBE PLAYLIST*/
+const YOUTUBE_PLAY_LIST_GRADLE =   "?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh";
+const YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY =   "?list=PLWy8DQlwJkdwYKX9-M2nh8FlS6pqMXr8o";
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -232,6 +251,7 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const REALM = "Realm";
  const OFFLINE = "Offline";
  const GOOD_PRACTICES = "Good Practices";
+ const PUBLISHING_A_LIBRARY = "Publishing A Library";
 
 
 
@@ -253,7 +273,7 @@ const topics = [
         JAVA_TIPS,ANIMATIONS,
         BECOMING_A_BETTER_DEVELOPER,INTERVIEWS,
         REALM,OFFLINE,
-        GOOD_PRACTICES
+        GOOD_PRACTICES,PUBLISHING_A_LIBRARY
 
 	];
 const speakers =
@@ -298,7 +318,9 @@ const speakers =
         EMIL_SJÖLANDER,MICHAEL_BAILEY,
         THE_CONTEXT,TOM_WILSON,
         JASON_SENDROS,JIE_JIN,
-        JORGE_BARROSO
+        JORGE_BARROSO,ANDREW_BUNNER,
+        AKSHAY_KANNAN,ETIENNE_STUDDER,
+        MARTIN_LIERSCH
     ]
 
 const events =[
@@ -908,5 +930,58 @@ var talks = [
         "topic": GOOD_PRACTICES,
         "type":SOURCE_TYPE_VIDEO
     }
-
+    ,
+    {
+        "name":"016: Effective Java for Android developers : Item 2",
+        "video":"http://fragmentedpodcast.com/episodes/16/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"017: Getting Close with Android Nearby",
+        "video":"http://fragmentedpodcast.com/episodes/17/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": NEARBY,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"Nearby Messages (100 days of Google Dev)",
+        "video":"https://youtu.be/hultDpBS22s?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
+        "slides":null,
+        "speakers":[ANDREW_BUNNER],
+        "topic": NEARBY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"Introducing Nearby: Physical proximity within and without apps",
+        "video":"https://youtu.be/Acdu2ZdBaZE?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
+        "slides":null,
+        "speakers":[ANDREW_BUNNER,AKSHAY_KANNAN],
+        "topic": NEARBY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"Gradle 3.0 and beyond for Android Development",
+        "video":"https://youtu.be/h09xAi8UTD4"+YOUTUBE_PLAY_LIST_GRADLE,
+        "slides":null,
+        "speakers":[ETIENNE_STUDDER],
+        "topic": GRADLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"RxFireDroid: From Idea to MavenCentral/jCenter",
+        "video":"https://youtu.be/nYJmXDPSn8Q"+YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY,
+        "slides":"https://docs.google.com/presentation/d/1IIvrW2qX_U7Pd1NiJk9-8ruS15LSwnnQ-tXsQfrq0pA/edit",
+        "speakers":[MARTIN_LIERSCH],
+        "topic": PUBLISHING_A_LIBRARY,
+        "type":SOURCE_TYPE_VIDEO
+    }
 ];

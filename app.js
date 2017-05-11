@@ -39,7 +39,7 @@ app.directive("talkSection", function() {
             '<li  class="mdl-card__title mdl-card--border"  style="list-style-type: none; border-bottom-style:none; ">'+
                 '<span>' +
                     '<h5><i class="material-icons">{{ getIconBySourceType(talk.type) }}</i><span>  <a target="_blank" href="{{talk.video}}">{{talk.name}}</a> </h5>'+
-                    '<strong ng-show="talk.speakers.length">Authors:</strong> <span ng-repeat=" speaker in talk.speakers | orderBy ">  <a target="_blank" href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
+                    '<strong ng-show="talk.speakers.length">Authors:</strong> <span ng-repeat=" speaker in talk.speakers | orderBy ">  <a target="{{speaker.twitter ? \'_blank\' : \'_self\'}}" href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
                     '<br/>'+
                     '<span ng-show="talk.slides"><strong>Resources:</strong>  <a target="_blank" href="{{talk.slides}}" >Slides</a></span>'+
                 '</span>'+
