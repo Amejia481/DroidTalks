@@ -207,11 +207,21 @@ const MARTIN_LIERSCH = {
     "twitter": "https://twitter.com/goddchen"
 };
 
+const MICHAEL_PARDO = {
+    "name": "Michael Pardo",
+    "twitter": "https://twitter.com/pardom"
+};
+const JULIO_ZYNGER = {
+    "name": "Julio Zynger",
+    "twitter": "https://twitter.com/juliozynger"
+};
+
+
 
 /*YOUTUBE PLAYLIST*/
 const YOUTUBE_PLAY_LIST_GRADLE =   "?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh";
 const YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY =   "?list=PLWy8DQlwJkdwYKX9-M2nh8FlS6pqMXr8o";
-
+const YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION = "PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp"
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
 const SOURCE_TYPE_VIDEO = "VIDEO";
@@ -320,7 +330,8 @@ const speakers =
         JASON_SENDROS,JIE_JIN,
         JORGE_BARROSO,ANDREW_BUNNER,
         AKSHAY_KANNAN,ETIENNE_STUDDER,
-        MARTIN_LIERSCH
+        MARTIN_LIERSCH,MICHAEL_PARDO,
+        JULIO_ZYNGER
     ]
 
 const events =[
@@ -421,6 +432,15 @@ const events =[
             {
                 "name":"2016",
                 "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte"
+            }
+        ]
+    },
+    {
+        "name":"MCE - Mobile Central Europe",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PL79il-55EZPu3xoT9Ig9wLb65tPOS4D4_"
             }
         ]
     }
@@ -982,6 +1002,33 @@ var talks = [
         "slides":"https://docs.google.com/presentation/d/1IIvrW2qX_U7Pd1NiJk9-8ruS15LSwnnQ-tXsQfrq0pA/edit",
         "speakers":[MARTIN_LIERSCH],
         "topic": PUBLISHING_A_LIBRARY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"020: Talking Kotlin with Hadi Hariri",
+        "video":"http://fragmentedpodcast.com/episodes/20/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        "name":"Kotlin: A New Hope in a Java 6 Wasteland",
+        "video":"https://news.realm.io/news/droidcon-michael-pardo-kotlin/",
+        "slides":"https://speakerdeck.com/pardom/kotlin-new-hope-in-a-java-6-wasteland",
+        "speakers":[MICHAEL_PARDO],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        "name":"Continuous deployement on Android with the publishing API",
+        "video":"https://youtu.be/A8CntrLJvvE?list="+YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION,
+        "slides":"https://speakerdeck.com/julioz/publishing-api-and-continuous-deployment-on-android",
+        "speakers":[JULIO_ZYNGER],
+        "topic": CONTINUOUS_INTEGRATION,
         "type":SOURCE_TYPE_VIDEO
     }
 ];
