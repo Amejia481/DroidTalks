@@ -492,7 +492,7 @@ var talks = [
     },
     {
         "name":"A new hope",
-        "video":"https://youtu.be/1mGEpCEbnXk?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns",
+        "video":"https://youtu.be/0ijVuVtu6a4?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns",
         "slides":"https://speakerdeck.com/takhion/a-new-hope",
         "speakers":[EUGENIO_MARLETTI,SEBASTIANO_POGGI],
         "topic": FLUTTER,
