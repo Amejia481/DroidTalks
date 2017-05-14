@@ -448,6 +448,7 @@ const events =[
 
 var talks = [
 	{
+        id:1,
 		"name":"Android is for Everyone",
 		"video":"https://youtu.be/-coa0n4SUBk?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5",
 		"slides":"https://speakerdeck.com/realm/kelly-shuster-android-is-for-everyone",
@@ -457,6 +458,7 @@ var talks = [
 
 	},
     {
+        id:2,
         "name":"Android Things for IoT Talk",
         "video":"https://youtu.be/L1JTnPDQpiI?list=PLWy8DQlwJkdwlV36QfGOrlTH5Y7Domgvo",
         "speakers":[WAYNE_PIEKARSKI],
@@ -464,6 +466,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:3,
         "name":"Fifty Shades of Android Studio",
         "video":"https://youtu.be/O3Xj1vBc0Xg?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F",
         "speakers":[MURAT_YENER],
@@ -471,6 +474,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:4,
         "name":"Make your Android Studio Plugin",
         "video":"https://youtu.be/znDROg5CzZw?list=PLWy8DQlwJkdzcgWrCWSYwY5PRiJFWwmIj",
         "slides":"https://speakerdeck.com/synesthesia/make-your-own-android-studio-plugin",
@@ -479,6 +483,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
 	{
+        id:5,
         "name":"Adaptable architecture for agencies",
         "video":"https://youtu.be/qSe8oXEln0I?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD",
         "slides":"https://speakerdeck.com/synesthesia/adaptable-architecture-for-agencies-sharing-our-experience",
@@ -487,6 +492,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:6,
         "name":"Measure, Layout, Draw, Repeat: Custom Views and ViewGroups",
         "video":"https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP",
         "slides":"https://speakerdeck.com/queencodemonkey/360-andev-measure-layout-draw-repeat",
@@ -495,6 +501,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:7,
         "name":"Data Binding in the Real World",
         "video":"https://realm.io/news/droidkaigi-kevin-pelgrims-data-real-world-data-binding/",
         "slides":"https://speakerdeck.com/kevinpelgrims/data-binding-on-android",
@@ -503,6 +510,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:8,
         "name":"Deeper insight into Android Espresso library",
         "video":"https://youtu.be/2Sw7zrJG1-0?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ",
         "slides":"https://speakerdeck.com/f1sherkk/deeper-insight-into-android-espresso-library-v2",
@@ -511,6 +519,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:9,
         "name":"A new hope",
         "video":"https://youtu.be/0ijVuVtu6a4?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns",
         "slides":"https://speakerdeck.com/takhion/a-new-hope",
@@ -519,6 +528,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:10,
         "name":"Gophers are coming",
         "video":"https://youtu.be/XS0cuFm7hgo?list=PLWy8DQlwJkdwdLouTsRJuLL2WjM2ekx2T",
         "slides":"https://www.slideshare.net/JovicaPopovic/gomobile-gophers-in-the-land-of-android",
@@ -527,6 +537,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:11,
         "name":"Making the most of your Gradle Builds",
         "video":"https://youtu.be/-RNXngQY5Dc?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh",
         "slides":"https://www.slideshare.net/EgorAndreevici/making-the-most-of-your-gradle-builds",
@@ -535,6 +546,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:12,
         "name":"An Android Retrospective",
         "video":"https://youtu.be/xOccHEgIvwY?list=PLWy8DQlwJkdytDOSVZhq6NIOnSioj8zPq",
         "slides":"https://www.slideshare.net/EgorAndreevici/making-the-most-of-your-gradle-builds",
@@ -543,6 +555,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:13,
         "name":"Kotlin: A Followup",
         "video":"https://youtu.be/j-3HOCGxbaI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://christinalee.github.io/Slides/slides-master/kotlin-retro",
@@ -551,6 +564,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:14,
         "name":"Kotlin in Production",
         "video":"https://youtu.be/mDpnc45WwlI?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://christinalee.github.io/Slides/slides-master/kotlin",
@@ -559,6 +573,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:15,
         "name":"Typing in Java, Kotlin and Scala",
         "video":"https://youtu.be/9h0XjuU0Ipk?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu",
         "slides":"https://www.slideshare.net/hannelita/typing-in-java-kotlin-and-scala",
@@ -567,6 +582,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:16,
         "name":"ConstraintLayout: It Can Do what Now?",
         "video":"https://www.youtube.com/playlist?list=PLWy8DQlwJkdwRK_My8WsCz-lg3DLep-YP",
         "slides":"https://speakerdeck.com/camaelon/constraintlayout-presentation",
@@ -575,6 +591,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:17,
         "name":"How to reactively load and cache data without even trying",
         "video":"https://youtu.be/TvsOsgd0--c?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y",
         "slides":"https://www.slideshare.net/nakhimovich/data-loading-made-easy-with-mike-nakhimovich-droidcon-italy-2017",
@@ -583,6 +600,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:18,
         "name":"Libraries I Wish I Knew About When I Started",
         "video":"https://youtu.be/r7z1dHL90BI?list=PLWy8DQlwJkdy4LuB0QzjCFXdizG5Zi75Y",
         "slides":"https://speakerdeck.com/chrisguzman/android-libraries-i-wish-i-knew-when-i-started",
@@ -591,6 +609,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:19,
         "name":"Journey to material Design Award",
         "video":"https://youtu.be/VZMe3LJuAPE?list=PLWy8DQlwJkdyA29LXz0r7jaaGqPhsCuRd",
         "slides":"https://speakerdeck.com/taylorling/designing-fabulous-journey-to-material-design-award",
@@ -599,6 +618,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:20,
         "name":"Add proximity to apps with Nearby",
         "video":"https://youtu.be/e3ufn-tY2Ek?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
         "slides":null,
@@ -607,6 +627,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:21,
         "name":"Optimizing and Profiling UI Performance",
         "video":"https://youtu.be/Uz5JgP_kzIM?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
         "slides":"https://speakerdeck.com/kenodoggy/optimizing-and-profiling-ui-performance-1",
@@ -615,6 +636,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:22,
         "name":"Optimizing Apps for Better Performance",
         "video":"https://youtu.be/hWbIU00zAX0?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi",
         "slides":"https://docs.google.com/presentation/d/1N195_xUSQr1g9iTfSOCbb-404rTxoTfkLHMjpKEZeqM/view",
@@ -623,6 +645,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:23,
         "name":"Exploring RxJava 2 for Android",
         "video":"https://youtu.be/htIXKI5gOQU?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://gotocon.com/dl/goto-cph-2016/slides/JakeWharton_ExploringRxJava2ForAndroid.pdf",
@@ -631,6 +654,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:24,
         "name":"Managing State with RxJava",
         "video":"https://youtu.be/0IKHxjkgop4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://speakerdeck.com/jakewharton/the-state-of-managing-state-with-rxjava-devoxx-us-2017",
@@ -639,6 +663,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:25,
         "name":"Learning RxJava (for Android) by example",
         "video":"https://youtu.be/k3D0cWyNno4?list=PLWy8DQlwJkdxS1tS6GpEqcYC-6TAn_u3U",
         "slides":"https://newcircle.com/s/post/1744/2015/06/29/learning-rxjava-for-android-by-example",
@@ -647,6 +672,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:26,
         "name":"Android Security, an enterprise perspective",
         "video":"https://youtu.be/1LacHsCRJw0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/nibble/android-its-time-to-go-to-work",
@@ -655,6 +681,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:27,
         "name":"I just hacked your app!",
         "video":"https://youtu.be/g2WF_Ttwho0?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/mplacona/i-just-hacked-your-app-droidcon-krakow-2016",
@@ -663,6 +690,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:28,
         "name":"Attacking Android Applications",
         "video":"https://youtu.be/sZJzrF790fQ?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/h4oxer/attacking-android-applications",
@@ -671,6 +699,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:29,
         "name":"The Android Security Jungle: Pitfalls, Threats & Survival Tips",
         "video":"https://youtu.be/18tn_mF4XRg?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"http://gotocon.com/dl/goto-cph-2015/slides/ScottAlexander-Bown_TheAndroidSecurityJunglePitfallsThreatsAndSurvivalTips.pdf",
@@ -679,6 +708,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:30,
         "name":"What's NNNNNNNNew in Android Security?",
         "video":"https://www.youtube.com/watch?v=XzRbhfVyoKo?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm",
         "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
@@ -687,6 +717,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:31,
         "name":"Swift on Android: The Future of Cross-Platform Programming or White Whale?",
         "video":"https://news.realm.io/news/swift-on-android",
         "slides":"https://speakerdeck.com/scottyab/whats-nnnnnew-in-security-droidcon-it",
@@ -695,6 +726,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:32,
         "name":"Does it work? Did you test it?",
         "video":"https://youtu.be/Ru-ooxa1upc?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ",
         "slides":"https://github.com//d2therak/DoesItWork/blob/master/Does%20it%20Work.pdf",
@@ -703,6 +735,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:33,
         "name":"013: Corey Latislaw on TDD and Testing",
         "video":"http://fragmentedpodcast.com/episodes/13/",
         "slides":null,
@@ -711,6 +744,7 @@ var talks = [
         "type":SOURCE_TYPE_AUDIO
     },
     {
+        id:34,
         "name":"012: Continous Integration and Collective Code Ownership",
         "video":"http://fragmentedpodcast.com/episodes/12/",
         "slides":null,
@@ -719,6 +753,7 @@ var talks = [
         "type":SOURCE_TYPE_AUDIO
     },
     {
+        id:35,
         "name":"Continuous Integration with Android",
         "video":"https://www.youtube.com/watch?v=-GZP2DaXIPk&index=1&list=PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp",
         "slides":"http://slides.com/epiccoleman/android-ci",
@@ -727,6 +762,7 @@ var talks = [
         "type":SOURCE_TYPE_VIDEO
     },
     {
+        id:36,
         "name":"082: Airbnb’s Gabriel tells how to animate with Lottie",
         "video":"http://fragmentedpodcast.com/episodes/82/",
         "slides":null,
@@ -736,6 +772,7 @@ var talks = [
     }
     ,
     {
+        id:37,
         "name":"Episode 65: Emulator",
         "video":"http://androidbackstage.blogspot.com/2017/05/episode-65-emulator.html",
         "slides":null,
@@ -745,6 +782,7 @@ var talks = [
     }
     ,
     {
+        id:38,
         "name":"ExoPlayer 2.0",
         "video":"https://youtu.be/RQHYVj2k3NM?list=PLWy8DQlwJkdxYgbAoUnTLCcbefI-OB_Li",
         "slides":"https://drive.google.com/file/d/0B3yqitiGHRi8dVR1eXdGUXFxNkE/view",
@@ -754,6 +792,7 @@ var talks = [
     }
     ,
     {
+        id:39,
         "name":"Brushing up on Lint",
         "video":"https://youtu.be/RQHYVj2k3NM?list=PLWy8DQlwJkdxy9ugORZARtt1Zu6vCQhWr&t=1854",
         "slides":"https://speakerdeck.com/jrodbx/brushing-up-on-lint-nyc-android-meetup-april-2017",
@@ -763,6 +802,7 @@ var talks = [
     }
     ,
     {
+        id:40,
         "name":"Litho: A Declarative Framework for Efficient UIs",
         "video":"https://developers.facebook.com/videos/f8-2017/litho-a-declarative-framework-for-efficient-uis/",
         "slides":null,
@@ -772,6 +812,7 @@ var talks = [
     }
     ,
     {
+        id:41,
         "name":"014: Effective Java for Android developers : Item 1",
         "video":"http://fragmentedpodcast.com/episodes/14/",
         "slides":null,
@@ -781,6 +822,7 @@ var talks = [
     }
     ,
     {
+        id:42,
         "name":"GTAC 2014: Espresso, Spoon, Wiremock, Oh my!",
         "video":"https://youtu.be/-xQCNf_5NNM?list=PLWy8DQlwJkdw9qjMIZnXl8-qWch2PsCF_",
         "slides":"https://docs.google.com/presentation/d/1B6GDN5ny3hGteJViIy4WxH9pf5EeC-Y-7EcdIQltI1c/edit",
@@ -790,6 +832,7 @@ var talks = [
     }
     ,
     {
+        id:43,
         "name":"015: Amanimations – Animations with Amanda",
         "video":"http://fragmentedpodcast.com/episodes/15/",
         "slides":null,
@@ -799,6 +842,7 @@ var talks = [
     }
     ,
     {
+        id:44,
         "name":"010: Boning Up on Core Java",
         "video":"http://fragmentedpodcast.com/episodes/10/",
         "slides":null,
@@ -808,6 +852,7 @@ var talks = [
     }
     ,
     {
+        id:45,
         "name":"001: Welcome & Testing in Android",
         "video":"http://fragmentedpodcast.com/episodes/1/",
         "slides":null,
@@ -817,6 +862,7 @@ var talks = [
     }
     ,
     {
+        id:46,
         "name":"002: Android Studio",
         "video":"http://fragmentedpodcast.com/episodes/2/",
         "slides":null,
@@ -826,6 +872,7 @@ var talks = [
     }
     ,
     {
+        id:47,
         "name":"003: The RxJava show with Dan Lew (Part 1)",
         "video":"http://fragmentedpodcast.com/episodes/3/",
         "slides":null,
@@ -835,6 +882,7 @@ var talks = [
     }
     ,
     {
+        id:48,
         "name":"004: The RxJava show with Dan Lew (Part 2)",
         "video":"http://fragmentedpodcast.com/episodes/4/",
         "slides":null,
@@ -844,6 +892,7 @@ var talks = [
     }
     ,
     {
+        id:49,
         "name":"005: Image libraries for Android",
         "video":"http://fragmentedpodcast.com/episodes/5/",
         "slides":null,
@@ -853,6 +902,7 @@ var talks = [
     }
     ,
     {
+        id:50,
         "name":"006: Jake Wharton on Becoming a Better Developer and Creating Successful Open Source Projects (Part 1)",
         "video":"http://fragmentedpodcast.com/episodes/6/",
         "slides":null,
@@ -862,6 +912,7 @@ var talks = [
     }
     ,
     {
+        id:51,
         "name":"007: Jake Wharton on Testing, SqlBrite, NotRxAndroid, RxJava and Much More",
         "video":"http://fragmentedpodcast.com/episodes/7/",
         "slides":null,
@@ -871,6 +922,7 @@ var talks = [
     }
     ,
     {
+        id:52,
         "name":"008: Pocket Casts Amazingness with Philip Simpson",
         "video":"http://fragmentedpodcast.com/episodes/8/",
         "slides":null,
@@ -880,6 +932,7 @@ var talks = [
     }
     ,
     {
+        id:53,
         "name":"009: Google IO Special",
         "video":"http://fragmentedpodcast.com/episodes/9/",
         "slides":null,
@@ -889,6 +942,7 @@ var talks = [
     }
     ,
     {
+        id:54,
         "name":"011: The Fowler Road to a Clean Architecture",
         "video":"http://fragmentedpodcast.com/episodes/11/",
         "slides":null,
@@ -898,6 +952,7 @@ var talks = [
     }
     ,
     {
+        id:55,
         "name":"Episode 10: Kotlin Language Design Nitpicking with Dmitry Jemerov from JetBrains",
         "video":"https://github.com/artem-zinnatullin/TheContext-Podcast/releases/tag/Episode_10",
         "slides":null,
@@ -907,6 +962,7 @@ var talks = [
     }
     ,
     {
+        id:56,
         "name":"Realm:Pros,Cons,Tips,Tricks",
         "video":"https://youtu.be/Rv8EWY8SFY8?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM&t=318",
         "slides":null,
@@ -916,6 +972,7 @@ var talks = [
     }
     ,
     {
+        id:57,
         "name":"Moving Mountains: The Art of Changing Large Software Systems",
         "video":"https://youtu.be/Rv8EWY8SFY8?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM&t=2149",
         "slides":null,
@@ -925,6 +982,7 @@ var talks = [
     }
     ,
     {
+        id:58,
         "name":"Building Mobile Applications for Unreliable Networks",
         "video":"https://youtu.be/4G622GSIjeM?list=PLFKjcMIU2WsjRto4UpcU_k3ESIY-XOSi6",
         "slides":null,
@@ -934,6 +992,7 @@ var talks = [
     }
     ,
     {
+        id:59,
         "name":"The (BEST) good practices",
         "video":"https://youtu.be/_3mHaG0A42g?list=PLWy8DQlwJkdxkvEz9gPaNZXcFXAFXQXlT",
         "slides":"https://speakerdeck.com/karumi/the-best-good-practices-on-android",
@@ -943,6 +1002,7 @@ var talks = [
     }
     ,
     {
+        id:60,
         "name":"016: Effective Java for Android developers : Item 2",
         "video":"http://fragmentedpodcast.com/episodes/16/",
         "slides":null,
@@ -952,6 +1012,7 @@ var talks = [
     }
     ,
     {
+        id:61,
         "name":"017: Getting Close with Android Nearby",
         "video":"http://fragmentedpodcast.com/episodes/17/",
         "slides":null,
@@ -961,6 +1022,7 @@ var talks = [
     }
     ,
     {
+        id:62,
         "name":"Nearby Messages (100 days of Google Dev)",
         "video":"https://youtu.be/hultDpBS22s?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
         "slides":null,
@@ -970,6 +1032,7 @@ var talks = [
     }
     ,
     {
+        id:63,
         "name":"Introducing Nearby: Physical proximity within and without apps",
         "video":"https://youtu.be/Acdu2ZdBaZE?list=PLWy8DQlwJkdxAlscTBe0MTbbULNLdLTwo",
         "slides":null,
@@ -979,6 +1042,7 @@ var talks = [
     }
     ,
     {
+        id:64,
         "name":"Gradle 3.0 and beyond for Android Development",
         "video":"https://youtu.be/h09xAi8UTD4"+YOUTUBE_PLAY_LIST_GRADLE,
         "slides":null,
@@ -988,6 +1052,7 @@ var talks = [
     }
     ,
     {
+        id:65,
         "name":"RxFireDroid: From Idea to MavenCentral/jCenter",
         "video":"https://youtu.be/nYJmXDPSn8Q"+YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY,
         "slides":"https://docs.google.com/presentation/d/1IIvrW2qX_U7Pd1NiJk9-8ruS15LSwnnQ-tXsQfrq0pA/edit",
@@ -997,6 +1062,7 @@ var talks = [
     }
     ,
     {
+        id:66,
         "name":"020: Talking Kotlin with Hadi Hariri",
         "video":"http://fragmentedpodcast.com/episodes/20/",
         "slides":null,
@@ -1006,6 +1072,7 @@ var talks = [
     }
     ,
     {
+        id:67,
         "name":"Kotlin: A New Hope in a Java 6 Wasteland",
         "video":"https://news.realm.io/news/droidcon-michael-pardo-kotlin/",
         "slides":"https://speakerdeck.com/pardom/kotlin-new-hope-in-a-java-6-wasteland",
@@ -1015,6 +1082,7 @@ var talks = [
     }
     ,
     {
+        id:68,
         "name":"Continuous deployement on Android with the publishing API",
         "video":"https://youtu.be/A8CntrLJvvE?list="+YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION,
         "slides":"https://speakerdeck.com/julioz/publishing-api-and-continuous-deployment-on-android",

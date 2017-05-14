@@ -1,5 +1,5 @@
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['LocalStorageModule']);
 
 app.filter('inArray', function($filter){
     return function(list, speaker, element){
@@ -11,13 +11,26 @@ app.filter('inArray', function($filter){
         }
     };
 });
-app.directive("talkSection", function() {
+app.directive("talkSection", function(WatchedTalksService) {
 
     return {
         scope:{
             talk:'='
         },
         link: function(scope, element, attrs) {
+            const ICON_NOT_WATCHED_TALK = 'mood_bad';
+            const ICON_WATCHED_TALK = 'done_all';
+
+            scope.addTalksToWatchedList = function(id){
+                if(scope.isTalksToWatched(id)) {
+                    WatchedTalksService.removeFromWatchedList(id)
+                }else{
+                    WatchedTalksService.addTalksToWatchedList(id)
+                }
+            }
+            scope.isTalksToWatched = function(id){
+                return WatchedTalksService.isTalksToWatched(id);
+            }
             scope.getIconBySourceType = function (sourceType){
                 var icon = "";
                 switch(sourceType){
@@ -34,14 +47,34 @@ app.directive("talkSection", function() {
                 }
                 return icon;
             }
+
+            scope.getIconWatched = function (id){
+                var isWatched = scope.isTalksToWatched(id);
+                return  (isWatched) ? ICON_WATCHED_TALK : ICON_NOT_WATCHED_TALK;
+            }
+            scope.getTextColorWatched = function (id){
+                var isWatched = scope.isTalksToWatched(id);
+                return  (isWatched) ? 'color: rgb(63,81,181);' : '';
+            }
         },
         template :
-            '<li  class="mdl-card__title mdl-card--border"  style="list-style-type: none; border-bottom-style:none; ">'+
+            '<li   class="mdl-card__title mdl-card--border"  style="list-style-type: none; border-bottom-style:none; " >' +
                 '<span>' +
-                    '<h5><i class="material-icons">{{ getIconBySourceType(talk.type) }}</i><span>  <a target="_blank" href="{{talk.video}}">{{talk.name}}</a> </h5>'+
-                    '<strong ng-show="talk.speakers.length">Authors:</strong> <span ng-repeat=" speaker in talk.speakers | orderBy ">  <a target="{{speaker.twitter ? \'_blank\' : \'_self\'}}" href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
+                    '<h5 style="margin-bottom: 5px !important;"><i class="material-icons mdl-button.mdl-button--colored">{{ getIconBySourceType(talk.type) }}</i><span>' +
+                        '  <a style="{{ getTextColorWatched(talk.id) }}' +
+                            ' target="_blank" href="{{talk.video}}">{{talk.name}}</a> ' +
+                        '<button title="{{ (isTalksToWatched(talk.id) ) ? \'watched :)\' : \'Not watched yet\' }}" class="mdl-button mdl-js-button mdl-button--icon ' +
+                            '{{ (isTalksToWatched(talk.id) ) ? \'mdl-button--colored\' : \'\' }}" '+
+                             'ng-click="addTalksToWatchedList(talk.id)">'+
+                            '<i class="material-icons">{{getIconWatched(talk.id)}}</i>'+
+                        '</button>'+
+                    '</h5>'+
+                    '<strong ng-show="talk.speakers.length">Authors:</strong> ' +
+                        ' <span ng-repeat=" speaker in talk.speakers | orderBy "> ' +
+                        ' <a style="{{getTextColorWatched(talk.id)}}" target="{{speaker.twitter ? \'_blank\' : \'_self\'}}" href="{{ speaker.twitter || \'#\' }}" >{{speaker.name}}</a> </span>'+
                     '<br/>'+
-                    '<span ng-show="talk.slides"><strong>Resources:</strong>  <a target="_blank" href="{{talk.slides}}" >Slides</a></span>'+
+                    '<span ng-show="talk.slides"><strong>Resources:</strong> ' +
+                        ' <a style="{{getTextColorWatched(talk.id)}}" target="_blank" href="{{talk.slides}}" >Slides</a></span>'+
                 '</span>'+
             '</li>'
     };
@@ -125,7 +158,7 @@ app.directive("showMore", function() {
 });
 
 
-app.controller('mainCtrl', function($scope,$http) {
+app.controller('mainCtrl', function($scope,$http,WatchedTalksService) {
 
     $scope.currentPage = 0;
     $scope.pageSize = 10;
@@ -143,6 +176,15 @@ app.controller('mainCtrl', function($scope,$http) {
     $scope.filteredEventData = emptyArray;
     $scope.filteredCreatorsData = emptyArray;
 
+
+    $scope.getCountOfWatchedTalk = function(talks){
+        var count = 0;
+        talks.forEach( function(item){
+            if(WatchedTalksService.isTalksToWatched(item.id))
+                count++;
+        });
+        return count;
+    }
     $scope.$watch("topics | filter:searchPattern", function(newVal) {
         $scope.filteredTopicData = (newVal)? newVal : emptyArray;
     }, true);
@@ -174,7 +216,32 @@ app.controller('mainCtrl', function($scope,$http) {
 
             });
         });
+
+
 });
+
+app.service('WatchedTalksService', function(localStorageService) {
+
+    var talksWatchedList = (localStorageService.get('talksWatchedList'))
+        ?  localStorageService.get('talksWatchedList') : [];
+
+    this.getWatchedList = function(){
+        return talksWatchedList;
+    }
+    this.addTalksToWatchedList = function(id){
+        talksWatchedList.push(id);
+        localStorageService.set('talksWatchedList',talksWatchedList);
+
+    }
+    this.removeFromWatchedList = function(id){
+         talksWatchedList.splice(talksWatchedList.indexOf(id),1) ;
+        localStorageService.set('talksWatchedList',talksWatchedList);
+    }
+    this.isTalksToWatched = function(id){
+        return  talksWatchedList.indexOf(id) != -1;
+    }
+});
+
 
 app.filter('startFrom', function() {
     return function(items, start) {

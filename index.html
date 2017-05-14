@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="dialog-polyfill.js"></script>
     <script src="data.js"></script>
+    <script src="js/angular-local-storage.min.js"></script>
     <script src="app.js"></script>
 </head>
 
@@ -68,7 +69,8 @@
                          class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone  mdl-card mdl-shadow--3dp" >
 
                         <div class="mdl-card__title mdl-card--border" >
-                            <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | filter: {topic:topic}).length }}"> <h3 class="mdl-card__title-text"> <strong >{{topic}}</strong></h3></span>
+                            <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | filter: {topic:topic}).length }}"> <h3 class="mdl-card__title-text"> <strong >{{topic}}  </strong></h3></span>
+                            <span style="font-size:12px;" ng-show="getCountOfWatchedTalk((talks | filter: {topic:topic})) > 0">&nbsp; {{getCountOfWatchedTalk((talks | filter: {topic:topic}))}}/{{ (talks | filter: {topic:topic}).length }}</span>
                         </div>
 
                         <ul>
@@ -98,7 +100,7 @@
 
                         <ul>
                             <li ng-repeat="version in event.versions | limitTo:maxNumberOfEvents">
-                                <h5> <a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
+                                <h5><a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
                             </li>
                         </ul>
                         <show-more actual-number-of-items="maxNumberOfEvents"
@@ -122,6 +124,7 @@
 
                         <div class="mdl-card__title mdl-card--border">
                             <span class="mdl-badge" mdl-badge--overlap data-badge="{{ (talks | inArray:speaker:'id').length  }}"> <h3 class="mdl-card__title-text"> <strong >{{speaker.name}}</strong></h3></span>
+                            <span style="font-size:12px;" ng-show="getCountOfWatchedTalk((talks | inArray:speaker:'id')) > 0">&nbsp; {{getCountOfWatchedTalk((talks | inArray:speaker:'id'))}}/{{ (talks | inArray:speaker:'id').length  }}</span>
                         </div>
 
                         <ul>
