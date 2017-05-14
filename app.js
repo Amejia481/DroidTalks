@@ -18,7 +18,7 @@ app.directive("talkSection", function(WatchedTalksService) {
             talk:'='
         },
         link: function(scope, element, attrs) {
-            const ICON_NOT_WATCHED_TALK = 'mood_bad';
+            const ICON_NOT_WATCHED_TALK = 'sentiment_very_dissatisfied';
             const ICON_WATCHED_TALK = 'done_all';
 
             scope.addTalksToWatchedList = function(id){

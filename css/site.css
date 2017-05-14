@@ -1,0 +1,14 @@
+.fab-top-right {
+    bottom:10px;
+    margin-bottom:100px;
+    padding-top:24px;
+    position:fixed;
+    right:24px;
+    z-index:998;
+}
+
+
+@media (min-width: 481px){  .biggerDialog {width: 90% !important;} }
+@media (min-width: 320px){  .biggerDialog {width: 90% !important;} }
+@media (min-width: 320px) and (min-height: 568px){  .biggerDialog {width: auto !important;} }
+@media (min-width: 1200px){  .biggerDialog {width: 40% !important;} }
