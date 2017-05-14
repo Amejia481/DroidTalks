@@ -817,15 +817,6 @@ var talks = [
     }
     ,
     {
-        "name":"001: Welcome & Testing in Android",
-        "video":"http://fragmentedpodcast.com/episodes/1/",
-        "slides":null,
-        "speakers":[FRAGMENTED_PODCAST],
-        "topic": TESTING,
-        "type":SOURCE_TYPE_AUDIO
-    }
-    ,
-    {
         "name":"002: Android Studio",
         "video":"http://fragmentedpodcast.com/episodes/2/",
         "slides":null,

@@ -36,7 +36,7 @@
                     <i class="material-icons">search</i>
                 </label>
                 <div class="mdl-textfield__expandable-holder">
-                    <input ng-model="searchPattern" class="mdl-textfield__input" type="text" name="sample"
+                    <input ng-click="currentPage = 0" ng-model="searchPattern" class="mdl-textfield__input" type="text" name="sample"
                            id="fixed-header-drawer-exp">
                 </div>
             </div>
@@ -62,8 +62,9 @@
         <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
             <div class="page-content">
 
-                <div class="mdl-grid"  >
-                    <div ng-repeat="topic in topics | orderBy | filter:searchPattern"
+                <div class="mdl-grid"  ng-init="numerberOfTalks = MAX_ITEMS_TO_SHOW_PER_CARDS">
+                    <div ng-repeat="topic in topics | filter:searchPattern
+                        | orderBy  | startFrom:currentPage*pageSize | limitTo:pageSize"
                          class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone  mdl-card mdl-shadow--3dp" >
 
                         <div class="mdl-card__title mdl-card--border" >
@@ -71,19 +72,24 @@
                         </div>
 
                         <ul>
-                            <talk-section ng-repeat="talk in talks | orderBy | filter:{topic:topic}" talk="talk"></talk-section>
+                            <talk-section ng-repeat="talk in talks | orderBy | filter:{topic:topic} | limitTo:numerberOfTalks" talk="talk"></talk-section>
                         </ul>
-
+                        <show-more actual-number-of-items="numerberOfTalks"
+                                   total-items-in-collection="( talks | filter:{topic:topic}).length"
+                                   max-items-to-show="MAX_ITEMS_TO_SHOW_PER_CARDS"></show-more>
                     </div>
+
                 </div>
+                <pagination-section unfiltered-data="topics" filtered-data="filteredTopicData" search-pattern="searchPattern"
+                                    current-page="currentPage" page-size="pageSize"></pagination-section>
 
             </div>
         </section>
         <section class="mdl-layout__tab-panel" id="fixed-tab-2">
             <div class="page-content">
-
-                <div class="mdl-grid" >
-                    <div ng-repeat="event in events | orderBy | filter:{name:searchPattern}"
+                <div class="mdl-grid" ng-init="maxNumberOfEvents = MAX_ITEMS_TO_SHOW_PER_CARDS" >
+                    <div ng-repeat="event in  events | orderBy | filter:{name:searchPattern}
+                        | startFrom:currentPage*pageSize | limitTo:pageSize "
                          class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
 
                         <div class="mdl-card__title mdl-card--border">
@@ -91,20 +97,27 @@
                         </div>
 
                         <ul>
-                            <li ng-repeat="version in event.versions">
+                            <li ng-repeat="version in event.versions | limitTo:maxNumberOfEvents">
                                 <h5> <a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
                             </li>
                         </ul>
-
+                        <show-more actual-number-of-items="maxNumberOfEvents"
+                                   total-items-in-collection="( event.versions).length"
+                                   max-items-to-show="MAX_ITEMS_TO_SHOW_PER_CARDS"></show-more>
                     </div>
+
                 </div>
+
+                <pagination-section unfiltered-data="events" filtered-data="filteredEventData" search-pattern="searchPattern"
+                                    current-page="currentPage" page-size="pageSize"></pagination-section>
 
             </div>
         </section>
         <section class="mdl-layout__tab-panel" id="fixed-tab-3">
             <div class="page-content">
                 <div class="mdl-grid" >
-                    <div ng-repeat="speaker in speakers | orderBy :'name' | filter:{name:searchPattern} "
+                    <div ng-repeat="speaker in speakers | orderBy :'name' | filter:{name:searchPattern}
+                    | startFrom:currentPage*pageSize | limitTo:pageSize  " ng-init="maxNumberOfAuthors = MAX_ITEMS_TO_SHOW_PER_CARDS"
                          class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
 
                         <div class="mdl-card__title mdl-card--border">
@@ -112,12 +125,18 @@
                         </div>
 
                         <ul>
-                            <talk-section ng-repeat="talk in talks | orderBy:'name'  | inArray:speaker:'id' " talk="talk" ></talk-section>
+                            <talk-section ng-repeat="talk in talks | orderBy:'name'  | inArray:speaker:'id'
+                            | limitTo:maxNumberOfAuthors" talk="talk" ></talk-section>
                         </ul>
-                        </strong>
+
+                        <show-more actual-number-of-items="maxNumberOfAuthors"
+                                   total-items-in-collection="(talks | inArray:speaker:'id').length "
+                                   max-items-to-show="MAX_ITEMS_TO_SHOW_PER_CARDS"></show-more>
                     </div>
                 </div>
 
+                <pagination-section unfiltered-data="speakers" filtered-data="filteredCreatorsData" search-pattern="searchPattern"
+                                    current-page="currentPage" page-size="pageSize"></pagination-section>
             </div>
         </section>
     </main>
@@ -147,7 +166,7 @@
         </h5>
     </div>
     <div class="mdl-dialog__actions mdl-dialog__actions--full-width" >
-        <button type="button" class="mdl-button"><a href="mailto:arturomejiamarmol@gmail.com">Send a Cool link</a> <i class="material-icons">send</i></button>
+        <button type="button" class="mdl-button"><a href="mailto:arturomejiamarmol@gmail.com">Send me a Cool link</a> <i class="material-icons">send</i></button>
         <button type="button" class="mdl-button close">Close</button>
 
     </div>
