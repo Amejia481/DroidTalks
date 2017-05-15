@@ -22,7 +22,7 @@ app.directive("talkSection", function(WatchedTalksService) {
         },
         link: function(scope, element, attrs) {
             const ICON_NOT_WATCHED_TALK = 'sentiment_very_dissatisfied';
-            const ICON_WATCHED_TALK = 'done_all';
+            const ICON_WATCHED_TALK = 'mood';
 
             scope.addTalksToWatchedList = function(id){
                 if(scope.isTalksToWatched(id)) {
@@ -64,7 +64,7 @@ app.directive("talkSection", function(WatchedTalksService) {
             '<li   class="mdl-card__title mdl-card--border"  style="list-style-type: none; border-bottom-style:none; " >' +
                 '<span>' +
                     '<h5 style="margin-bottom: 5px !important;"><i class="material-icons mdl-button.mdl-button--colored">{{ getIconBySourceType(talk.type) }}</i><span>' +
-                        '  <a style="{{ getTextColorWatched(talk.id) }}' +
+                        '  <a style="{{ getTextColorWatched(talk.id) }}"' +
                             ' target="_blank" href="{{talk.video}}">{{talk.name}}</a> ' +
                         '<button title="{{ (isTalksToWatched(talk.id) ) ? \'watched :)\' : \'Not watched yet\' }}" class="mdl-button mdl-js-button mdl-button--icon ' +
                             '{{ (isTalksToWatched(talk.id) ) ? \'mdl-button--colored\' : \'\' }}" '+

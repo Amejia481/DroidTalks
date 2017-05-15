@@ -215,13 +215,31 @@ const JULIO_ZYNGER = {
     "name": "Julio Zynger",
     "twitter": "https://twitter.com/juliozynger"
 };
+const JETBRAINSTV = {
+    "name": "JetBrainsTV",
+    "twitter": "https://www.youtube.com/user/JetBrainsTV"
+};
+const TALKING_KOTLIN = {
+    "name": "Talking Kotlin",
+    "twitter": "http://talkingkotlin.com/"
+};
+const GREGORY_KICK = {
+    "name": "Gregory Kick",
+    "twitter": "https://twitter.com/gk5885"
+};
+const DANIEL_LEW = {
+    "name": "Daniel Lew",
+    "twitter": "https://twitter.com/danlew42"
+};
 
 
 
 /*YOUTUBE PLAYLIST*/
 const YOUTUBE_PLAY_LIST_GRADLE =   "?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh";
 const YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY =   "?list=PLWy8DQlwJkdwYKX9-M2nh8FlS6pqMXr8o";
-const YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION = "PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp"
+const YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION = "?list=PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp"
+const YOUTUBE_PLAY_LIST_KOTLIN = "?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu"
+const YOUTUBE_PLAY_DEPENDENCY_INJECTION = "?list=PLWy8DQlwJkdzrcXTcDiryWyWOf2StuGsA"
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
 const SOURCE_TYPE_VIDEO = "VIDEO";
@@ -234,6 +252,7 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const ARCHITECTURE = "Architecture";
  const CUSTOM_VIEWS = "Custom Views";
  const DATA_BINDING = "Data Binding";
+ const DEPENDENCY_INJECTION = "Dependency Injection";
  const ESPRESSO = "Espresso";
  const FLUTTER = "Flutter";
  const FRAGMENTS = "Fragments";
@@ -262,6 +281,7 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const OFFLINE = "Offline";
  const GOOD_PRACTICES = "Good Practices";
  const PUBLISHING_A_LIBRARY = "Publishing A Library";
+ const FUNCTIONAL_PROGRAMING = "Functional Programming";
 
 
 
@@ -283,7 +303,8 @@ const topics = [
         JAVA_TIPS,ANIMATIONS,
         BECOMING_A_BETTER_DEVELOPER,INTERVIEWS,
         REALM,OFFLINE,
-        GOOD_PRACTICES,PUBLISHING_A_LIBRARY
+        GOOD_PRACTICES,PUBLISHING_A_LIBRARY,
+        DEPENDENCY_INJECTION,FUNCTIONAL_PROGRAMING
 
 	];
 const speakers =
@@ -331,7 +352,8 @@ const speakers =
         JORGE_BARROSO,ANDREW_BUNNER,
         AKSHAY_KANNAN,ETIENNE_STUDDER,
         MARTIN_LIERSCH,MICHAEL_PARDO,
-        JULIO_ZYNGER
+        JULIO_ZYNGER,GREGORY_KICK,
+        TALKING_KOTLIN,DANIEL_LEW
     ]
 
 const events =[
@@ -1084,7 +1106,7 @@ var talks = [
     {
         id:68,
         "name":"Continuous deployement on Android with the publishing API",
-        "video":"https://youtu.be/A8CntrLJvvE?list="+YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION,
+        "video":"https://youtu.be/A8CntrLJvvE"+YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION,
         "slides":"https://speakerdeck.com/julioz/publishing-api-and-continuous-deployment-on-android",
         "speakers":[JULIO_ZYNGER],
         "topic": CONTINUOUS_INTEGRATION,
@@ -1097,6 +1119,88 @@ var talks = [
         "slides":null,
         "speakers":[FRAGMENTED_PODCAST],
         "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        id:70,
+        "name":"018: Effective Java for Android developers : Item 3",
+        "video":"http://fragmentedpodcast.com/episodes/18/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        id:71,
+        "name":"Kotlin 1.1 Event",
+        "video":"https://youtu.be/QQKdFFRqamg"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":null,
+        "speakers":[JETBRAINSTV],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:72,
+        "name":"Kotlin at Pinterest",
+        "video":"http://talkingkotlin.com/kotlin-at-pinterest-with-christina-lee/",
+        "slides":null,
+        "speakers":[TALKING_KOTLIN],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:73,
+        "name":"Catching up with Jake Wharton",
+        "video":"http://talkingkotlin.com/extensions-with-jake-wharton/",
+        "slides":null,
+        "speakers":[TALKING_KOTLIN],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:74,
+        "name":"DAGGER 2 - A New Type of dependency injection",
+        "video":"https://youtu.be/oK_XtfXPkqw"+YOUTUBE_PLAY_DEPENDENCY_INJECTION,
+        "slides":null,
+        "speakers":[GREGORY_KICK],
+        "topic": DEPENDENCY_INJECTION,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:75,
+        "name":"021: Diving Deep with Dagger",
+        "video":"http://fragmentedpodcast.com/episodes/021/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": DEPENDENCY_INJECTION,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:76,
+        "name":"Dependency Injection Made Simple",
+        "video":"https://youtu.be/B7rY_t3ghjI"+YOUTUBE_PLAY_DEPENDENCY_INJECTION,
+        "slides":"https://speakerdeck.com/dlew/dependency-injection-made-simple-360-andev",
+        "speakers":[DANIEL_LEW],
+        "topic": DEPENDENCY_INJECTION,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:77,
+        "name":"Episode 63: Dagger",
+        "video":"http://androidbackstage.blogspot.com/2017/02/episode-63-dagger.html",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS_BACKSTAGE],
+        "topic": DEPENDENCY_INJECTION,
+        "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        id:78,
+        "name":"083: Learning the basics of functional programing with Anup Cowkur",
+        "video":"http://fragmentedpodcast.com/episodes/83/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": FUNCTIONAL_PROGRAMING ,
         "type":SOURCE_TYPE_AUDIO
     }
 ];
