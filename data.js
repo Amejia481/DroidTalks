@@ -1089,5 +1089,14 @@ var talks = [
         "speakers":[JULIO_ZYNGER],
         "topic": CONTINUOUS_INTEGRATION,
         "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:69,
+        "name":"019: Effective Java for Android developers : Item 4",
+        "video":"http://fragmentedpodcast.com/episodes/19/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS,
+        "type":SOURCE_TYPE_AUDIO
     }
 ];

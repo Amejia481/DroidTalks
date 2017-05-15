@@ -1,6 +1,9 @@
 
 var app = angular.module('myApp', ['LocalStorageModule']);
-
+app.config(function (localStorageServiceProvider) {
+    localStorageServiceProvider
+        .setPrefix('droidtalks');
+});
 app.filter('inArray', function($filter){
     return function(list, speaker, element){
         if(speaker){
@@ -222,20 +225,22 @@ app.controller('mainCtrl', function($scope,$http,WatchedTalksService) {
 
 app.service('WatchedTalksService', function(localStorageService) {
 
-    var talksWatchedList = (localStorageService.get('talksWatchedList'))
-        ?  localStorageService.get('talksWatchedList') : [];
+
+    var dataFromStorage  = JSON.parse(localStorage.getItem('talksWatchedList'));
+    var talksWatchedList = (dataFromStorage )
+        ?  dataFromStorage : [];
 
     this.getWatchedList = function(){
         return talksWatchedList;
     }
     this.addTalksToWatchedList = function(id){
         talksWatchedList.push(id);
-        localStorageService.set('talksWatchedList',talksWatchedList);
+        localStorage.setItem('talksWatchedList',JSON.stringify(talksWatchedList));
 
     }
     this.removeFromWatchedList = function(id){
          talksWatchedList.splice(talksWatchedList.indexOf(id),1) ;
-        localStorageService.set('talksWatchedList',talksWatchedList);
+        localStorage.setItem('talksWatchedList',JSON.stringify(talksWatchedList));
     }
     this.isTalksToWatched = function(id){
         return  talksWatchedList.indexOf(id) != -1;
