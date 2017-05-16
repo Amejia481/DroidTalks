@@ -171,7 +171,7 @@ const MICHAEL_BAILEY = {
     "twitter": "https://twitter.com/yogurtearl"
 };
 const THE_CONTEXT = {
-    "name": "The Context",
+    "name": "The Context Podcast",
     "twitter": "https://github.com/artem-zinnatullin/TheContext-Podcast"
 };
 const TOM_WILSON = {
@@ -1320,5 +1320,15 @@ var talks = [
         "speakers":[ANJANA_VAKIL],
         "topic": FUNCTIONAL_PROGRAMING ,
         "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:88,
+        "name":"Episode 11: Migration to RxJava 2 with Artur Dryomov from Juno",
+        "video":"https://github.com/artem-zinnatullin/TheContext-Podcast/releases/tag/Episode_11",
+        "slides":null,
+        "speakers":[THE_CONTEXT],
+        "topic": RXJAVA ,
+        "type":SOURCE_TYPE_AUDIO
     }
 ];

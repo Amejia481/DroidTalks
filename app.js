@@ -1,9 +1,5 @@
 
-var app = angular.module('myApp', ['LocalStorageModule']);
-app.config(function (localStorageServiceProvider) {
-    localStorageServiceProvider
-        .setPrefix('droidtalks');
-});
+var app = angular.module('myApp', []);
 app.filter('inArray', function($filter){
     return function(list, speaker, element){
         if(speaker){
@@ -223,7 +219,7 @@ app.controller('mainCtrl', function($scope,$http,WatchedTalksService) {
 
 });
 
-app.service('WatchedTalksService', function(localStorageService) {
+app.service('WatchedTalksService', function() {
 
 
     var dataFromStorage  = JSON.parse(localStorage.getItem('talksWatchedList'));
