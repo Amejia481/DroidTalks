@@ -231,7 +231,22 @@ const DANIEL_LEW = {
     "name": "Daniel Lew",
     "twitter": "https://twitter.com/danlew42"
 };
-
+const ANDROID_DIALOGS = {
+    "name": "Android Dialogs",
+    "twitter": "https://www.youtube.com/channel/UCMEmNnHT69aZuaOrE-dF6ug"
+};
+const ANDROID_DEVELOPERS = {
+    "name": "Android Developers Youtube",
+    "twitter": "https://www.youtube.com/channel/UCVHFbqXqoYvEWM1Ddxl0QDg"
+};
+const EDER_BASTOS = {
+    "name": "Eder Bastos",
+    "twitter": null
+};
+const ANJANA_VAKIL = {
+    "name": "Anjana Vakil",
+    "twitter": "https://twitter.com/anjanavakil"
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -239,7 +254,11 @@ const YOUTUBE_PLAY_LIST_GRADLE =   "?list=PLWy8DQlwJkdyeM_J3__bGynwEXmeg2ldh";
 const YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY =   "?list=PLWy8DQlwJkdwYKX9-M2nh8FlS6pqMXr8o";
 const YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION = "?list=PLWy8DQlwJkdzgADmUpbf3gpTOBlj6RbLp"
 const YOUTUBE_PLAY_LIST_KOTLIN = "?list=PLWy8DQlwJkdyfmKRdFfwTR5FjJ92Yq-bu"
-const YOUTUBE_PLAY_DEPENDENCY_INJECTION = "?list=PLWy8DQlwJkdzrcXTcDiryWyWOf2StuGsA"
+const YOUTUBE_PLAY_LIST_DEPENDENCY_INJECTION = "?list=PLWy8DQlwJkdzrcXTcDiryWyWOf2StuGsA"
+const YOUTUBE_PLAY_LIST_TESTING = "?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ"
+const YOUTUBE_PLAY_LIST_ANDROID_STUDIO = "?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F"
+const YOUTUBE_PLAY_LIST_FUNCTIONAL_PROGRAMMING = "?list=PLWy8DQlwJkdxewQA6F21HQkz1E4Rn4ss4"
+
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
 const SOURCE_TYPE_VIDEO = "VIDEO";
@@ -353,7 +372,9 @@ const speakers =
         AKSHAY_KANNAN,ETIENNE_STUDDER,
         MARTIN_LIERSCH,MICHAEL_PARDO,
         JULIO_ZYNGER,GREGORY_KICK,
-        TALKING_KOTLIN,DANIEL_LEW
+        TALKING_KOTLIN,DANIEL_LEW,
+        ANDROID_DEVELOPERS,ANDROID_DIALOGS,
+        EDER_BASTOS,ANJANA_VAKIL
     ]
 
 const events =[
@@ -463,6 +484,15 @@ const events =[
             {
                 "name":"2016",
                 "videoURL":"https://www.youtube.com/playlist?list=PL79il-55EZPu3xoT9Ig9wLb65tPOS4D4_"
+            }
+        ]
+    },
+    {
+        "name":"Android Dev Summit",
+        "versions":[
+            {
+                "name":"2016",
+                "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8"
             }
         ]
     }
@@ -1160,7 +1190,7 @@ var talks = [
     {
         id:74,
         "name":"DAGGER 2 - A New Type of dependency injection",
-        "video":"https://youtu.be/oK_XtfXPkqw"+YOUTUBE_PLAY_DEPENDENCY_INJECTION,
+        "video":"https://youtu.be/oK_XtfXPkqw"+YOUTUBE_PLAY_LIST_DEPENDENCY_INJECTION,
         "slides":null,
         "speakers":[GREGORY_KICK],
         "topic": DEPENDENCY_INJECTION,
@@ -1179,7 +1209,7 @@ var talks = [
     {
         id:76,
         "name":"Dependency Injection Made Simple",
-        "video":"https://youtu.be/B7rY_t3ghjI"+YOUTUBE_PLAY_DEPENDENCY_INJECTION,
+        "video":"https://youtu.be/B7rY_t3ghjI"+YOUTUBE_PLAY_LIST_DEPENDENCY_INJECTION,
         "slides":"https://speakerdeck.com/dlew/dependency-injection-made-simple-360-andev",
         "speakers":[DANIEL_LEW],
         "topic": DEPENDENCY_INJECTION,
@@ -1202,5 +1232,93 @@ var talks = [
         "speakers":[FRAGMENTED_PODCAST],
         "topic": FUNCTIONAL_PROGRAMING ,
         "type":SOURCE_TYPE_AUDIO
+    },
+    {
+        id:79,
+        "name":"Kate Catlin: Unit Testing (3 of 4)",
+        "video":"https://youtu.be/HobGJvFL-Uw"+YOUTUBE_PLAY_LIST_TESTING,
+        "slides":null,
+        "speakers":[ANDROID_DIALOGS],
+        "topic": TESTING ,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:80,
+        "name":"022: Effective Java for Android developers : Item 5",
+        "video":"http://fragmentedpodcast.com/episodes/22/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS ,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:81,
+        "name":"Android Studio for Experts",
+        "video":"https://youtu.be/Y2GC6P5hPeA"+YOUTUBE_PLAY_LIST_ANDROID_STUDIO,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_STUDIO ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:82,
+        "name":"024: Effective Java for Android developers : Item 6",
+        "video":"http://fragmentedpodcast.com/episodes/24/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": JAVA_TIPS ,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:83,
+        "name":"Kate Catlin: Unit Testing (1 of 4)",
+        "video":"https://youtu.be/wzy6iwbmFLs"+YOUTUBE_PLAY_LIST_TESTING,
+        "slides":null,
+        "speakers":[ANDROID_DIALOGS],
+        "topic": TESTING ,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    ,
+    {
+        id:84,
+        "name":"Kate Catlin: Unit Testing (2 of 4)",
+        "video":"https://youtu.be/zBYHja21JDM"+YOUTUBE_PLAY_LIST_TESTING,
+        "slides":null,
+        "speakers":[ANDROID_DIALOGS],
+        "topic": TESTING ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:85,
+        "name":"Android Testing Patterns",
+        "video":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-6HWg_jyP0U1zrVLHn65b2",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": TESTING ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:86,
+        "name":"Fun with Kotlin",
+        "video":"https://youtu.be/ZlQhmkp_jyk"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":null,
+        "speakers":[EDER_BASTOS],
+        "topic": KOTLIN ,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    ,
+    {
+        id:87,
+        "name":"Learning Functional Programming with JavaScript",
+        "video":"https://youtu.be/e-5obm1G_FY"+YOUTUBE_PLAY_LIST_FUNCTIONAL_PROGRAMMING,
+        "slides":"https://slidr.io/vakila/learning-functional-programming-with-javascript#1",
+        "speakers":[ANJANA_VAKIL],
+        "topic": FUNCTIONAL_PROGRAMING ,
+        "type":SOURCE_TYPE_VIDEO
     }
 ];

@@ -79,7 +79,7 @@
                         </div>
 
                         <ul>
-                            <talk-section ng-repeat="talk in talks | orderBy | filter:{topic:topic} | limitTo:numerberOfTalks" talk="talk"></talk-section>
+                            <talk-section ng-repeat="talk in talks | orderBy:'name' | filter:{topic:topic} | limitTo:numerberOfTalks" talk="talk"></talk-section>
                         </ul>
                         <show-more actual-number-of-items="numerberOfTalks"
                                    total-items-in-collection="( talks | filter:{topic:topic}).length"
@@ -95,7 +95,7 @@
         <section class="mdl-layout__tab-panel" id="fixed-tab-2">
             <div class="page-content">
                 <div class="mdl-grid" ng-init="maxNumberOfEvents = MAX_ITEMS_TO_SHOW_PER_CARDS" >
-                    <div ng-repeat="event in  events | orderBy | filter:{name:searchPattern}
+                    <div ng-repeat="event in  events | orderBy:'name' | filter:{name:searchPattern}
                         | startFrom:currentPage*pageSize | limitTo:pageSize "
                          class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone mdl-card mdl-shadow--3dp">
 
@@ -104,7 +104,7 @@
                         </div>
 
                         <ul>
-                            <li ng-repeat="version in event.versions | limitTo:maxNumberOfEvents">
+                            <li ng-repeat="version in event.versions | orderBy:'-name' | limitTo:maxNumberOfEvents">
                                 <h5><a target="_blank" href="{{version.videoURL}}">{{version.name}}</a></h5>
                             </li>
                         </ul>
