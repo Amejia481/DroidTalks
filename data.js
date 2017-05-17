@@ -247,6 +247,18 @@ const ANJANA_VAKIL = {
     "name": "Anjana Vakil",
     "twitter": "https://twitter.com/anjanavakil"
 };
+const DMITRY_KANDALOV = {
+    "name": "Dmitry Kandalov",
+    "twitter": "https://twitter.com/dmitrykandalov"
+};
+const ISRAEL_FERRER_CAMACHO = {
+    "name": "Israel Ferrer Camacho",
+    "twitter": "https://twitter.com/rallat"
+};
+const DONN_FELKER = {
+    "name": "Donn Felker",
+    "twitter": "https://twitter.com/donnfelker"
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -258,6 +270,9 @@ const YOUTUBE_PLAY_LIST_DEPENDENCY_INJECTION = "?list=PLWy8DQlwJkdzrcXTcDiryWyWO
 const YOUTUBE_PLAY_LIST_TESTING = "?list=PLWy8DQlwJkdyjxz4huXz5iRbjIELeeuJQ"
 const YOUTUBE_PLAY_LIST_ANDROID_STUDIO = "?list=PLWy8DQlwJkdwADprLAc2n3x9zcxEnQO6F"
 const YOUTUBE_PLAY_LIST_FUNCTIONAL_PROGRAMMING = "?list=PLWy8DQlwJkdxewQA6F21HQkz1E4Rn4ss4"
+const YOUTUBE_PLAY_LIST_CONSTRAINT_LAYOUTS = "?list=PLWy8DQlwJkdyu258VsbNPCdnWsgqNDOxx"
+const YOUTUBE_PLAY_LIST_AUTOVALUE = "?list=PLWy8DQlwJkdw6BE8rqVWrkgH0xFUPduWP"
+const YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE = "?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD"
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -301,6 +316,8 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const GOOD_PRACTICES = "Good Practices";
  const PUBLISHING_A_LIBRARY = "Publishing A Library";
  const FUNCTIONAL_PROGRAMING = "Functional Programming";
+ const CONSTRAINT_LAYOUT = "Constraint Layout";
+ const AUTOVALUE = "AutoValue";
 
 
 
@@ -323,7 +340,8 @@ const topics = [
         BECOMING_A_BETTER_DEVELOPER,INTERVIEWS,
         REALM,OFFLINE,
         GOOD_PRACTICES,PUBLISHING_A_LIBRARY,
-        DEPENDENCY_INJECTION,FUNCTIONAL_PROGRAMING
+        DEPENDENCY_INJECTION,FUNCTIONAL_PROGRAMING,
+        CONSTRAINT_LAYOUT,AUTOVALUE
 
 	];
 const speakers =
@@ -374,7 +392,9 @@ const speakers =
         JULIO_ZYNGER,GREGORY_KICK,
         TALKING_KOTLIN,DANIEL_LEW,
         ANDROID_DEVELOPERS,ANDROID_DIALOGS,
-        EDER_BASTOS,ANJANA_VAKIL
+        EDER_BASTOS,ANJANA_VAKIL,
+        DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
+        DONN_FELKER
     ]
 
 const events =[
@@ -493,6 +513,15 @@ const events =[
             {
                 "name":"2016",
                 "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8"
+            }
+        ]
+    },
+    {
+        "name":"Chicago Roboto 2017",
+        "versions":[
+            {
+                "name":"2017",
+                "videoURL":"http://chicagoroboto.com/session-videos/"
             }
         ]
     }
@@ -1281,7 +1310,6 @@ var talks = [
         "topic": TESTING ,
         "type":SOURCE_TYPE_VIDEO
     },
-    ,
     {
         id:84,
         "name":"Kate Catlin: Unit Testing (2 of 4)",
@@ -1311,7 +1339,7 @@ var talks = [
         "topic": KOTLIN ,
         "type":SOURCE_TYPE_VIDEO
     },
-    ,
+
     {
         id:87,
         "name":"Learning Functional Programming with JavaScript",
@@ -1330,5 +1358,96 @@ var talks = [
         "speakers":[THE_CONTEXT],
         "topic": RXJAVA ,
         "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:89,
+        "name":"Cool ConstraintLayout",
+        "video":"https://vimeo.com/216099136",
+        "slides":"https://speakerdeck.com/queencodemonkey/chicago-roboto-2017-cool-constraintlayout",
+        "speakers":[HUYEN_TUE_DAO],
+        "topic": CONSTRAINT_LAYOUT ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:90,
+        "name":"Episode 50: Constraint Layout",
+        "video":"http://androidbackstage.blogspot.com/2016/06/episode-50-constraint-layout.html",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS_BACKSTAGE],
+        "topic": CONSTRAINT_LAYOUT ,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:91,
+        "name":"Constraint Layout",
+        "video":"https://youtu.be/yBcnL6F1Mh8"+YOUTUBE_PLAY_LIST_CONSTRAINT_LAYOUTS,
+        "slides":null,
+        "speakers":[ANDROID_DIALOGS],
+        "topic": CONSTRAINT_LAYOUT ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:92,
+        "name":"AutoValue and Annotation Processors",
+        "video":"https://youtu.be/8QYh4ehiTn4"+YOUTUBE_PLAY_LIST_AUTOVALUE,
+        "slides":null,
+        "speakers":[ANDROID_DIALOGS],
+        "topic": AUTOVALUE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    /*TODO*/
+    // ,
+    // {
+    //     id:93,
+    //     "name":"AutoValue and Annotation Processors",
+    //     "video":"https://youtu.be/8QYh4ehiTn4"+YOUTUBE_PLAY_LIST_AUTOVALUE,
+    //     "slides":null,
+    //     "speakers":[ANDROID_DIALOGS],
+    //     "topic": AUTOVALUE ,
+    //     "type":SOURCE_TYPE_VIDEO
+    // }
+    ,
+    {
+        id:94,
+        "name":"An introduction to Kotlin by example",
+        "video":"https://youtu.be/pjC8C1xid3k"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":"https://www.dropbox.com/sh/reb81046oz1xn47/AACsd1QG6C9MN8s70vNaz0KFa?preview=kotlin-by-example.pdf",
+        "speakers":[DMITRY_KANDALOV],
+        "topic": KOTLIN ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:95,
+        "name":"026: LetMeExplainYou AndroidDev like a pro",
+        "video":"http://fragmentedpodcast.com/episodes/26/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": ARCHITECTURE ,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:96,
+        "name":"Android Development Like a Pro",
+        "video":"https://youtu.be/tvZX3O9yHy8"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":"https://speakerdeck.com/rallat/androiddevlikeaprodroidconsf",
+        "speakers":[ISRAEL_FERRER_CAMACHO],
+        "topic": ARCHITECTURE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:97,
+        "name":"a New, Easy to Use Mobile Database & Object Framework",
+        "video":"http://chariotsolutions.com/screencast/philly-ete-2016-1-donn-felker/",
+        "slides":"http://chariotsolutions.com/presentation/philly-ete-2016-donn-felker-realm-new-easy-use-mobile-database-object-framework/",
+        "speakers":[DONN_FELKER],
+        "topic": REALM ,
+        "type":SOURCE_TYPE_VIDEO
     }
 ];
