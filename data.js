@@ -259,6 +259,10 @@ const DONN_FELKER = {
     "name": "Donn Felker",
     "twitter": "https://twitter.com/donnfelker"
 };
+const CHRISTIAN_MELCHIOR = {
+    "name": "Christian Melchior",
+    "twitter": "https://twitter.com/chrmelchior"
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -273,6 +277,7 @@ const YOUTUBE_PLAY_LIST_FUNCTIONAL_PROGRAMMING = "?list=PLWy8DQlwJkdxewQA6F21HQk
 const YOUTUBE_PLAY_LIST_CONSTRAINT_LAYOUTS = "?list=PLWy8DQlwJkdyu258VsbNPCdnWsgqNDOxx"
 const YOUTUBE_PLAY_LIST_AUTOVALUE = "?list=PLWy8DQlwJkdw6BE8rqVWrkgH0xFUPduWP"
 const YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE = "?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD"
+const YOUTUBE_PLAY_LIST_ANDROID_REALM = "?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM"
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -394,7 +399,7 @@ const speakers =
         ANDROID_DEVELOPERS,ANDROID_DIALOGS,
         EDER_BASTOS,ANJANA_VAKIL,
         DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
-        DONN_FELKER
+        DONN_FELKER,CHRISTIAN_MELCHIOR
     ]
 
 const events =[
@@ -1447,6 +1452,26 @@ var talks = [
         "video":"http://chariotsolutions.com/screencast/philly-ete-2016-1-donn-felker/",
         "slides":"http://chariotsolutions.com/presentation/philly-ete-2016-donn-felker-realm-new-easy-use-mobile-database-object-framework/",
         "speakers":[DONN_FELKER],
+        "topic": REALM ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:98,
+        "name":"027: Talking Realm with Christian Melchior",
+        "video":"http://fragmentedpodcast.com/episodes/27/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": REALM ,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:99,
+        "name":"Realm: Building a mobile database",
+        "video":"https://youtu.be/vGFInG96KH4"+YOUTUBE_PLAY_LIST_ANDROID_REALM,
+        "slides":"https://www.slideshare.net/ChristianMelchior/realm-building-a-mobile-database",
+        "speakers":[CHRISTIAN_MELCHIOR],
         "topic": REALM ,
         "type":SOURCE_TYPE_VIDEO
     }
