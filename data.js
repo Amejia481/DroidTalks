@@ -263,6 +263,10 @@ const CHRISTIAN_MELCHIOR = {
     "name": "Christian Melchior",
     "twitter": "https://twitter.com/chrmelchior"
 };
+const BRAM_VANBILSEN = {
+    "name": "Bram Vanbilsen",
+    "twitter": "https://www.youtube.com/channel/UCqibwXKXYPpnPuo5xg5l2xA"
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -278,6 +282,15 @@ const YOUTUBE_PLAY_LIST_CONSTRAINT_LAYOUTS = "?list=PLWy8DQlwJkdyu258VsbNPCdnWsg
 const YOUTUBE_PLAY_LIST_AUTOVALUE = "?list=PLWy8DQlwJkdw6BE8rqVWrkgH0xFUPduWP"
 const YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE = "?list=PLWy8DQlwJkdxkdZ7LRS5aPN_VlYo00DVD"
 const YOUTUBE_PLAY_LIST_ANDROID_REALM = "?list=PLWy8DQlwJkdwt87_UY4ZBpdgsdGf2MRtM"
+const YOUTUBE_PLAY_LIST_ANDROID_FLUTTER = "?list=PLWy8DQlwJkdym-ISJNR8ZSKd0048Z0Pns"
+const YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE = "?list=PLWy8DQlwJkdxNmPpnFY5uTqfFCVK3mpDi"
+const YOUTUBE_PLAY_LIST_ANDROID_PAYMENTS = "?list=PLWy8DQlwJkdyUyE6RG6gQ830E8HdsFD82"
+const YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE = "?list=PLWy8DQlwJkdzPFm5n5XVl-UoIkf4g8HFg"
+const YOUTUBE_PLAY_LIST_ACCESSIBILITY = "?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H5"
+const YOUTUBE_PLAY_LIST_BACKGROUND = "?list=PLWy8DQlwJkdyftmzh-AFXiacKkdH-4dTO"
+const YOUTUBE_PLAY_LIST_ANDROID_AUTO = "?list=PLWy8DQlwJkdz6dmsh8RdhFejsbhPH8zPl"
+const YOUTUBE_PLAY_LIST_EXOPLAYER = "?list=PLWy8DQlwJkdxYgbAoUnTLCcbefI-OB_Li"
+const YOUTUBE_PLAY_LIST_ANDROID_TV = "?list=PLWy8DQlwJkdyGSN2gtZatUejzVjXZwgSL"
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -323,6 +336,11 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const FUNCTIONAL_PROGRAMING = "Functional Programming";
  const CONSTRAINT_LAYOUT = "Constraint Layout";
  const AUTOVALUE = "AutoValue";
+ const PAYMENTS = "Payments";
+ const GOOGLE_PLAY_CONSOLE = "Google Play Console";
+ const BACKGROUND = "Background";
+ const ANDROID_AUTO = "Android Auto";
+ const ANDROID_TV = "Android TV";
 
 
 
@@ -346,7 +364,10 @@ const topics = [
         REALM,OFFLINE,
         GOOD_PRACTICES,PUBLISHING_A_LIBRARY,
         DEPENDENCY_INJECTION,FUNCTIONAL_PROGRAMING,
-        CONSTRAINT_LAYOUT,AUTOVALUE
+        CONSTRAINT_LAYOUT,AUTOVALUE,
+        PAYMENTS,GOOGLE_PLAY_CONSOLE,
+        BACKGROUND,ANDROID_AUTO,
+        ANDROID_TV
 
 	];
 const speakers =
@@ -399,8 +420,9 @@ const speakers =
         ANDROID_DEVELOPERS,ANDROID_DIALOGS,
         EDER_BASTOS,ANJANA_VAKIL,
         DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
-        DONN_FELKER,CHRISTIAN_MELCHIOR
-    ]
+        DONN_FELKER,CHRISTIAN_MELCHIOR,
+        BRAM_VANBILSEN
+    ];
 
 const events =[
     {
@@ -1473,6 +1495,124 @@ var talks = [
         "slides":"https://www.slideshare.net/ChristianMelchior/realm-building-a-mobile-database",
         "speakers":[CHRISTIAN_MELCHIOR],
         "topic": REALM ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:100,
+        "name":"Life is Great and Everything Will Be Ok, Kotlin is Here",
+        "video":"https://youtu.be/fPzxfeDJDzY"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":null,
+        "speakers":[JAKE_WHARTON,CHRISTINA_LEE],
+        "topic": KOTLIN ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:101,
+        "name":"Flutter SDK Tutorial - Hello World!",
+        "video":"https://youtu.be/CEPCGXQ7IQg"+YOUTUBE_PLAY_LIST_ANDROID_FLUTTER,
+        "slides":null,
+        "speakers":[BRAM_VANBILSEN],
+        "topic": FLUTTER ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:102,
+        "name":"Engineer for High Performance with Tools from Android & Play",
+        "video":"https://youtu.be/ySxCrzsKSGI"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:103,
+        "name":"Architecture Components - Introduction I/O 17",
+        "video":"https://youtu.be/FrteWKKVyzI"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ARCHITECTURE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:104,
+        "name":"Powering Commerce Online and In-Store with Google Payments",
+        "video":"https://youtu.be/BCEPRr5Hsh4"+YOUTUBE_PLAY_LIST_ANDROID_PAYMENTS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PAYMENTS ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:105,
+        "name":"Powering Commerce Online and In-Store with Google Payments",
+        "video":"https://youtu.be/peCWuCSIv7U"+YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GOOGLE_PLAY_CONSOLE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:106,
+        "name":"What's New in Android Accessibility I/O 17",
+        "video":"https://youtu.be/h5rRNXzy1xo"+YOUTUBE_PLAY_LIST_ACCESSIBILITY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ACCESSIBILITY ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:107,
+        "name":"Background Check and Other Insights into the Android OS Framework",
+        "video":"https://youtu.be/hbLAzwhBjFE"+YOUTUBE_PLAY_LIST_BACKGROUND,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": BACKGROUND ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:108,
+        "name":"Assisting the Driver: From Android Phones to Android Cars",
+        "video":"https://youtu.be/4JlhCuTYSfc"+YOUTUBE_PLAY_LIST_ANDROID_AUTO,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_AUTO ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:109,
+        "name":"Android Performance An Overview I/O 17",
+        "video":"https://youtu.be/Qfo5fdoXrTU"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE ,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:110,
+        "name":"Flexible Media Playback for Android I/O 17",
+        "video":"https://youtu.be/jAZn-J1I8Eg"+YOUTUBE_PLAY_LIST_EXOPLAYER,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": EXOPLAYER ,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:111,
+        "name":"What's New for Android TV I/O 17",
+        "video":"https://youtu.be/LMB9B6Z__bM"+YOUTUBE_PLAY_LIST_ANDROID_TV,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_TV ,
         "type":SOURCE_TYPE_VIDEO
     }
 ];
