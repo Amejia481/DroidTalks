@@ -157,11 +157,11 @@ app.directive("showMore", function() {
 });
 
 
-app.controller('mainCtrl', function($scope,$http,WatchedTalksService) {
-
+app.controller('mainCtrl', function($scope,$http,$window,WatchedTalksService) {
+    var is_mobile = ($window.innerWidth < 480);
     $scope.currentPage = 0;
     $scope.pageSize = 10;
-    $scope.MAX_ITEMS_TO_SHOW_PER_CARDS = 100;
+    $scope.MAX_ITEMS_TO_SHOW_PER_CARDS = (is_mobile) ? 3 : 5 ;
 
     const emptyArray = [];
     $scope.talks = talks;
