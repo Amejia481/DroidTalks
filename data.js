@@ -290,7 +290,22 @@ const YOUTUBE_PLAY_LIST_ACCESSIBILITY = "?list=PLWy8DQlwJkdwmAE2ETiQSxg6TWSn0m1H
 const YOUTUBE_PLAY_LIST_BACKGROUND = "?list=PLWy8DQlwJkdyftmzh-AFXiacKkdH-4dTO"
 const YOUTUBE_PLAY_LIST_ANDROID_AUTO = "?list=PLWy8DQlwJkdz6dmsh8RdhFejsbhPH8zPl"
 const YOUTUBE_PLAY_LIST_EXOPLAYER = "?list=PLWy8DQlwJkdxYgbAoUnTLCcbefI-OB_Li"
+const YOUTUBE_PLAY_LIST_ANDROID_FRAGMENTS = "?list=PLWy8DQlwJkdz7TT5E5efXU70uzvVpl5FM"
 const YOUTUBE_PLAY_LIST_ANDROID_TV = "?list=PLWy8DQlwJkdyGSN2gtZatUejzVjXZwgSL"
+const YOUTUBE_PLAY_LIST_ANDROID_WEAR = "?list=PLWy8DQlwJkdyvGFx94pTeTY-Hj0DFXa_b"
+const YOUTUBE_PLAY_LIST_ANDROID_SUPPORT_LIBRARY = "?list=PLWy8DQlwJkdzExVvWZqQvHAQdplVtwJMs"
+const YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS = "?list=PLWy8DQlwJkdxbEK0bf2eeytQyNCBhq8IJ"
+const YOUTUBE_PLAY_LIST_ANDROID_NDK = "?list=PLWy8DQlwJkdztOM1B3VG4EhBsRT06N_hA"
+const YOUTUBE_PLAY_LIST_ANDROID_SECURITY = "?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm"
+const YOUTUBE_PLAY_LIST_ANDROID_NOTIFICATIONS = "?list=PLWy8DQlwJkdww486oeNfggBwJG-07Q3rw"
+
+
+
+
+
+
+
+
 
 /*SOURCE TYPE*/
 const SOURCE_TYPE_AUDIO = "AUDIO";
@@ -341,6 +356,11 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const BACKGROUND = "Background";
  const ANDROID_AUTO = "Android Auto";
  const ANDROID_TV = "Android TV";
+ const ANDROID_WEAR = "Android Wear";
+ const SUPPORT_LIBRARY = "Support Library";
+ const INSTANT_APPS = "Instant Apps";
+ const NDK = "NDK";
+ const NOTIFICATIONS = "Notifications";
 
 
 
@@ -367,7 +387,10 @@ const topics = [
         CONSTRAINT_LAYOUT,AUTOVALUE,
         PAYMENTS,GOOGLE_PLAY_CONSOLE,
         BACKGROUND,ANDROID_AUTO,
-        ANDROID_TV
+        ANDROID_TV,SUPPORT_LIBRARY,
+        INSTANT_APPS,NDK,
+        NOTIFICATIONS,ANDROID_WEAR,
+        FRAGMENTS
 
 	];
 const speakers =
@@ -519,6 +542,10 @@ const events =[
     {
         "name":"Google I/O",
         "versions":[
+            {
+                "name":"2017",
+                "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc-odHd6XEaf7ykfsosYyCKp"
+            },
             {
                 "name":"2016",
                 "videoURL":"https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8jQTUYvIfqA9lMvSGQWtte"
@@ -1605,7 +1632,8 @@ var talks = [
         "speakers":[ANDROID_DEVELOPERS],
         "topic": EXOPLAYER ,
         "type":SOURCE_TYPE_VIDEO
-    },
+    }
+    ,
     {
         id:111,
         "name":"What's New for Android TV I/O 17",
@@ -1615,4 +1643,225 @@ var talks = [
         "topic": ANDROID_TV ,
         "type":SOURCE_TYPE_VIDEO
     }
+    ,
+    {
+        id:112,
+        "name":"Architecture Components - Solving the Lifecycle Problem I/O 17",
+        "video":"https://youtu.be/bEKNi1JOrNs"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ARCHITECTURE ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:113,
+        "name":"Test-Driven Development on Android with the Android Testing Support Library I/O 17",
+        "video":"https://youtu.be/pK7W5npkhho"+YOUTUBE_PLAY_LIST_TESTING,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": TESTING ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:114,
+        "name":"Fragment Tricks I/O 17",
+        "video":"https://youtu.be/eUG3VWnXFtg"+YOUTUBE_PLAY_LIST_ANDROID_FRAGMENTS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": FRAGMENTS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:115,
+        "name":"Android Wear: What's New & Best Practices I/O 17",
+        "video":"https://youtu.be/97U6W-5iF_o"+YOUTUBE_PLAY_LIST_ANDROID_WEAR,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_WEAR,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:116,
+        "name":"What's New in Android Development Tools I/O 17",
+        "video":"https://youtu.be/Hx_rwS1NTiI"+YOUTUBE_PLAY_LIST_ANDROID_STUDIO,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_STUDIO,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:117,
+        "name":"Best Practices to Slim Down Your App Size I/O 17",
+        "video":"https://youtu.be/AdfKNgyT438"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:118,
+        "name":"What's New in Android Support Library I/O 17",
+        "video":"https://youtu.be/V6-roIeNUY0"+YOUTUBE_PLAY_LIST_ANDROID_SUPPORT_LIBRARY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SUPPORT_LIBRARY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:119,
+        "name":"Architecture Components - Persistence and Offline I/O 17",
+        "video":"https://youtu.be/MfHsPGQ6bgE"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:120,
+        "name":"Making Data on Google Play Work for You I/O 17",
+        "video":"https://youtu.be/Dr82cv6Lj0c"+YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GOOGLE_PLAY_CONSOLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:121,
+        "name":"Introduction to Android Instant Apps I/O 17",
+        "video":"https://youtu.be/oispNrpGnIY"+YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": INSTANT_APPS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:122,
+        "name":"How to Manage Native C++ Memory in Android I/O 17",
+        "video":"https://youtu.be/7_caITSjk1k"+YOUTUBE_PLAY_LIST_ANDROID_NDK,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": NDK,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:123,
+        "name":"Securing and Optimizing Your App I/O 17",
+        "video":"https://youtu.be/5tdGAP927dk"+YOUTUBE_PLAY_LIST_ANDROID_SECURITY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:124,
+        "name":"What's New in Android Security I/O 17",
+        "video":"https://youtu.be/C9_ytg6MUP0"+YOUTUBE_PLAY_LIST_ANDROID_SECURITY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SECURITY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:125,
+        "name":"Building an Android Instant App I/O 17",
+        "video":"https://youtu.be/9Jg1D07NgeI"+YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": INSTANT_APPS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:126,
+        "name":"What's New in Android Design Tools - New Features for Rapid UI Development I/O 17",
+        "video":"https://youtu.be/nYb4FUdlLZE"+YOUTUBE_PLAY_LIST_CONSTRAINT_LAYOUTS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": CONSTRAINT_LAYOUT,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:127,
+        "name":"What's New in Google Play I/O 17",
+        "video":"https://youtu.be/L9uKkhCCRZA"+YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GOOGLE_PLAY_CONSOLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:128,
+        "name":"Android Instant Apps Best Practices Fireside Chat I/O 17",
+        "video":"https://youtu.be/F42Rbi3WIlA"+YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": INSTANT_APPS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:129,
+        "name":"10 Google Play Console Secrets to Optimize Android Apps for Stellar User Retention I/O 17",
+        "video":"https://youtu.be/ovPCRS_lEWU"+YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GOOGLE_PLAY_CONSOLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:130,
+        "name":"Speeding Up Your Android Gradle Builds I/O 17",
+        "video":"https://youtu.be/7ll-rkLCtyk"+YOUTUBE_PLAY_LIST_GRADLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GRADLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:131,
+        "name":"Google Play Awards I/O 17",
+        "video":"https://youtu.be/ayXMtOmXXhw"+YOUTUBE_PLAY_LIST_GOOGLE_PLAY_CONSOLE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GOOGLE_PLAY_CONSOLE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:132,
+        "name":"Android for Entry-Level Devices I/O 17",
+        "video":"https://youtu.be/CHKfKChZSE0"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:133,
+        "name":"What's New in Notifications, Launcher Icons, and Shortcuts I/O 17",
+        "video":"https://youtu.be/TB-K6OniF68"+YOUTUBE_PLAY_LIST_ANDROID_NOTIFICATIONS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": NOTIFICATIONS,
+        "type":SOURCE_TYPE_VIDEO
+    }
 ];
+

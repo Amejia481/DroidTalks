@@ -161,7 +161,7 @@ app.controller('mainCtrl', function($scope,$http,WatchedTalksService) {
 
     $scope.currentPage = 0;
     $scope.pageSize = 10;
-    $scope.MAX_ITEMS_TO_SHOW_PER_CARDS = 3;
+    $scope.MAX_ITEMS_TO_SHOW_PER_CARDS = 100;
 
     const emptyArray = [];
     $scope.talks = talks;
