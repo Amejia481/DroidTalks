@@ -298,6 +298,9 @@ const YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS = "?list=PLWy8DQlwJkdxbEK0bf2eeytQy
 const YOUTUBE_PLAY_LIST_ANDROID_NDK = "?list=PLWy8DQlwJkdztOM1B3VG4EhBsRT06N_hA"
 const YOUTUBE_PLAY_LIST_ANDROID_SECURITY = "?list=PLWy8DQlwJkdyVc631egdHy0-2ytO0LqCm"
 const YOUTUBE_PLAY_LIST_ANDROID_NOTIFICATIONS = "?list=PLWy8DQlwJkdww486oeNfggBwJG-07Q3rw"
+const YOUTUBE_PLAY_LIST_ANDROID_AUDIO = "?list=PLWy8DQlwJkdxn7ADNsbT_JpunF69FAtSV"
+const YOUTUBE_PLAY_LIST_ANDROID_SUBSCRIPTIONS = "?list=PLWy8DQlwJkdwFK1Inetr_UEyxN4nG6-F7"
+const YOUTUBE_PLAY_LIST_ANDROID_LOCATION = "?list=PLWy8DQlwJkdxyUFuuCIodAohv10ZLB9la"
 
 
 
@@ -361,6 +364,16 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const INSTANT_APPS = "Instant Apps";
  const NDK = "NDK";
  const NOTIFICATIONS = "Notifications";
+ const USER_RETENTION = "User Retention";
+ const SIGN_IN = "Sign in";
+ const AUDIO = "Audio";
+ const SUBSCRIPTIONS = "Subscriptions";
+ const CHROMEBOOKS = "Chromebooks";
+ const LOCATION = "Location";
+
+
+
+
 
 
 
@@ -390,7 +403,10 @@ const topics = [
         ANDROID_TV,SUPPORT_LIBRARY,
         INSTANT_APPS,NDK,
         NOTIFICATIONS,ANDROID_WEAR,
-        FRAGMENTS
+        FRAGMENTS,USER_RETENTION,
+        SIGN_IN,CHROMEBOOKS,
+        LOCATION,AUDIO,
+         SUBSCRIPTIONS
 
 	];
 const speakers =
@@ -1863,5 +1879,120 @@ var talks = [
         "topic": NOTIFICATIONS,
         "type":SOURCE_TYPE_VIDEO
     }
-];
+    ,
+    {
+        id:134,
+        "name":"Boost User Retention with Behavioral Insights I/O 17",
+        "video":"https://youtu.be/W-4JY9vayNI?list=PLWz5rJ2EKKc-odHd6XEaf7ykfsosYyCKp",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": USER_RETENTION,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:135,
+        "name":"Best Practices to Improve Sign-In, Payments, and Forms in Your Apps I/O 17",
+        "video":"https://youtu.be/oZxwTiMH0FM?list=PLWz5rJ2EKKc-odHd6XEaf7ykfsosYyCKp",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SIGN_IN,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:136,
+        "name":"Performance and Memory Improvements in Android Run Time I/O 17",
+        "video":"https://youtu.be/iFE2Utbv1Oo"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:137,
+        "name":"Best Practices for Android Audio I/O 17",
+        "video":"https://youtu.be/C0BPXZIvG-Q"+YOUTUBE_PLAY_LIST_ANDROID_AUDIO,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": AUDIO,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:139,
+        "name":"Make More Money with Subscriptions on Google Play I/O 17",
+        "video":"https://youtu.be/hRZPXgRhOH0"+YOUTUBE_PLAY_LIST_ANDROID_SUBSCRIPTIONS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SUBSCRIPTIONS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:140,
+        "name":"Introduction to Kotlin I/O 17",
+        "video":"https://youtu.be/X1RVYt2QKQE"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": KOTLIN,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:141,
+        "name":"Growing Globally with Phone Number Identity I/O 17",
+        "video":"https://youtu.be/MUULwaxqFLI",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SIGN_IN,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:142,
+        "name":"Android Apps for Chromebooks and Large Screen Devices I/O 17",
+        "video":"https://youtu.be/v6QH89i4YCI",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": CHROMEBOOKS,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:143,
+        "name":"Notifications UX: What's New for Android O I/O 17",
+        "video":"https://youtu.be/vwZi56I0Mi0"+YOUTUBE_PLAY_LIST_ANDROID_NOTIFICATIONS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": NOTIFICATIONS,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:144,
+        "name":"Developing High Performance Games for Android I/O 17",
+        "video":"https://youtu.be/zwrvJ0QJxE0"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:145,
+        "name":"Android Performance: UI I/O 17",
+        "video":"https://youtu.be/9HtTL_RO2wI"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:146,
+        "name":"Android Sensors & Location: What's New & Best Practices I/O 17",
+        "video":"https://youtu.be/5MIBNOTD_mM"+YOUTUBE_PLAY_LIST_ANDROID_LOCATION,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": LOCATION,
+        "type":SOURCE_TYPE_VIDEO
+    }
 
+];
