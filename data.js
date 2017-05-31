@@ -301,6 +301,10 @@ const YOUTUBE_PLAY_LIST_ANDROID_NOTIFICATIONS = "?list=PLWy8DQlwJkdww486oeNfggBw
 const YOUTUBE_PLAY_LIST_ANDROID_AUDIO = "?list=PLWy8DQlwJkdxn7ADNsbT_JpunF69FAtSV"
 const YOUTUBE_PLAY_LIST_ANDROID_SUBSCRIPTIONS = "?list=PLWy8DQlwJkdwFK1Inetr_UEyxN4nG6-F7"
 const YOUTUBE_PLAY_LIST_ANDROID_LOCATION = "?list=PLWy8DQlwJkdxyUFuuCIodAohv10ZLB9la"
+const YOUTUBE_PLAY_LIST_ANDROID_ANIMATION = "?list=PLWy8DQlwJkdz2jBsoF1byFLX8iGKMGDRR"
+const YOUTUBE_PLAY_LIST_ANDROID_AWARENESS = "?list=PLWy8DQlwJkdyazDsr8eXO_GsD1G31REn9"
+const YOUTUBE_PLAY_LIST_ANDROID_FIRESIDE_CHAT = "?list=PLWy8DQlwJkdzXkjqHlxbcWtTnNKnPZiSl"
+
 
 
 
@@ -370,6 +374,8 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const SUBSCRIPTIONS = "Subscriptions";
  const CHROMEBOOKS = "Chromebooks";
  const LOCATION = "Location";
+ const AWARENESS  = "Awareness";
+ const FIRESIDE_CHAT  = "Fireside Chat";
 
 
 
@@ -405,8 +411,8 @@ const topics = [
         NOTIFICATIONS,ANDROID_WEAR,
         FRAGMENTS,USER_RETENTION,
         SIGN_IN,CHROMEBOOKS,
-        LOCATION,AUDIO,
-         SUBSCRIPTIONS
+        LOCATION,AUDIO,SUBSCRIPTIONS,
+        AWARENESS,FIRESIDE_CHAT
 
 	];
 const speakers =
@@ -1994,5 +2000,63 @@ var talks = [
         "topic": LOCATION,
         "type":SOURCE_TYPE_VIDEO
     }
-
+    ,
+    {
+        id:147,
+        "name":"Android Animations Spring to Life I/O 17",
+        "video":"https://youtu.be/BNcODK-Ju0g"+YOUTUBE_PLAY_LIST_ANDROID_ANIMATION,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANIMATIONS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:148,
+        "name":"Life is Great and Everything Will Be Ok, Kotlin is Here I/O 17",
+        "video":"https://youtu.be/BNcODK-Ju0g"+YOUTUBE_PLAY_LIST_KOTLIN,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANIMATIONS,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:149,
+        "name":"How to Enable Contextual App Experiences I/O 17",
+        "video":"https://youtu.be/1a0wII96cpE"+YOUTUBE_PLAY_LIST_ANDROID_AWARENESS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": AWARENESS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:150,
+        "name":"Android Wear UI Development Best Practice I/O 17",
+        "video":"https://youtu.be/q-a1aPHO10g"+YOUTUBE_PLAY_LIST_ANDROID_WEAR,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_WEAR,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:151,
+        "name":"Android TV: How to Engage More Users and Earn More Revenue I/O 17",
+        "video":"https://youtu.be/qkt7C0NIuUA"+YOUTUBE_PLAY_LIST_ANDROID_TV,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ANDROID_TV,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:150,
+        "name":"Android Fireside Chat I/O 17",
+        "video":"https://youtu.be/NSZ7iadGaa8"+YOUTUBE_PLAY_LIST_ANDROID_FIRESIDE_CHAT,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": FIRESIDE_CHAT,
+        "type":SOURCE_TYPE_VIDEO
+    }
 ];
