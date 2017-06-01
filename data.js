@@ -2059,4 +2059,55 @@ var talks = [
         "topic": FIRESIDE_CHAT,
         "type":SOURCE_TYPE_VIDEO
     }
+    ,
+    {
+        id:151,
+        "name":"Android Instant Apps: UX Best Practices",
+        "video":"https://youtu.be/KImzvcrBfzE"+YOUTUBE_PLAY_LIST_ANDROID_INSTANT_APPS,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": INSTANT_APPS,
+        "type":SOURCE_TYPE_VIDEO
+    }
+   ,
+    {
+        id:153,
+        "name":"Architecture Components: Improve Your App's Design",
+        "video":"https://youtu.be/vOJCrbr144o"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:154,
+        "name":"Continuous Integration Dashboard",
+        "video":"https://youtu.be/3VwSCYUv2Eo"+YOUTUBE_PLAY_LIST_ANDROID_CONTINUOUS_INTEGRATION,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": CONTINUOUS_INTEGRATION,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:155,
+        "name":"Developing Accessible Apps for Users with Motor Impairments",
+        "video":"https://youtu.be/ElifzykHt7U"+YOUTUBE_PLAY_LIST_ACCESSIBILITY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ACCESSIBILITY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:156,
+        "name":"Internal Library Dependency Management by Kelly Shuster",
+        "video":"https://youtu.be/EsOTPNAaH6o"+YOUTUBE_PLAY_LIST_PUBLISHING_A_LIBRARY,
+        "slides":"https://www.slideshare.net/KellyShuster/android-internal-library-management",
+        "speakers":[KELLY_SHUSTER],
+        "topic": PUBLISHING_A_LIBRARY,
+        "type":SOURCE_TYPE_VIDEO
+    }
+
 ];
