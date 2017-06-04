@@ -267,6 +267,10 @@ const BRAM_VANBILSEN = {
     "name": "Bram Vanbilsen",
     "twitter": "https://www.youtube.com/channel/UCqibwXKXYPpnPuo5xg5l2xA"
 };
+const HADI_HARIRI = {
+    "name": "Hadi Hariri",
+    "twitter": "https://twitter.com/hhariri"
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -304,6 +308,7 @@ const YOUTUBE_PLAY_LIST_ANDROID_LOCATION = "?list=PLWy8DQlwJkdxyUFuuCIodAohv10ZL
 const YOUTUBE_PLAY_LIST_ANDROID_ANIMATION = "?list=PLWy8DQlwJkdz2jBsoF1byFLX8iGKMGDRR"
 const YOUTUBE_PLAY_LIST_ANDROID_AWARENESS = "?list=PLWy8DQlwJkdyazDsr8eXO_GsD1G31REn9"
 const YOUTUBE_PLAY_LIST_ANDROID_FIRESIDE_CHAT = "?list=PLWy8DQlwJkdzXkjqHlxbcWtTnNKnPZiSl"
+const YOUTUBE_PLAY_LIST_ANDROID_ART = "?list=PLWy8DQlwJkdzpkdyqNjfVtww42mermcjZ"
 
 
 
@@ -376,6 +381,7 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const LOCATION = "Location";
  const AWARENESS  = "Awareness";
  const FIRESIDE_CHAT  = "Fireside Chat";
+ const ART  = "ART";
 
 
 
@@ -412,7 +418,8 @@ const topics = [
         FRAGMENTS,USER_RETENTION,
         SIGN_IN,CHROMEBOOKS,
         LOCATION,AUDIO,SUBSCRIPTIONS,
-        AWARENESS,FIRESIDE_CHAT
+        AWARENESS,FIRESIDE_CHAT,
+        ART
 
 	];
 const speakers =
@@ -466,7 +473,7 @@ const speakers =
         EDER_BASTOS,ANJANA_VAKIL,
         DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
         DONN_FELKER,CHRISTIAN_MELCHIOR,
-        BRAM_VANBILSEN
+        BRAM_VANBILSEN,HADI_HARIRI
     ];
 
 const events =[
@@ -2109,5 +2116,74 @@ var talks = [
         "topic": PUBLISHING_A_LIBRARY,
         "type":SOURCE_TYPE_VIDEO
     }
-
+    ,
+    {
+        id:157,
+        "name":"029: All about the infamous 65,536 dex method count",
+        "video":"http://fragmentedpodcast.com/episodes/29/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": BECOMING_A_BETTER_DEVELOPER,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:158,
+        "name":"Mouseless Driven Development by Hadi Hariri",
+        "video":"https://vimeo.com/98922030",
+        "slides":null,
+        "speakers":[HADI_HARIRI],
+        "topic": ANDROID_STUDIO,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:159,
+        "name":"030: Material Design for developers with GDE Mike Wolfson",
+        "video":"http://fragmentedpodcast.com/episodes/30/",
+        "slides":null,
+        "speakers":[FRAGMENTED_PODCAST],
+        "topic": MATERIAL_DESIGN,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:160,
+        "name":"A New View: Layout Editor + ConstraintLayout",
+        "video":"https://skillsmatter.com/skillscasts/8711-a-new-view-layout-editor-constraintlayout",
+        "slides":"https://speakerdeck.com/queencodemonkey/droidcon-london-2016-a-new-view-layout-editor-plus-constraintlayout",
+        "speakers":[HUYEN_TUE_DAO],
+        "topic": CONSTRAINT_LAYOUT,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:161,
+        "name":"Episode 11: ART, pART 2 (Trash Talk)",
+        "video":"http://androidbackstage.blogspot.com/2014/08/android-developers-backstage-episode-11.html",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS_BACKSTAGE],
+        "topic": ART,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:162,
+        "name":"Episode 10: ART, pART 1",
+        "video":"http://androidbackstage.blogspot.com/2014/07/android-developers-backstage-episode-10.html",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS_BACKSTAGE],
+        "topic": ART,
+        "type":SOURCE_TYPE_AUDIO
+    }
+    ,
+    {
+        id:163,
+        "name":"Google I/O 2014 - The ART runtime",
+        "video":"https://www.youtube.com/watch?v=EBlTzQsUoOw"+YOUTUBE_PLAY_LIST_ANDROID_ART,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": ART,
+        "type":SOURCE_TYPE_VIDEO
+    }
 ];
