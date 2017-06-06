@@ -271,6 +271,10 @@ const HADI_HARIRI = {
     "name": "Hadi Hariri",
     "twitter": "https://twitter.com/hhariri"
 };
+const TYLER_SCHULTZ = {
+    "name": "Tyler Schultz",
+    "twitter": null
+};
 
 
 /*YOUTUBE PLAYLIST*/
@@ -309,6 +313,8 @@ const YOUTUBE_PLAY_LIST_ANDROID_ANIMATION = "?list=PLWy8DQlwJkdz2jBsoF1byFLX8iGK
 const YOUTUBE_PLAY_LIST_ANDROID_AWARENESS = "?list=PLWy8DQlwJkdyazDsr8eXO_GsD1G31REn9"
 const YOUTUBE_PLAY_LIST_ANDROID_FIRESIDE_CHAT = "?list=PLWy8DQlwJkdzXkjqHlxbcWtTnNKnPZiSl"
 const YOUTUBE_PLAY_LIST_ANDROID_ART = "?list=PLWy8DQlwJkdzpkdyqNjfVtww42mermcjZ"
+const YOUTUBE_PLAY_LIST_LISTVIEW = "?list=PLWy8DQlwJkdxI5KgRDDpYqW-Arr4nzrrK"
+const YOUTUBE_PLAY_LIST_BECOMING_A_BETTER_DEVELOPER = "?list=PLWy8DQlwJkdxDKTQoYF9GtDu95yzRIwM1"
 
 
 
@@ -382,6 +388,8 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const AWARENESS  = "Awareness";
  const FIRESIDE_CHAT  = "Fireside Chat";
  const ART  = "ART";
+ const LISTVIEW  = "ListView";
+
 
 
 
@@ -419,7 +427,7 @@ const topics = [
         SIGN_IN,CHROMEBOOKS,
         LOCATION,AUDIO,SUBSCRIPTIONS,
         AWARENESS,FIRESIDE_CHAT,
-        ART
+        ART,LISTVIEW
 
 	];
 const speakers =
@@ -473,7 +481,8 @@ const speakers =
         EDER_BASTOS,ANJANA_VAKIL,
         DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
         DONN_FELKER,CHRISTIAN_MELCHIOR,
-        BRAM_VANBILSEN,HADI_HARIRI
+        BRAM_VANBILSEN,HADI_HARIRI,
+        TYLER_SCHULTZ
     ];
 
 const events =[
@@ -2184,6 +2193,70 @@ var talks = [
         "slides":null,
         "speakers":[ANDROID_DEVELOPERS],
         "topic": ART,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:164,
+        "name":"Google I/O 2010 - The world of ListView",
+        "video":"https://youtu.be/wDBM6wVEO70"+YOUTUBE_PLAY_LIST_LISTVIEW,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": LISTVIEW,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:165,
+        "name":"Google I/O 2011: Android Protips: Advanced Topics for Expert Android App Developers",
+        "video":"https://youtu.be/twmuBbC_oB8"+YOUTUBE_PLAY_LIST_BECOMING_A_BETTER_DEVELOPER,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": BECOMING_A_BETTER_DEVELOPER,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:166,
+        "name":"Google I/O 2011: Accelerated Android Rendering",
+        "video":"https://youtu.be/twmuBbC_oB8"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:167,
+        "name":"Android UI Development - Tips, Tricks, and Techniques from Google's Anrdroid UI Toolkit Team",
+        "video":"https://youtu.be/wJYTBjMZJh0"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[CHET_HAASE,ROMAIN_GUY],
+        "topic": PERFORMANCE,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:168,
+        "name":"Learn about Android Graphics & Animations from Google's Android UI Toolkit team",
+        "video":"https://youtu.be/duefsFTJXzc"+YOUTUBE_PLAY_LIST_ANDROID_ANIMATION,
+        "slides":null,
+        "speakers":[CHET_HAASE,ROMAIN_GUY],
+        "topic": ANIMATIONS,
+        "type":SOURCE_TYPE_VIDEO
+    },
+    {
+        id:169,
+        "name":"Learn How to Unit Test Your Android Application (with Robolectric)",
+        "video":"https://youtu.be/T6FWL877txw"+YOUTUBE_PLAY_LIST_TESTING,
+        "slides":null,
+        "speakers":[TYLER_SCHULTZ],
+        "topic": TESTING,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:170,
+        "name":"Google I/O 2011: Memory management for Android Apps",
+        "video":"https://youtu.be/_CruQY55HOk"+YOUTUBE_PLAY_LIST_ANDROID_PERFORMANCE,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": PERFORMANCE,
         "type":SOURCE_TYPE_VIDEO
     }
 ];
