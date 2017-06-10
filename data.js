@@ -275,6 +275,21 @@ const TYLER_SCHULTZ = {
     "name": "Tyler Schultz",
     "twitter": null
 };
+const MARKO_GARGENTA = {
+    "name": "Marko Gargenta",
+    "twitter": "https://twitter.com/markog"
+};
+const CYRIL_MOTTIER = {
+    "name": "Cyril Mottier",
+    "twitter": "https://twitter.com/cyrilmottier"
+};
+const BORIS_FARBER = {
+    "name": "Boris Farber",
+    "twitter": "https://twitter.com/BorisFarber"
+};
+
+
+
 
 
 /*YOUTUBE PLAYLIST*/
@@ -315,6 +330,9 @@ const YOUTUBE_PLAY_LIST_ANDROID_FIRESIDE_CHAT = "?list=PLWy8DQlwJkdzXkjqHlxbcWtT
 const YOUTUBE_PLAY_LIST_ANDROID_ART = "?list=PLWy8DQlwJkdzpkdyqNjfVtww42mermcjZ"
 const YOUTUBE_PLAY_LIST_LISTVIEW = "?list=PLWy8DQlwJkdxI5KgRDDpYqW-Arr4nzrrK"
 const YOUTUBE_PLAY_LIST_BECOMING_A_BETTER_DEVELOPER = "?list=PLWy8DQlwJkdxDKTQoYF9GtDu95yzRIwM1"
+const YOUTUBE_PLAY_LIST_VOLLEY = "?list=PLWy8DQlwJkdyUq5gxtQQ9bhk8wZ6wJkZR";
+
+
 
 
 
@@ -389,13 +407,17 @@ const SOURCE_TYPE_VIDEO = "VIDEO";
  const FIRESIDE_CHAT  = "Fireside Chat";
  const ART  = "ART";
  const LISTVIEW  = "ListView";
+ const GCM  = "GCM";
+ const WEB_APIS  = "Web APIs";
+ const VOLLEY  = "Volley";
+ const STATE_RESTORATION﻿  = "State Restoration";
 
 
 
 
 
 
-
+ ﻿
 
 
 const topics = [
@@ -427,7 +449,9 @@ const topics = [
         SIGN_IN,CHROMEBOOKS,
         LOCATION,AUDIO,SUBSCRIPTIONS,
         AWARENESS,FIRESIDE_CHAT,
-        ART,LISTVIEW
+        ART,LISTVIEW,
+        GCM,WEB_APIS,
+        VOLLEY,STATE_RESTORATION﻿
 
 	];
 const speakers =
@@ -482,7 +506,8 @@ const speakers =
         DMITRY_KANDALOV,ISRAEL_FERRER_CAMACHO,
         DONN_FELKER,CHRISTIAN_MELCHIOR,
         BRAM_VANBILSEN,HADI_HARIRI,
-        TYLER_SCHULTZ
+        TYLER_SCHULTZ,MARKO_GARGENTA,
+        CYRIL_MOTTIER,BORIS_FARBER
     ];
 
 const events =[
@@ -2259,4 +2284,77 @@ var talks = [
         "topic": PERFORMANCE,
         "type":SOURCE_TYPE_VIDEO
     }
+    ,
+    {
+        id:171,
+        "name":"Architecting Android Apps",
+        "video":"https://youtu.be/M1XG8ko7F_o"+YOUTUBE_PLAY_LIST_ANDROID_ARCHITECTURE,
+        "slides":null,
+        "speakers":[MARKO_GARGENTA],
+        "topic": ARCHITECTURE,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:172,
+        "name":"Google I/O 2012 - Google Cloud Messaging for Android",
+        "video":"https://youtu.be/YoaP6hcDctM",
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": GCM,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:173,
+        "name":"Google I/O 2012 - Security and Privacy in Android Apps",
+        "video":"https://youtu.be/RPJENzweI-A"+YOUTUBE_PLAY_LIST_ANDROID_SECURITY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": SECURITY ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:174,
+        "name":"Google I/O 2012 - Making Good Apps Great: More Advanced Topics",
+        "video":"https://youtu.be/PwC1OlJo5VM"+YOUTUBE_PLAY_LIST_BECOMING_A_BETTER_DEVELOPER,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": BECOMING_A_BETTER_DEVELOPER ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:175,
+        "name":"Google I/O 2013 - Volley: Easy, Fast Networking for Android",
+        "video":"https://youtu.be/yhv8l9F44qo"+YOUTUBE_PLAY_LIST_VOLLEY,
+        "slides":null,
+        "speakers":[ANDROID_DEVELOPERS],
+        "topic": VOLLEY ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:176,
+        "name":"Deep Dive Into State Restoration",
+        "video":"https://youtu.be/ekN2zvFytZk",
+        "slides":"http://cyrilmottier.com/2014/09/25/deep-dive-into-android-state-restoration/",
+        "speakers":[CYRIL_MOTTIER],
+        "topic":  STATE_RESTORATION﻿ ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+    ,
+    {
+        id:177,
+        "name":"How the Main Thread works",
+        "video":"https://youtu.be/eAtMon8ndfk"+YOUTUBE_PLAY_LIST_BECOMING_A_BETTER_DEVELOPER,
+        "slides":null,
+        "speakers":[MICHAEL_BAILEY],
+        "topic":  BECOMING_A_BETTER_DEVELOPER ,
+        "type":SOURCE_TYPE_VIDEO
+    }
+
+
 ];
+
