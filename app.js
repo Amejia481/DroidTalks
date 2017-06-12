@@ -1,12 +1,24 @@
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ["firebase"]);
+app.run(function(topicsService,creatorsService,talksService){
+    topicsService.getTopicsFromServer();
+    creatorsService.getCreatorsFromServer();
+    talksService.getTalksFromServer();
+});
+
 app.filter('inArray', function($filter){
-    return function(list, speaker, element){
+    return function(talks, speaker, element){
         if(speaker){
-            return $filter("filter")(list, function(talk){
-                 return talk.speakers.indexOf(speaker) != -1
+             var dataTalk = talks.filter(function(talk){
+
+                var data =  talk.speakers.filter(function(item){
+                    return speaker.id === item.id
+                });
+
+                return data.length > 0;
 
             });
+            return dataTalk;
         }
     };
 });
@@ -157,17 +169,17 @@ app.directive("showMore", function() {
 });
 
 
-app.controller('mainCtrl', function($scope,$http,$window,WatchedTalksService) {
+app.controller('mainCtrl', function($scope,$http,$window,WatchedTalksService,topicsService,creatorsService,talksService) {
     var is_mobile = ($window.innerWidth < 480);
     $scope.currentPage = 0;
     $scope.pageSize = 10;
     $scope.MAX_ITEMS_TO_SHOW_PER_CARDS = (is_mobile) ? 3 : 5 ;
 
     const emptyArray = [];
-    $scope.talks = talks;
-    $scope.topics = topics;
+    $scope.talks = talksService.getTalks();
+    $scope.topics = topicsService.getTopics();
     $scope.events = events;
-    $scope.speakers = speakers;
+    $scope.speakers = creatorsService.getCreators();
     $scope.SOURCE_TYPE_VIDEO = SOURCE_TYPE_VIDEO;
     $scope.SOURCE_TYPE_AUDIO = SOURCE_TYPE_AUDIO;
 

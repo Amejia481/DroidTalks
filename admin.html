@@ -1,0 +1,192 @@
+<html>
+<head>
+    <meta name="theme-color" content="#313F8C">
+    <link rel="icon" type="image/png" href="img/ic_adb_black_24dp_1x.png" sizes="24x24" />
+    <link rel="icon" type="image/png" href="img/ic_adb_black_24dp_2x.png" sizes="48x48" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Droid Talks</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="A collection of videos and podcast about Android Developement">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="js/libs/ui-select/isteven-multi-select.css">
+
+    <script src="js/sweetalert.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <script src="js/libs/ui-select/isteven-multi-select.js"></script>
+    <script src="js/controllers/AdminTopicsController.js"></script>
+    <script src="js/controllers/AdminCreatorsController.js"></script>
+    <script src="js/controllers/AdminTalksController.js"></script>
+    <script src="js/services/TopicsServices.js"></script>
+    <script src="js/services/CreatorsServices.js"></script>
+    <script src="js/services/TalksServices.js"></script>
+
+
+</head>
+
+<body ng-app="myApp">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header
+            mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Droid Talks</span>
+
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="fixed-header-drawer-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable-holder">
+                    <input ng-click="currentPage = 0" ng-model="searchPattern" class="mdl-textfield__input" type="text" name="sample"
+                           id="fixed-header-drawer-exp">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a ng-click="currentPage = 0" href="#fixed-tab-1" class="mdl-layout__tab is-active">Add Topics</a>
+            <a ng-click="currentPage = 0" href="#fixed-tab-2" class="mdl-layout__tab">Creators</a>
+            <a ng-click="currentPage = 0" href="#fixed-tab-3" class="mdl-layout__tab">Talks</a>
+        </div>
+    </header>
+
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Droid Talks</span>
+        <nav class="mdl-navigation">
+            <a target="_blank" href="https://github.com/Amejia481/DroidTalks/" class="mdl-navigation__link "><i class="material-icons">link</i><span> GitHub</span></a>
+            <a id="button-open-dialog-about" class="mdl-navigation__link" href=""><i class="material-icons">adb</i><span> About</span></a>
+            <a id="button-open-dialog-credits" class="mdl-navigation__link" href=""><i class="material-icons">favorite</i><span> Credits</span></a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content" ng-cloak>
+        <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+            <div class="page-content">
+
+                <div class="mdl-grid" ng-controller="adminTopicsCtrl">
+
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone" >
+
+
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text" id="sample1" ng-model="newTopicName">
+                                <label class="mdl-textfield__label" for="sample1">Topic's Name</label>
+                            </div>
+                            <!-- Accent-colored raised button with ripple -->
+                            <button ng-click="addNewTopic()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                Add
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">
+
+                <div class="mdl-grid">
+
+                    <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone" ng-controller="adminCreatorsCtrl" >
+
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text"  ng-model="newCreator.name">
+                                <label class="mdl-textfield__label" for="sample1">Creator's Name</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield">
+                                <input class="mdl-textfield__input" type="text"  ng-model="newCreator.twitter">
+                                <label class="mdl-textfield__label" for="sample1">Website</label>
+                            </div>
+                            <button ng-click="addNewCreator()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                Add
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="page-content">
+                <div class="mdl-grid">
+
+                    <div  ng-controller="adminTalksCtrl" >
+
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+                                <input class="mdl-textfield__input" type="text"  ng-model="newTalk.name">
+                                <label class="mdl-textfield__label" for="sample1">Talk's Name</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
+                                <input class="mdl-textfield__input" type="text"  ng-model="newTalk.slides">
+                                <label class="mdl-textfield__label" for="sample1">Slide</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col" >
+                                <input class="mdl-textfield__input" type="text"  ng-model="newTalk.video">
+                                <label class="mdl-textfield__label" for="sample1">Video</label>
+                            </div>
+                            <div>
+
+                                <div class="mdl-cell mdl-cell--12-col"
+                                        isteven-multi-select
+                                        input-model="types"
+                                        output-model="newTalk.type"
+                                        button-label="name"
+                                        item-label="name"
+                                        selection-mode="single"
+                                        tick-property="ticked">
+                                </div>
+
+                                <div
+                                        class="mdl-cell mdl-cell--12-col"
+                                        isteven-multi-select
+                                        input-model="topics"
+                                        output-model="newTalk.topic"
+                                        button-label="$value"
+                                        item-label="$value"
+                                        selection-mode="single"
+                                        tick-property="ticked">
+                                </div>
+
+                                <div
+                                        class="mdl-cell mdl-cell--12-col"
+                                        isteven-multi-select
+                                        input-model="speakers"
+                                        output-model="newTalk.speakers"
+                                        button-label="name"
+                                        item-label="name"
+                                        tick-property="ticked">
+                                </div>
+                                <button ng-click="addNewTalk()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                    Add
+                                </button>
+
+
+                                <pre>{{beautify()}}
+                                </pre>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+<html>
