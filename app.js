@@ -53,6 +53,14 @@ app.directive("talkSection", function(WatchedTalksService) {
                         icon = "movie_creation";
                         break;
 
+                    case SOURCE_TYPE_LINK:
+                        icon = "link";
+                        break;
+
+                    case SOURCE_TYPE_COURSE:
+                        icon = "library_books";
+                        break;
+
                     default:
                         icon = "movie_creation";
                 }
@@ -71,7 +79,7 @@ app.directive("talkSection", function(WatchedTalksService) {
         template :
             '<li   class="mdl-card__title mdl-card--border"  style="list-style-type: none; border-bottom-style:none; " >' +
                 '<span>' +
-                    '<h5 style="margin-bottom: 5px !important;"><i class="material-icons mdl-button.mdl-button--colored">{{ getIconBySourceType(talk.type) }}</i><span>' +
+                    '<h5 title="{{talk.type}}" style="margin-bottom: 5px !important;" ><i class="material-icons mdl-button.mdl-button--colored">{{ getIconBySourceType(talk.type) }}</i><span>' +
                         '  <a style="{{ getTextColorWatched(talk.id) }}"' +
                             ' target="_blank" href="{{talk.video}}">{{talk.name}}</a> ' +
                         '<button title="{{ (isTalksToWatched(talk.id) ) ? \'watched :)\' : \'Not watched yet\' }}" class="mdl-button mdl-js-button mdl-button--icon ' +

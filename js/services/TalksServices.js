@@ -28,6 +28,8 @@ app.service('talksService', function($rootScope,$firebaseArray,creatorsService){
             newItem.id = data.key;
             talks.$save(newItem);
             alert("Talk Added")
+        }).catch(function(error) {
+            console.log('Error!');
         });
 
     }

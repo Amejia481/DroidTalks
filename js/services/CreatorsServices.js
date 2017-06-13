@@ -12,8 +12,12 @@ app.service('creatorsService', function($rootScope,$firebaseArray){
             var newItem  = creators.$getRecord(data.key);
             creator.id = data.key;
             newItem.id = data.key;
-            creators.$save(newItem);
+            creators.$save(newItem).catch(function(error) {
+                console.log('Error!');
+            });
             alert("Creator Added")
+        }).catch(function(error) {
+            console.log('Error!');
         });
 
     }

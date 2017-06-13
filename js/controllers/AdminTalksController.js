@@ -6,7 +6,7 @@ app.controller('adminTalksCtrl', function($scope,talksService,topicsService, cre
 
     $scope.speakers = creatorsService.getCreators();
     $scope.topics = topicsService.getTopicsOriginal();
-    $scope.types = [{"name":"VIDEO"},{"name":"AUDIO"}];
+    $scope.types = [{"name":"VIDEO"},{"name":"AUDIO"},{"name":"LINK"},{"name":"COURSE"}];
     $scope.beautify = function(){
         return JSON.stringify($scope.newTalk, null, 2);
     };

@@ -19,7 +19,10 @@ app.service('topicsService', function($rootScope,$firebaseArray){
 
             alert('Topic Added!');
 
-        })
+        }).catch(function(error) {
+            console.log('Error!');
+        });
+
         topicsStrings.push(topic);
     }
 
