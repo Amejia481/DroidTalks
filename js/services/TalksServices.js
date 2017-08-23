@@ -17,7 +17,7 @@ app.service('talksService', function ($rootScope, $firebaseArray, creatorsServic
                 "id": item.$id,
 
             });
-            creatorsService.addNewTalkToCreatorsTalks(item)
+
         });
 
         topicsService.addNewTalkToTopicsTalks(talk.topic[0].$id)
@@ -31,6 +31,9 @@ app.service('talksService', function ($rootScope, $firebaseArray, creatorsServic
             newItem.id = data.key;
             talks.$save(newItem);
             alert("Talk Added")
+            talk.speakers.forEach(function (item) {
+                creatorsService.addNewTalkToCreatorsTalks(item,talk)
+            });
         }).catch(function (error) {
             console.log('Error!');
         });

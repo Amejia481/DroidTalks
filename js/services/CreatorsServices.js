@@ -24,7 +24,8 @@ app.service('creatorsService', function ($rootScope, $firebaseArray) {
                     id: newItem.id,
                     name: creator.name,
                     resourcesCout: 0,
-                    twitter: creator.twitter
+                    twitter: creator.twitter,
+                    talks:[]
                 }
             ).catch(function (error) {
                 alert('Error creatorsTalks NOT ADDED!' + error);
@@ -37,18 +38,24 @@ app.service('creatorsService', function ($rootScope, $firebaseArray) {
 
     }
 
-    this.getCreators = function () {
-        return creators;
-    }
-    this.addNewTalkToCreatorsTalks = function (item) {
+    this.addNewTalkToCreatorsTalks = function (item,talk) {
 
         var data = creatorsTalks.$getRecord(item.id)
         data.resourcesCout += 1
+        if(!data['talks']){
+            data['talks'] = [talk]
+        }else{
+            data.talks.push(talk)
+        }
+
 
         creatorsTalks.$save(data).catch(function (error) {
             console.log('Error!');
         });
 
+    }
+    this.getCreators = function () {
+        return creators;
     }
 
     this.findCreatorByName = function (name) {
